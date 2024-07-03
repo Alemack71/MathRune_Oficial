@@ -44,11 +44,24 @@ if (global.POK){
 	var newLetter = a_letters[gridX, gridY];
 	
 	if(newLetter == "OK"){
-		room_goto(rm_game);
+		if (string_length(currentName) >= 3)
+		{
+	        global.name = currentName;
+	        InitializeParty(); // Inicializa o party com o nome definido
+			room_goto(rm_game);
+		}
 	}
 	
 	if(newLetter != "OK"){
-		currentName += newLetter;
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(newLetter);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(newLetter);
+		}
+		
+		
 	}
 }
 
@@ -64,4 +77,4 @@ if (global.PCAN){
 
 #endregion
 
-global.nome_player = currentName;
+show_debug_message(string_length(currentName))

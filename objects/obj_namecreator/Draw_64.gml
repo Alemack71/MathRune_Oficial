@@ -1,4 +1,11 @@
-startY = 184;
+startY = 50;
+startX = 683;
+draw_set_font(fnt_monospaced);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text(startX, startY, "Digite seu nome")
+
+startY = 240;
 startX = 683;
 
 draw_set_halign(fa_center);
@@ -10,11 +17,11 @@ draw_text(startX, startY, currentName);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top)
 
-startY = 360;
-startX = 140;
+startY = 420;
+startX = 200;
 
 draw_set_font(fnt_monospaced);
-fontSize = 60;
+fontSize = 50;
 var buffer = ceil(fontSize);
 
 var charCount = 1;

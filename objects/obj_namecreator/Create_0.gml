@@ -7,6 +7,7 @@ global.POK = false;
 global.PCAN = false;
 
 currentName = "";
+limite = 9;
 
 gridX = 0;
 gridY = 0;
