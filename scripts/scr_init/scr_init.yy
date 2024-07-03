@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"var_global",
+  "%Name":"scr_init",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"var_global",
+  "name":"scr_init",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

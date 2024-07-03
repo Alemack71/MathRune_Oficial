@@ -25,6 +25,8 @@
     {"name":"inst_424B99BE","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_C7C0EF0","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_4E1B8FB1","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_68AAA0D9","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_4C843ADD","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -69,6 +71,8 @@
         {"$GMRInstance":"","%Name":"inst_1CB68FB4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CB68FB4","objectId":{"name":"obj_Colisor","path":"objects/obj_Colisor/obj_Colisor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":20.0,"scaleY":1.5,"x":0.0,"y":320.0,},
         {"$GMRInstance":"","%Name":"inst_C7C0EF0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C7C0EF0","objectId":{"name":"oSlime","path":"objects/oSlime/oSlime.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":422.0,"y":218.0,},
         {"$GMRInstance":"","%Name":"inst_4E1B8FB1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E1B8FB1","objectId":{"name":"obj_reativar","path":"objects/obj_reativar/obj_reativar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6.0,"y":6.0,},
+        {"$GMRInstance":"","%Name":"inst_68AAA0D9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_68AAA0D9","objectId":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6.0,"y":26.0,},
+        {"$GMRInstance":"","%Name":"inst_4C843ADD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C843ADD","objectId":{"name":"obj_UI_menu","path":"objects/obj_UI_menu/obj_UI_menu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6.0,"y":46.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Chao_decor","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Chao_decor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -16,-2147483648,1,493,-3,-2147483648,1,493,-5,-2147483648,1,736,-29,-2147483648,1,555,-3,493,7,555,-2147483648,

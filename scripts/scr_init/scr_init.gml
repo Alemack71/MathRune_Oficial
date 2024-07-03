@@ -3,3 +3,5 @@
 global.key = 0;
 
 randomize();
+
+global.pause = false;

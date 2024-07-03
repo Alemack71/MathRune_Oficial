@@ -1,6 +1,15 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
+if(global.gamePaused){ 
+	
+	image_speed = 0;
+	moveh = 0;
+	movev = 0;
+	exit;
+
+}
+
 //Ajustando a minha profundidade
 depth = -y
 

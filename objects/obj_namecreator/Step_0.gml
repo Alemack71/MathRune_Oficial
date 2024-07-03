@@ -60,8 +60,6 @@ if (global.POK){
 		{
 			currentName +=  string_lower(newLetter);
 		}
-		
-		
 	}
 }
 

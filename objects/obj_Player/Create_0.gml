@@ -149,3 +149,10 @@ dir = 0
 
 //Iniciando minha máquina de estado
 inicia_estado(estado_idle)
+
+if ( global.player_continuing == true )
+{
+    global.player_continuing = false
+    x = global.player_x
+    y = global.player_y
+}

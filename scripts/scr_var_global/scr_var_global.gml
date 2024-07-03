@@ -2,3 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
 global.nome_player = "";
+global.player_continuing = false
+global.player_x = -1
+global.player_y = -1
