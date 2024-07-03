@@ -9,6 +9,7 @@ global.battle_x = x;
 global.battle_y = y;
 
 unidades = [];
+unidades_invertidas = [];
 turno = 0;
 unidade_turno_ordem = [];
 unidade_render_ordem = [];
@@ -57,7 +58,11 @@ for (var i = 0; i < array_length(global.party); i++)
 }
 
 //embaralha a ordem do turno
-unidade_turno_ordem = array_shuffle(unidades);
+for (var i = (array_length(unidades)-1); i >= 0; i--)
+{
+	array_push(unidades_invertidas, unidades[i])	
+}
+unidade_turno_ordem = unidades_invertidas;
 
 //adquirindo ordem de renderização
 atualizar_render_ordem = function ()
@@ -340,7 +345,7 @@ function battle_state_victory_check()
 			// Atualiza o HP global
 			AtualizarHpGlobal();
 		
-			inst_8AA9384.ativar = true;
+			inst_4E1B8FB1.ativar = true;
 			instance_activate_object(obj_reativar);
 			instance_destroy();
 		}

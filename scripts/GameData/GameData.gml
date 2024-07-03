@@ -137,17 +137,17 @@ global.party =
 		sprites : { idle: sLuluIdle, attack: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
 		actions : [global.action_library.attack]
 	}
-	,
-	{
-		name: "Carlinhos",
-		hp: 18,
-		hpMax: 44,
-		mp: 20,
-		mpMax: 30,
-		strength: 4,
-		sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown, defend: sQuestyCast},
-		actions : [global.action_library.attack, global.action_library.ice]
-	}
+	//,
+	//{
+	//	name: "Carlinhos",
+	//	hp: 18,
+	//	hpMax: 44,
+	//	mp: 20,
+	//	mpMax: 30,
+	//	strength: 4,
+	//	sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown, defend: sQuestyCast},
+	//	actions : [global.action_library.attack, global.action_library.ice]
+	//}
 ]
 
 //Enemy Data

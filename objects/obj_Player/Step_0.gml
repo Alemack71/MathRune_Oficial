@@ -33,30 +33,30 @@ roda_estado()
 //variável de controle pra saber se o player colidiu ou não
 var _colidiu = false;
 
-if place_meeting(x+moveh,y,all)
-{
-	while !place_meeting(x+sign(moveh),y,all)
-	{
-		x+=sign(moveh)	
-	}
-	moveh = 0;
-	_colidiu = true; //marca que houve colisão
-}
+//if place_meeting(x+moveh,y,all)
+//{
+//	while !place_meeting(x+sign(moveh),y,all)
+//	{
+//		x+=sign(moveh)	
+//	}
+//	moveh = 0;
+//	_colidiu = true; //marca que houve colisão
+//}
 
 if (global.dialogo_on == 0) {
 	x+=moveh
 }
 
-if place_meeting(x,y+movev,all)
-{
-	while !place_meeting(x,y+sign(movev),all)
-	{
-		y+=sign(movev)	
-	}
+//if place_meeting(x,y+movev,all)
+//{
+//	while !place_meeting(x,y+sign(movev),all)
+//	{
+//		y+=sign(movev)	
+//	}
 	
-	movev = 0;
-	_colidiu = true;
-}
+//	movev = 0;
+//	_colidiu = true;
+//}
 
 if (global.dialogo_on == 0) {
 	y+=movev

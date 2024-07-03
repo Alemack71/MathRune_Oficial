@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_decoracao_pai","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"propertyId":{"name":"transparente","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_decoracao_pai",

@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Fontes luz",
-    "path":"folders/Objetos/Fontes luz.yy",
+    "path":"folders/Objects/Fontes luz.yy",
   },
   "parentObjectId":{
     "name":"obj_decoracao_pai",
