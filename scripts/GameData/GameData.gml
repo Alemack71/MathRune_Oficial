@@ -136,7 +136,7 @@ function InitializeParty() {
             mpMax: 15,
             strength: 6,
             sprites : { idle: sLuluIdle, attack: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
-            actions : [global.action_library.attack]
+            actions : [global.action_library.attack, global.action_library.ice]
         }
 		//,
 		//{
