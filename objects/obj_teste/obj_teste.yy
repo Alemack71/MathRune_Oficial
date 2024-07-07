@@ -13,7 +13,10 @@
     "name":"Dialogo",
     "path":"folders/Objects/Dialogo.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_decoracao_pai",
+    "path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_teste_dialogo",
-    "path":"sprites/spr_teste_dialogo/spr_teste_dialogo.yy",
+    "name":"Sprite29",
+    "path":"sprites/Sprite29/Sprite29.yy",
   },
   "spriteMaskId":null,
   "visible":true,

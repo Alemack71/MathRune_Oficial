@@ -1,8 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-//Ajustando a minha profundidade
-depth = -y
+
 
 if (obj_Player != noone) {
     // Definir os limites da área de ativação

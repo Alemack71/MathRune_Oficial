@@ -25,12 +25,13 @@ if (global.gamePaused){
 				ini_write_string("Player","nome",global.name);
 				ini_write_real("Player","x_atual",obj_Player.x);
 				ini_write_real("Player","y_atual",obj_Player.y);
+				ini_write_real("Player","hp_atual",global.party[0].hp);
+				ini_write_real("Player","mp_atual",global.party[0].mp);
 				ini_write_real("Player","sala_atual", room);
 				ini_close();
-				show_message("Jogo Salvo");
 				with(obj_game) instance_destroy();
+				instance_destroy();
 				room_goto(rm_menu);	
-			
 			}break;
 			case 2: // Save and Quit to Desktop
 			{

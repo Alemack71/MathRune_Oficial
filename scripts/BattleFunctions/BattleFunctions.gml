@@ -61,3 +61,10 @@ function AtualizarHpGlobal() {
         global.party[i].hp = _unidade.hp;
     }
 }
+
+function AtualizarMpGlobal() {
+    for (var i = 0; i < array_length(partyUnidades); i++) {
+        var _unidade = partyUnidades[i];
+        global.party[i].mp = _unidade.mp;
+    }
+}

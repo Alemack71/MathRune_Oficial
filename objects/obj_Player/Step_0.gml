@@ -74,3 +74,5 @@ if (global.dialogo_on == 0) {
 if (_colidiu) {
 	troca_estado(estado_idle);	
 }
+
+show_debug_message(depth)
