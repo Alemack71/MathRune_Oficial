@@ -342,9 +342,11 @@ function battle_state_victory_check()
 		battle_wait_time_remaining--
 		if (battle_wait_time_remaining == 0)
 		{
-			// Atualiza o HP global
+			// Atualiza a vida da party
 			AtualizarHpGlobal();
-		
+			// Atualiza a mana da party
+			AtualizarMpGlobal();
+			
 			inst_4E1B8FB1.ativar = true;
 			instance_activate_object(obj_reativar);
 			instance_destroy();

@@ -130,25 +130,24 @@ function InitializeParty() {
     [
         {
             name: global.name,
-            hp: 3,
+            hp: 10,
             hpMax: 89,
             mp: 10,
             mpMax: 15,
             strength: 6,
-            sprites : { idle: sLuluIdle, attack: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
+            sprites : { idle: sLuluIdle, attack: sLuluAttack, cast: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
             actions : [global.action_library.attack, global.action_library.ice]
-        }
-		//,
-		//{
-		//	name: "Carlinhos",
-		//	hp: 18,
-		//	hpMax: 44,
-		//	mp: 20,
-		//	mpMax: 30,
-		//	strength: 4,
-		//	sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown, defend: sQuestyCast},
-		//	actions : [global.action_library.attack, global.action_library.ice]
-		//}
+        },
+		{
+			name: "Carlinhos",
+			hp: 18,
+			hpMax: 44,
+			mp: 20,
+			mpMax: 30,
+			strength: 4,
+			sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown, defend: sQuestyCast},
+			actions : [global.action_library.attack, global.action_library.ice]
+		}
     ];
 }
 
@@ -158,28 +157,25 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Slime",
-		hp: 30,
+		hp: 10,
 		hpMax: 30,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSlime, attack: sSlimeAttack},
-		actions: 
-		[
-		global.question_library_0[0]
-		],
+		actions: global.question_library_0,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
 			// Seleciona uma questão aleatória se ainda não houver uma selecionada
 			if (current_question_index == -1) {
-				current_question_index = irandom(array_length(global.question_library_0) - 1);
+				current_question_index = irandom(array_length(actions) - 1);
 			}
 
-			var _action = global.question_library_0[current_question_index];
+			var _action = actions[current_question_index];
 
 			// Atualiza o índice da próxima questão para o próximo turno
-			current_question_index = irandom(array_length(global.question_library_0) - 1);
+			current_question_index = irandom(array_length(actions) - 1);
 
 			// Seleciona um membro aleatório da party como alvo
 			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)

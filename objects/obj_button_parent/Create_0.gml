@@ -9,5 +9,3 @@ escala_y = image_yscale;
 escala_texto_x = 1;
 escala_texto_y = 1;
 
-//Define a cor do texto
-cor_texto = false;
