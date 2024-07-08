@@ -8,13 +8,13 @@ depth = -bbox_bottom
 //Checando se o player existe
 if (transparente) 
 {
-	if (instance_exists(obj_Player))
+	if (instance_exists(obj_player))
 	{
 		//Checando se o player está em cima de mim
-		if (obj_Player.y < y)
+		if (obj_player.y < y)
 		{
 			//Checando se o player esta mais ou menos atras de mim
-			if (point_in_rectangle(obj_Player.x, obj_Player.y, bbox_left - 10, bbox_top - 25, bbox_right + 10, bbox_top))
+			if (point_in_rectangle(obj_player.x, obj_player.y, bbox_left - 10, bbox_top - 25, bbox_right + 10, bbox_top))
 			{
 				//Ficando transparente
 				image_alpha = lerp(image_alpha, 0.5, 0.1)

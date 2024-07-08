@@ -23,7 +23,7 @@
   ],
   "name":"sLuluDefend",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"BattleUnits",
     "path":"folders/Sprites/BattleUnits.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":32,
+    "yorigin":33,
   },
   "swatchColours":null,
   "swfPrecision":2.525,

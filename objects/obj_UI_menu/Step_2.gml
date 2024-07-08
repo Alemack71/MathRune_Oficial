@@ -23,8 +23,8 @@ if (global.gamePaused){
 				if(file_exists("save.sav"))file_delete("save.sav");
 				ini_open("save.sav");
 				ini_write_string("Player","nome",global.name);
-				ini_write_real("Player","x_atual",obj_Player.x);
-				ini_write_real("Player","y_atual",obj_Player.y);
+				ini_write_real("Player","x_atual",obj_player.x);
+				ini_write_real("Player","y_atual",obj_player.y);
 				ini_write_real("Player","hp_atual",global.party[0].hp);
 				ini_write_real("Player","mp_atual",global.party[0].mp);
 				ini_write_real("Player","sala_atual", room);

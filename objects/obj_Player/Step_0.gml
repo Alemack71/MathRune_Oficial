@@ -42,9 +42,9 @@ roda_estado()
 //variável de controle pra saber se o player colidiu ou não
 var _colidiu = false;
 
-if place_meeting(x+moveh,y,all)
+if place_meeting(x+moveh,y,obj_Colisor)
 {
-	while !place_meeting(x+sign(moveh),y,all)
+	while !place_meeting(x+sign(moveh),y,obj_Colisor)
 	{
 		x+=sign(moveh)	
 	}
@@ -56,9 +56,9 @@ if (global.dialogo_on == 0) {
 	x+=moveh
 }
 
-if place_meeting(x,y+movev,all)
+if place_meeting(x,y+movev,obj_Colisor)
 {
-	while !place_meeting(x,y+sign(movev),all)
+	while !place_meeting(x,y+sign(movev),obj_Colisor)
 	{
 		y+=sign(movev)	
 	}
@@ -75,4 +75,9 @@ if (_colidiu) {
 	troca_estado(estado_idle);	
 }
 
-show_debug_message(depth)
+//show_debug_message(depth)
+
+if (x >= room_width-60)
+{
+	room_goto(rm_game8)	
+}
