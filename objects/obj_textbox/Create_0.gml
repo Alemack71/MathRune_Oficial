@@ -1,5 +1,7 @@
 /// Input
 confirm_key = vk_enter;
+up_key = vk_up;
+down_key = vk_down;
 max_input_delay = 5;
 input_delay = max_input_delay;
 
@@ -31,6 +33,16 @@ speaker_y = 0;
 speaker_font = fnt_text;
 speaker_color = #464633;
 
+/// Opções
+option_x = padding;
+option_y = padding * -6;
+option_spacing = 50;
+option_selection_indent = 24;
+option_width = 300;
+option_height = 40;
+option_text_x = 10;
+option_text_color = c_white;
+
 
 /// Proprieties NÃO EDITAR.
 actions = [];
@@ -54,6 +66,10 @@ enum PORTRAIT_SIDE{
 speaker_name = "";
 speaker_width = sprite_get_width(spr_name);
 speaker_height = sprite_get_height(spr_name);
+
+options = [];
+current_option = 0;
+option_count = 0;
 
 /// Methods
 setTopic = function(topic) {
