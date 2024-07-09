@@ -5,3 +5,7 @@ global.key = 0;
 randomize();
 
 global.pause = false;
+
+global.dialogo_on = false;
+
+global.novo_jogo = false;

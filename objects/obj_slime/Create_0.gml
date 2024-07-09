@@ -77,6 +77,15 @@ estado_walk.roda = function()
         move_y = -move_y;
     }
 	
+	//inverte horizontalmente o slime
+	if (move_x < 0) 
+	{
+		image_xscale = -1;
+	} else
+	{
+		image_xscale = 1;
+	}
+	
 	//Diminuindo o timer do estado
 	timer_estado--
 	

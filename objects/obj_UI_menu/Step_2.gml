@@ -30,6 +30,7 @@ if (global.gamePaused){
 				ini_write_real("Player","sala_atual", room);
 				ini_close();
 				with(obj_game) instance_destroy();
+				instance_destroy(obj_player);
 				instance_destroy();
 				room_goto(rm_menu);	
 			}break;

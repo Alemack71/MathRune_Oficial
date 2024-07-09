@@ -2,8 +2,7 @@
 // Você pode escrever seu código neste editor
 
 if(global.gamePaused){ 
-	
-	image_speed = 0;
+
 	moveh = 0;
 	movev = 0;
 	exit;
@@ -77,7 +76,3 @@ if (_colidiu) {
 
 //show_debug_message(depth)
 
-if (x >= room_width-60)
-{
-	room_goto(rm_game8)	
-}
