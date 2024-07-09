@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_poste_left",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_decoracao_pai","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"propertyId":{"name":"transparente","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_decoracao_pai","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"propertyId":{"name":"transparente","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
     "name":"Fontes luz",
