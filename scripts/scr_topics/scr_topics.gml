@@ -41,3 +41,11 @@ global.topics[$ "Chose Pancakes"] = [
 global.topics[$ "End of Breakfast"] = [
 	TEXT("Goodbye, now!")
 ];
+
+global.topics[$ "Bonfire_Descanso"] = [
+	TEXT("Voce descansou na bonfire. Isso te enche de determinacao")
+];
+
+global.topics[$ "Bonfire_Cheio"] = [
+	TEXT("Nao temos tempo para descansar. E hora de partir.")
+];

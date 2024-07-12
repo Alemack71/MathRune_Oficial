@@ -148,6 +148,7 @@
     {"id":{"name":"spr_Colisor","path":"sprites/spr_Colisor/spr_Colisor.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_fogueira_burning","path":"sprites/spr_fogueira_burning/spr_fogueira_burning.yy",},},
+    {"id":{"name":"spr_fogueira_desligando","path":"sprites/spr_fogueira_desligando/spr_fogueira_desligando.yy",},},
     {"id":{"name":"spr_fogueira_idle","path":"sprites/spr_fogueira_idle/spr_fogueira_idle.yy",},},
     {"id":{"name":"spr_fogueira_start","path":"sprites/spr_fogueira_start/spr_fogueira_start.yy",},},
     {"id":{"name":"spr_lanterna","path":"sprites/spr_lanterna/spr_lanterna.yy",},},

@@ -70,9 +70,16 @@ if (global.dialogo_on == 0) {
 	y+=movev
 }
 
+if (global.dialogo_on)
+{
+	_colidiu = true;	
+}
+
 if (_colidiu) {
+	movev = 0;
+	moveh = 0;
 	troca_estado(estado_idle);	
 }
 
-//show_debug_message(depth)
+show_debug_message(movev)
 

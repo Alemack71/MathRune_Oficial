@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_fogueira_idle",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":61,
   "bbox_left":2,
   "bbox_right":30,
@@ -23,7 +23,7 @@
   ],
   "name":"spr_fogueira_idle",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Fogueira",
     "path":"folders/Sprites/Level/Fogueira.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":64,
+    "yorigin":42,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
