@@ -76,10 +76,8 @@ if (global.dialogo_on)
 }
 
 if (_colidiu) {
-	movev = 0;
-	moveh = 0;
 	troca_estado(estado_idle);	
 }
 
-show_debug_message(movev)
+//show_debug_message(depth)
 
