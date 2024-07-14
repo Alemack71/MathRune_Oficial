@@ -12,4 +12,5 @@ alternativa_selecionada = 0;
 delay = 0;
 delay_resposta = 0;
 _key_confirm = false; 
-resposta_revelada = false
+resposta_revelada = false;
+imagem = sprites;

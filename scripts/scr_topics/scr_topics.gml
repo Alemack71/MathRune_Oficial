@@ -7,7 +7,7 @@ global.topics[$ "Exemplo"] = [
 ];
 
 global.topics[$ "Bos Vindas a MathRune"] = [
-	TEXT("o-oi"),
+	TEXT("Ah Olá"),
 	TEXT("Você me salvou"),
 	TEXT("Acho que voce nao conhece esse lugar, parece novo por aqui, meu nome é Luck, e eu irei te guiar nessa terra mágica!"),
 ];

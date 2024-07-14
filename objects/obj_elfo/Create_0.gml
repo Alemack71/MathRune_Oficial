@@ -4,4 +4,5 @@
 //controle pra verificar se alguém está conversando
 global.dialogo_on = false;
 
-//diz o dialogo dependendo da instância
+//qual sprite usar
+sprite_index = sprite_elfo;

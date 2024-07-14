@@ -32,13 +32,14 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"dialogo","filters":[],"listItems":[],"multiselect":false,"name":"dialogo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"sprite_elfo","filters":[],"listItems":[],"multiselect":false,"name":"sprite_elfo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Sprite29",
-    "path":"sprites/Sprite29/Sprite29.yy",
+    "name":"spr_elf_idle_front",
+    "path":"sprites/spr_elf_idle_front/spr_elf_idle_front.yy",
   },
   "spriteMaskId":null,
   "visible":true,

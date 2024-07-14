@@ -54,4 +54,4 @@ if (_key_confirm && !resposta_revelada)
 	alarm[0] = 120
 }
 
-//show_debug_message(string(global.battle_x));
+show_debug_message(string(global.battle_x));

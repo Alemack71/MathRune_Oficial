@@ -54,12 +54,13 @@ global.action_library =
 }
 
 
-global.question_library_0 = 
+global.question_library_operacoes_basicas = 
 [
 	{
-		pergunta : "Qual o valor de x?\n2x + 6 = 0",
-		alternativas : ["x = 3","x = -6","x = -3","x = 1"],
+		pergunta : "Calcule a expressão:\n8 + 3 × (10−4) ÷ 2.",
+		alternativas : ["20","17","23","25"],
 		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -76,9 +77,10 @@ global.question_library_0 =
 		}
 	},
 	{
-		pergunta : "Qual o valor de x?\nx + 3 = 0",
-		alternativas : ["x = 3","x = -6","x = -3","x = 1"],
+		pergunta : "Resolva:\n",
+		alternativas : ["5","11","7","13"],
 		alternativa_certa : 2,
+		sprites : spr_question_1a,
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -95,9 +97,10 @@ global.question_library_0 =
 		}
 	},
 	{
-		pergunta : "Qual o valor y?\ny + 6 = 0",
-		alternativas : ["y = 3","y = -6","y = -3","y = 1"],
+		pergunta : "Qual é o resultado de\n",
+		alternativas : ["25","34","29","18"],
 		alternativa_certa : 1,
+		sprites : spr_question_1a,
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -138,16 +141,16 @@ function InitializeParty() {
             sprites : { idle: sLuluIdle, attack: sLuluAttack, cast: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
             actions : [global.action_library.attack, global.action_library.ice]
         },
-		{
-			name: "Carlinhos",
-			hp: 18,
-			hpMax: 44,
-			mp: 20,
-			mpMax: 30,
-			strength: 4,
-			sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown, defend: sQuestyCast},
-			actions : [global.action_library.attack, global.action_library.ice]
-		}
+		//{
+		//	name: "Carlinhos",
+		//	hp: 18,
+		//	hpMax: 44,
+		//	mp: 20,
+		//	mpMax: 30,
+		//	strength: 4,
+		//	sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown, defend: sQuestyCast},
+		//	actions : [global.action_library.attack, global.action_library.ice]
+		//}
     ];
 }
 
@@ -163,7 +166,7 @@ global.enemies =
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSlime, attack: sSlimeAttack},
-		actions: global.question_library_0,
+		actions: global.question_library_operacoes_basicas,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{

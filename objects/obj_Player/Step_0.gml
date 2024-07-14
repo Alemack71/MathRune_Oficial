@@ -2,11 +2,9 @@
 // Você pode escrever seu código neste editor
 
 if(global.gamePaused){ 
-
 	moveh = 0;
 	movev = 0;
 	exit;
-
 }
 
 //Ajustando a minha profundidade

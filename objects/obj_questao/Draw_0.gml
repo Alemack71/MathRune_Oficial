@@ -9,8 +9,8 @@ draw_sprite_stretched(sBox, 0, _x_centro, _y_centro, _spr_box_width, _spr_box_he
 
 // Coordenadas base para desenhar a questão e as alternativas dentro da sBox
 var question_margin_top = 2;
-var alternatives_margin_top = 40;
-var margin_horizontal = 10;
+var alternatives_margin_top = 50;
+var margin_horizontal = 5;
 
 var start_x = _x_centro + margin_horizontal;
 var start_y = _y_centro + alternatives_margin_top;
@@ -19,13 +19,31 @@ var alternative_width = (_spr_box_width - 3 * margin_horizontal) / 2; // Conside
 var alternative_height = 20; // Altura da sprite da alternativa
 
 // Desenhar a questão centralizada
-var question_x = _x_centro + (_spr_box_width / 2) - (string_width(questao_box) / 2);
+var question_x = _x_centro + (_spr_box_width / 2);
 var question_y = _y_centro + question_margin_top;
 draw_set_font(fnQuest);
 draw_set_color(c_white);
-draw_set_halign(0)
-draw_set_valign(0)
+draw_set_halign(fa_center);
+draw_set_valign(0);
 draw_text(question_x, question_y, questao_box);
+//question_x = 440
+//question_y = 171
+if (imagem != 0)
+{
+	if (imagem != 0) {
+	    var image_width = 120;  // Largura desejada para a sprite da imagem
+	    var image_height = 30;  // Altura desejada para a sprite da imagem
+    
+	    // Calcula a posição X da imagem para centralizar com a pergunta
+	    var image_x = _x_centro + (_spr_box_width / 2) - (image_width / 2);
+    
+	    // Calcula a posição Y da imagem fixa entre a pergunta e as alternativas
+	    var image_y = question_y + ((start_y - question_y) / 2) - (image_height / 2);
+    
+	    // Desenha a sprite da imagem
+	    draw_sprite_stretched(imagem, 0, image_x, image_y + 7, image_width, image_height);
+	}
+}
 
 // Matriz para posicionar as alternativas em uma grade 2x2
 var positions = [
