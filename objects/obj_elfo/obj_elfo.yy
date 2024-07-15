@@ -33,6 +33,9 @@
   "properties":[
     {"$GMObjectProperty":"","%Name":"dialogo","filters":[],"listItems":[],"multiselect":false,"name":"dialogo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"sprite_elfo","filters":[],"listItems":[],"multiselect":false,"name":"sprite_elfo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
+    {"$GMObjectProperty":"","%Name":"dialogo_2","filters":[],"listItems":[],"multiselect":false,"name":"dialogo_2","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"dialogo_3","filters":[],"listItems":[],"multiselect":false,"name":"dialogo_3","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"dialogo_4","filters":[],"listItems":[],"multiselect":false,"name":"dialogo_4","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

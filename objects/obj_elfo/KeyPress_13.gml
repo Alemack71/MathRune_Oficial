@@ -3,22 +3,26 @@
 if distance_to_object(obj_player) <= 10{
 	if (!global.dialogo_on)
 	{
-		 global.progresso_dialogo ++;
+		 progresso++;
 	}
 	
-	if (global.progresso_dialogo == 1) {
+	if (progresso == 1) {
         global.dialogo_on = true;
 		startDialogue(dialogo);
     }
-    else if (global.progresso_dialogo == 2) {
+    else if (progresso == 2 && dialogo_2 != 0) {
         global.dialogo_on = true;
-        dialogo = "Teste";
+        dialogo = dialogo_2;
         startDialogue(dialogo);
-        global.progresso_dialogo = 2;
     }
-    else if (global.progresso_dialogo == 3) {
+    else if (progresso == 3 && dialogo_3 != 0) {
         global.dialogo_on = true;
-        dialogo = "Breakfast";
+        dialogo = dialogo_3;
+        startDialogue(dialogo);
+    }
+	else if (progresso == 4 && dialogo_4 != 0) {
+        global.dialogo_on = true;
+        dialogo = dialogo_4;
         startDialogue(dialogo);
     }
 }  

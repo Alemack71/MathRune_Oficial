@@ -184,6 +184,30 @@ global.question_library_operacoes_basicas =
 
 #region operacoes_basicas_2
 
+global.question_library_operacoes_basicas_2 = 
+[
+	{
+		pergunta : "Calcule a expressao:\n",
+		alternativas : ["20","17","23","25"],
+		alternativa_certa : 1,
+		sprites : spr_question_1b, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
 #endregion
 
 //constantes para valores semi-booleanos
@@ -257,8 +281,40 @@ global.enemies =
 
 			return [_action, _target];
 		}
-	}
-	,
+	},
+	slimeB: 
+	{
+		name: "Slime",
+		hp: 7,
+		hpMax: 7,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: sSLime_blue, attack: sSlime_blue_Attack},
+		actions: global.question_library_operacoes_basicas,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
 	bat: 
 	{
 		name: "Bat",

@@ -55,3 +55,11 @@ global.topics[$ "Bonfire_Descanso"] = [
 global.topics[$ "Bonfire_Cheio"] = [
 	TEXT("Nao temos tempo para descansar. E hora de partir.")
 ];
+
+global.topics[$ "Aviso_enter"] = [
+	TEXT("Parabens, voce interagiu comigo!")
+];
+
+global.topics[$ "Aviso_bonfire"] = [
+	TEXT("Quando achar uma fogueira, voce tambem pode interagir para acende-la e recuperar sua vida e mana!")
+];

@@ -6,7 +6,7 @@ if (global.player_continuing) {
     global.player_continuing = false; // Resetar a flag para garantir que isso só aconteça uma vez
 	
 } else if (global.novo_jogo) {
-	instance_create_layer(110, 90, "Instances", obj_player);
+	instance_create_layer(50, 69, "Instances", obj_player);
 	global.novo_jogo = false; //Mesmo motivo
 }
 

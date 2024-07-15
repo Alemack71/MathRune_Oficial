@@ -7,3 +7,5 @@ global.dialogo_on = false;
 //qual sprite usar
 sprite_index = sprite_elfo;
 image_xscale = -1;
+
+progresso = 0;

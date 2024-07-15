@@ -8,8 +8,8 @@
   "name":"obj_texto_flutuante",
   "overriddenProperties":[],
   "parent":{
-    "name":"Combat",
-    "path":"folders/Objects/Combat.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
