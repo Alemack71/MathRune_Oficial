@@ -6,5 +6,3 @@ if (!instance_exists(obj_textbox)) {
 
 //rodando estado
 roda_estado();
-
-show_debug_message(timer_estado)

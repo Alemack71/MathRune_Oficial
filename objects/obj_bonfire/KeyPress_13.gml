@@ -1,4 +1,4 @@
-if distance_to_object(obj_player) <= 10 && global.dialogo_on = false{
+if distance_to_object(obj_player) <= 5 && global.dialogo_on = false{
 	
 	if (global.party[0].hp < global.party[0].hpMax) || (global.party[0].mp < global.party[0].mpMax){
 		ativou = true;

@@ -48,7 +48,7 @@ if (global.POK){
 		{
 	        global.name = currentName;
 	        InitializeParty(); // Inicializa o party com o nome definido
-			room_goto(rm_game);
+			room_goto(rm_game_inicio);
 		}
 	}
 	

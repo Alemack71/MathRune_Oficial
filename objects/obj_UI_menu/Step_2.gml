@@ -35,9 +35,22 @@ if (global.gamePaused){
 				instance_destroy();
 				room_goto(rm_menu);	
 			}break;
-			case 2: // Save and Quit to Desktop
+			case 2: //Salva e vai para ajuda
 			{
-				url_open("https:/www.google.com");
+				if(file_exists("save.sav"))file_delete("save.sav");
+				ini_open("save.sav");
+				ini_write_string("Player","nome",global.name);
+				ini_write_real("Player","x_atual",obj_player.x);
+				ini_write_real("Player","y_atual",obj_player.y);
+				ini_write_real("Player","hp_atual",global.party[0].hp);
+				ini_write_real("Player","mp_atual",global.party[0].mp);
+				ini_write_real("Player","sala_atual", room);
+				ini_close();
+				with(obj_game) instance_destroy();
+				instance_destroy(obj_player);
+				instance_destroy();
+				room_goto(rm_menu);	
+				url_open("https://alemack71.github.io/MathRune_Oficial/");
 			}
 		}
 	}

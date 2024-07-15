@@ -77,5 +77,6 @@ if (_colidiu) {
 	troca_estado(estado_idle);	
 }
 
-//show_debug_message(depth)
+show_debug_message(
+global.progresso_dialogo);
 

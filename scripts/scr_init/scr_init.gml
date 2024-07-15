@@ -9,3 +9,5 @@ global.pause = false;
 global.dialogo_on = false;
 
 global.novo_jogo = false;
+
+global.progresso_dialogo = 0;

@@ -53,14 +53,15 @@ global.action_library =
 	}
 }
 
+#region operacoes_basicas_1
 
 global.question_library_operacoes_basicas = 
 [
 	{
-		pergunta : "Calcule a expressão:\n8 + 3 × (10−4) ÷ 2.",
+		pergunta : "Calcule a expressao:\n",
 		alternativas : ["20","17","23","25"],
-		alternativa_certa : 2,
-		sprites : 0, //0 indica que não precisa de sprites
+		alternativa_certa : 1,
+		sprites : spr_question_1b, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -79,8 +80,8 @@ global.question_library_operacoes_basicas =
 	{
 		pergunta : "Resolva:\n",
 		alternativas : ["5","11","7","13"],
-		alternativa_certa : 2,
-		sprites : spr_question_1a,
+		alternativa_certa : 0,
+		sprites : spr_question_1b,
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -97,10 +98,70 @@ global.question_library_operacoes_basicas =
 		}
 	},
 	{
-		pergunta : "Qual é o resultado de\n",
+		pergunta : "Qual o resultado de\n5^2 + 3^2 ?",
 		alternativas : ["25","34","29","18"],
 		alternativa_certa : 1,
-		sprites : spr_question_1a,
+		sprites : 0,
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Calcule a expressao:\n",
+		alternativas : ["9","12","13","15"],
+		alternativa_certa : 1,
+		sprites : spr_question_1d,
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva\n",
+		alternativas : ["15","18","17","20"],
+		alternativa_certa : 3,
+		sprites : spr_question_1e,
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Qual o resultado de\n 7^2 - 4^2 ?",
+		alternativas : ["33","37","45","49"],
+		alternativa_certa : 0,
+		sprites : 0,
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -119,6 +180,12 @@ global.question_library_operacoes_basicas =
 	
 ]
 
+#endregion
+
+#region operacoes_basicas_2
+
+#endregion
+
 //constantes para valores semi-booleanos
 enum MODE
 {
@@ -134,13 +201,16 @@ function InitializeParty() {
         {
             name: global.name,
             hp: 10,
-            hpMax: 89,
+            hpMax: 10,
             mp: 10,
             mpMax: 15,
             strength: 6,
             sprites : { idle: sLuluIdle, attack: sLuluAttack, cast: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
             actions : [global.action_library.attack, global.action_library.ice]
-        },
+        }
+    ];
+}
+
 		//{
 		//	name: "Carlinhos",
 		//	hp: 18,
@@ -151,8 +221,6 @@ function InitializeParty() {
 		//	sprites : { idle: sQuestyIdle, attack: sQuestyCast, cast: sQuestyCast, down: sQuestyDown, defend: sQuestyCast},
 		//	actions : [global.action_library.attack, global.action_library.ice]
 		//}
-    ];
-}
 
 //Enemy Data
 global.enemies =
@@ -160,8 +228,8 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Slime",
-		hp: 10,
-		hpMax: 30,
+		hp: 7,
+		hpMax: 7,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,

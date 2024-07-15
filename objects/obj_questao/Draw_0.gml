@@ -31,8 +31,8 @@ draw_text(question_x, question_y, questao_box);
 if (imagem != 0)
 {
 	if (imagem != 0) {
-	    var image_width = 120;  // Largura desejada para a sprite da imagem
-	    var image_height = 30;  // Altura desejada para a sprite da imagem
+	    var image_width = 110;  // Largura desejada para a sprite da imagem
+	    var image_height = 33;  // Altura desejada para a sprite da imagem
     
 	    // Calcula a posição X da imagem para centralizar com a pergunta
 	    var image_x = _x_centro + (_spr_box_width / 2) - (image_width / 2);
