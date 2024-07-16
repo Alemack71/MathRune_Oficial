@@ -5,7 +5,7 @@
 if(global.ativar) 
 {
 	instance_destroy();
-	global.key++;
+	global.key_1++;
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {

@@ -187,10 +187,130 @@ global.question_library_operacoes_basicas =
 global.fatores_e_multiplos = 
 [
 	{
-		pergunta : "Calcule a expressao:\n",
-		alternativas : ["20","17","23","25"],
+		pergunta : "Encontre o MDC de:\n54 e 72",
+		alternativas : ["9","6","18","12"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Determine o MMC de:\n12 e 18",
+		alternativas : ["54","36","72","24"],
 		alternativa_certa : 1,
-		sprites : spr_question_1b, //0 indica que não precisa de sprites
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Fatore (decomponha):\n56",
+		alternativas : ["4 x 14","2^2 x 14","2 x 28","2^3 x 7"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Fatore (decomponha):\n75",
+		alternativas : ["3 x 5^2","5 x 15","3^2 x 5","25 x 3"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Fatore (decomponha):\n120",
+		alternativas : ["2 x 3 x 5","2^3 x 3 x 5","2^2 x 3 x 5","3 x 4 x 10"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Encontre o MDC de:\n48 e 64",
+		alternativas : ["8","12","16","24"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Determine o MMC de:\n15, 10 e 25",
+		alternativas : ["75","150","50","100"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -225,7 +345,7 @@ function InitializeParty() {
         {
             name: global.name,
             hp: 10,
-            hpMax: 10,
+            hpMax: 20,
             mp: 10,
             mpMax: 15,
             strength: 6,
@@ -252,7 +372,7 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Slime",
-		hp: 7,
+		hp: 1,
 		hpMax: 7,
 		mp: 0,
 		mpMax: 0,
@@ -291,7 +411,7 @@ global.enemies =
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSLime_blue, attack: sSlime_blue_Attack},
-		actions: global.question_library_operacoes_basicas,
+		actions: global.fatores_e_multiplos,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{

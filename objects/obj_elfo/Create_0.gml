@@ -11,3 +11,8 @@ image_xscale = -1;
 progresso = 0;
 
 primeiro_terminado = false;
+
+dialogo_trocou = false;
+
+ponto_exclamacao_reaparece = false;
+

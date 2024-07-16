@@ -1,6 +1,6 @@
 //dialogo está ativo ent fica true
 
-if (global.dialogo_acabou_elfo1 == false || global.dialogo_acabou_elfo2 == false){
+
 	if distance_to_object(obj_player) <= 10
 	{
 		if (!global.dialogo_on)
@@ -36,9 +36,12 @@ if (global.dialogo_acabou_elfo1 == false || global.dialogo_acabou_elfo2 == false
 	        startDialogue(dialogo);
 			if (room_atual == 1) global.dialogo_acabou_elfo1 = true;
 			else if (room_atual == 2) global.dialogo_acabou_elfo2 = true;
+			if (dialogo_trocou) {
+				dialogo_trocou = false;
+			}
 	    }
 	}
-}
+
 
 
 

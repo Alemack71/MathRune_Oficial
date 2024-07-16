@@ -21,3 +21,25 @@ if (progresso <= 0  && global.dialogo_acabou_elfo2 = false)
 show_debug_message(global.dialogo_acabou_elfo1
 );
 
+if (room_atual == 2 && global.key_1 == 4)
+{
+	dialogo_final = "Siga"
+	global.dialogo_acabou_elfo2 = false
+	dialogo_trocou = true;
+	if (dialogo_trocou)
+	{
+		ponto_exclamacao_reaparece = true;	
+	} else if (!dialogo_trocou)
+	{
+		ponto_exclamacao_reaparece = false;	
+	}
+	
+	if (ponto_exclamacao_reaparece)
+	{
+		instance_create_layer(x, y -24, "Instances", obj_exclamacao);	
+	} else if (!ponto_exclamacao_reaparece)
+	{
+		instance_destroy(obj_exclamacao);		
+	}
+};
+

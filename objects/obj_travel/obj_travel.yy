@@ -40,5 +40,5 @@
     "path":"sprites/spr_travel/spr_travel.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
