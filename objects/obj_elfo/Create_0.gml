@@ -9,3 +9,5 @@ sprite_index = sprite_elfo;
 image_xscale = -1;
 
 progresso = 0;
+
+primeiro_terminado = false;

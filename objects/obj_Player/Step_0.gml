@@ -77,5 +77,3 @@ if (_colidiu) {
 	troca_estado(estado_idle);	
 }
 
-
-

@@ -11,3 +11,9 @@ global.dialogo_on = false;
 global.novo_jogo = false;
 
 global.progresso_dialogo = 0;
+
+global.ativar = false;
+
+global.dialogo_acabou_elfo1 = false;
+
+global.dialogo_acabou_elfo2 = false;

@@ -347,7 +347,7 @@ function battle_state_victory_check()
 			// Atualiza a mana da party
 			AtualizarMpGlobal();
 			
-			inst_4E1B8FB1.ativar = true;
+			global.ativar = true;
 			instance_activate_object(obj_reativar);
 			instance_destroy();
 		}

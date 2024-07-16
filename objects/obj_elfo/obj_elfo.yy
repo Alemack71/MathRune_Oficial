@@ -36,6 +36,8 @@
     {"$GMObjectProperty":"","%Name":"dialogo_2","filters":[],"listItems":[],"multiselect":false,"name":"dialogo_2","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"dialogo_3","filters":[],"listItems":[],"multiselect":false,"name":"dialogo_3","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"dialogo_4","filters":[],"listItems":[],"multiselect":false,"name":"dialogo_4","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"dialogo_final","filters":[],"listItems":[],"multiselect":false,"name":"dialogo_final","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"room_atual","filters":[],"listItems":[],"multiselect":false,"name":"room_atual","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

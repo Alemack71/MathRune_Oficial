@@ -43,7 +43,7 @@ global.action_library =
 			{	
 				for (var i = 0; i < array_length(_targets); i++)
 				{
-					var _damage = irandom_range(10,15);
+					var _damage = irandom_range(3,6);
 					if (array_length(_targets) > 1) _damage = ceil(_damage * 0.75);
 					BattleChangeHP(_targets[i], - _damage);
 				}
@@ -61,7 +61,7 @@ global.question_library_operacoes_basicas =
 		pergunta : "Calcule a expressao:\n",
 		alternativas : ["20","17","23","25"],
 		alternativa_certa : 1,
-		sprites : spr_question_1b, //0 indica que não precisa de sprites
+		sprites : spr_question_1a, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -80,7 +80,7 @@ global.question_library_operacoes_basicas =
 	{
 		pergunta : "Resolva:\n",
 		alternativas : ["5","11","7","13"],
-		alternativa_certa : 0,
+		alternativa_certa : 1,
 		sprites : spr_question_1b,
 		description : "{0} pergunta!",
 		user_animation : "attack",
@@ -182,9 +182,9 @@ global.question_library_operacoes_basicas =
 
 #endregion
 
-#region operacoes_basicas_2
+#region fatores_e_multiplos
 
-global.question_library_operacoes_basicas_2 = 
+global.fatores_e_multiplos = 
 [
 	{
 		pergunta : "Calcule a expressao:\n",
