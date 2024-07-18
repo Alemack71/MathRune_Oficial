@@ -1,8 +1,11 @@
 if (keyboard_check_pressed(vk_escape)){
 	if (!global.dialogo_on) 
 	{
-		global.gamePaused = !global.gamePaused;
-	
+		if (!global.gamePaused) 
+		{
+			global.gamePaused = true;
+		}
+		
 		if(global.gamePaused){
 			with(all){
 				gamePausedImageSpeed = image_speed;

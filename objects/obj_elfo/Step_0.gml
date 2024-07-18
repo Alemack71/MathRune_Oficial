@@ -23,7 +23,7 @@ show_debug_message(global.dialogo_acabou_elfo1
 
 if (room_atual == 2 && global.key_1 == 4)
 {
-	dialogo_final = "Siga"
+	dialogo_final = "Fatores_Multiplos"
 	global.dialogo_acabou_elfo2 = false
 	dialogo_trocou = true;
 	if (dialogo_trocou)

@@ -47,23 +47,22 @@ global.topics[$ "Introdução ao combate"] = [
 	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Escape', para aulas mais detalhadas!"),
 ];
 
-global.topics[$ "Ensinando fatores e múltiplos "] = [
+global.topics[$ "Fatores_Multiplos"] = [
 	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-	TEXT("Parece que você conseguiu derrotar todos os slimes verdes, parabéns!"),
+	TEXT("Você derrotou todos os slimes? Impressionante... Você está preparado para desafios maiores. Escute com atenção, vou te ensinar a derrotar os poderosos slimes azuis."),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Agora temos que resolver "),
+	TEXT("A decomposição de números consiste em expressar um número como a soma, produto ou combinação de outros números menores."),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Fatorar um número significa decompor esse número em seus fatores primos. Isso envolve dividir o número sucessivamente pelos menores primos até que não seja mais possível."),
-	SPEAKER("Luck", spr_portrait_luck),
-	TEXT("O MMC de dois números é o menor número que é múltiplo de ambos. Para encontrá-lo, decomponha cada número em fatores primos e escolha os maiores expoentes comuns."),
+	TEXT("Para decompor o número 30 em fatores primos: Divida 30 pelo menor número primo (2): 30 ÷ 2 = 15; Divida 15 pelo menor número primo (3): 15 ÷ 3 = 5; O 5 já é primo, então paramos aqui; A decomposição de 30 em fatores primos é: 30 = 2 × 3 × 5."),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("O MDC de dois números é o maior número que divide ambos sem deixar resto. Para encontrá-lo, decomponha cada número em seus fatores primos e escolha os menores expoentes comuns."),
+	TEXT("O Máximo Divisor Comum de dois ou mais números é o maior número inteiro positivo que divide todos eles sem deixar resto, ou seja, mantém um valor inteiro."),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Acho que com isso você consegue derrotar todos os slimes azuis. Não se preocupe com o resto, quando você acabar com eles eu te ensinarei a como derrotar os próximos!"),
+	TEXT("Para encontrar o MDC, pode-se utilizar o método da fatoração em números primos."),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Escape', para aulas mais detalhadas!"),
-];
-
+	TEXT("O Mínimo Múltiplo Comum de dois ou mais números é o menor número inteiro positivo que é múltiplo de todos eles."),
+	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+	TEXT("Para encontrar o MMC, pode-se utilizar o método da fatoração em números primos ou o algoritmo da decomposição simultânea.")
+]
 
 
 
