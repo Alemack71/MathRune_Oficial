@@ -99,4 +99,4 @@ if (cursor.active)
 	}
 }
 
-show_debug_message(string(alarm[0]));
+//show_debug_message(string(alarm[0]));

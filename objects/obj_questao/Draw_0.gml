@@ -1,10 +1,4 @@
 // Centralizar a sprite da caixa principal (sBox)
-var _spr_box_width = 180;
-var _spr_box_height = 100;
-
-var _x_centro = (global.battle_x + 158) - (_spr_box_width / 2);
-var _y_centro = (global.battle_y + 80) - (_spr_box_height / 2);
-
 draw_sprite_stretched(sBox, 0, _x_centro, _y_centro, _spr_box_width, _spr_box_height);
 
 // Coordenadas base para desenhar a questão e as alternativas dentro da sBox
@@ -83,4 +77,52 @@ for (var i = 0; i < array_length(alternativas_box); i++) {
     draw_text(alternative_x + alternative_width / 2 - string_width(alternativas_box[i]) / 2, 
               alternative_y + alternative_height / 2 - string_height(alternativas_box[i]) / 2,
               alternativas_box[i]);
+}
+
+//Desenhando a barra de vida (display)
+//regra de três pra definir o tamanho da barra
+// Definir a largura da barra para cobrir toda a largura da sBox
+timebar_w = _spr_box_width;
+var _amount = (time / time_max) * timebar_w;
+
+//formula para ter um valor fixo
+var _amount_fixed = (time_max / time_max) * timebar_w;
+
+//Subtraindo pela metade da largura da barra pra centralizar no meio
+var _x1 = _x_centro -0.2;
+var _y1 = _y_centro + _spr_box_height - timebar_h;
+var _x2 = _x1 + _amount;
+var _x2_fixed = _x1 + _amount_fixed;
+var _y2 = _y1 + timebar_h;
+
+//garantindo que a barra nao passe do negativo
+if (time > 0) 
+{
+	if (time / time_max > 0.6) 
+    {
+        // Barra amarela quando acima de 60%
+        color_1 = make_color_rgb(255, 255, 0);
+    } 
+    else if (time / time_max > 0.3) 
+    {
+        // Barra laranja quando entre 30% e 60%
+        color_1 = make_color_rgb(255, 165, 0);
+    } 
+    else 
+    {
+        // Barra vermelha quando abaixo de 30%
+        color_1 = make_color_rgb(255, 0, 64);
+    }
+	
+	//Desenhando background barra
+	draw_set_color(color_2);
+	draw_rectangle(_x1,_y1,_x2_fixed,_y2,false);
+	
+	//Desenhando barra de tempo
+	draw_set_color(color_1);
+	draw_rectangle(_x1,_y1,_x2,_y2,false);
+	
+	//Desenhando borda
+	draw_set_color(color_3);
+	draw_rectangle(_x1,_y1,_x2_fixed,_y2,true);
 }

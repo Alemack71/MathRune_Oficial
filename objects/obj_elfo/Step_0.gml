@@ -18,8 +18,8 @@ if (progresso <= 0  && global.dialogo_acabou_elfo2 = false)
 	instance_destroy(obj_exclamacao);	
 }
 
-show_debug_message(global.dialogo_acabou_elfo1
-);
+//show_debug_message(global.dialogo_acabou_elfo1
+//);
 
 if (room_atual == 2 && global.key_1 == 4)
 {
