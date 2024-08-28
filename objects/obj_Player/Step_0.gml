@@ -5,6 +5,9 @@ if(global.gamePaused){
 	moveh = 0;
 	movev = 0;
 	exit;
+} else
+{
+	image_speed = 1;	
 }
 
 //Ajustando a minha profundidade
@@ -77,3 +80,8 @@ if (_colidiu) {
 	troca_estado(estado_idle);	
 }
 
+//cria:
+if keyboard_check_released(ord("N"))
+{
+	
+}

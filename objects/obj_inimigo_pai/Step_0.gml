@@ -12,6 +12,9 @@ if(global.gamePaused){
 	move_y = 0;
 	exit;
 
+} else
+{
+	image_speed = 1;	
 }
 
 //rodando estado

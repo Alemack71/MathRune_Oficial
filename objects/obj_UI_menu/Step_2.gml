@@ -36,6 +36,13 @@ if (global.gamePaused){
 				instance_destroy(obj_player);
 				instance_destroy();
 				room_goto(rm_menu);	
+				var _doc = json_stringify(
+					{
+						name: global.name,
+						score: global.pontos,
+					}
+				);
+				FirebaseFirestore(root).Set(_doc)
 			}break;
 			case 2: //Salva e vai para ajuda
 			{
@@ -54,6 +61,13 @@ if (global.gamePaused){
 				instance_destroy(obj_player);
 				instance_destroy();
 				room_goto(rm_menu);	
+				var _doc = json_stringify(
+				{
+					name: global.name,
+					score: global.pontos,
+				}
+				);
+				FirebaseFirestore(root).Set(_doc)
 				url_open("https://alemack71.github.io/MathRune_Oficial/");
 			}
 		}

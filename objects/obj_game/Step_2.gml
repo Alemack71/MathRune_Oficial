@@ -6,17 +6,19 @@ if (keyboard_check_pressed(vk_escape)){
 			global.gamePaused = true;
 		}
 		
-		if(global.gamePaused){
-			with(all){
-				gamePausedImageSpeed = image_speed;
-				image_speed = 0;
-			}
-		}
-		else{
-			with(all)
-			{
-				image_speed = gamePausedImageSpeed;
-			}
-		}
+		
+	}
+}
+
+if(global.gamePaused){
+	with(all){
+		
+		image_speed = 0;
+	}
+}
+else{
+	with(all)
+	{
+		image_speed = 1;
 	}
 }

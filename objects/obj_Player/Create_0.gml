@@ -9,6 +9,7 @@ estado_walk = new estado()
 
 //Iniciando o estado de attack
 estado_attack = new estado()
+
 #region estado_idle
 //Meu estado idle precisa de um inicia
 estado_idle.inicia = function()
@@ -155,3 +156,4 @@ if ( global.player_continuing == true )
     x = global.player_x
     y = global.player_y
 }
+

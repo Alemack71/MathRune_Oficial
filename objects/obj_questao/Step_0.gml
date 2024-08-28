@@ -50,6 +50,7 @@ if (_key_confirm && !resposta_revelada or time <= 0)
 	if (alternativa_selecionada == alternativa_certa)
 	{
 		global.acertou = true;
+		global.pontos += ceil(time) * 2;
 	} else if (alternativa_selecionada != alternativa_certa)
 	{
 		global.acertou = false;
@@ -61,7 +62,7 @@ if (_key_confirm && !resposta_revelada or time <= 0)
 
 if (!resposta_revelada)
 {
-	time -= (_fps/300);
+	time -= 0.016;
 } else {
 	time -= 0;
 }
