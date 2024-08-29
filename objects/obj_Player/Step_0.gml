@@ -80,8 +80,3 @@ if (_colidiu) {
 	troca_estado(estado_idle);	
 }
 
-//cria:
-if keyboard_check_released(ord("N"))
-{
-	
-}

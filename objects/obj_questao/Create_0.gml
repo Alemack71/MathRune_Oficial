@@ -35,3 +35,6 @@ timebar_h = 3;
 color_1 = make_color_rgb(255,0,64); //Cor principal
 color_2 = make_color_rgb(19,19,19); //Cor do background
 color_3 = make_color_rgb(19,19,19); //Cor do outline (borda)
+
+//resetando pra default
+display_set_gui_size(-1,-1);

@@ -16,7 +16,7 @@
   "exportToGame":true,
   "extensionVersion":"2.5.0",
   "files":[
-    {"$GMExtensionFile":"","%Name":"FirebaseFirestore.ext","constants":[],"copyToTargets":44,"filename":"FirebaseFirestore.ext","final":"","functions":[
+    {"$GMExtensionFile":"","%Name":"FirebaseFirestore.ext","constants":[],"copyToTargets":108,"filename":"FirebaseFirestore.ext","final":"","functions":[
         {"$GMExtensionFunction":"","%Name":"FirebaseFirestore_SDK","argCount":0,"args":[1,],"documentation":"","externalName":"FirebaseFirestore_SDK","help":"FirebaseFirestore_SDK(fluent_json)","hidden":false,"kind":4,"name":"FirebaseFirestore_SDK","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
       ],"init":"","kind":4,"name":"FirebaseFirestore.ext","order":[
         {"name":"FirebaseFirestore_SDK","path":"extensions/YYFirebaseFirestore/YYFirebaseFirestore.yy",},

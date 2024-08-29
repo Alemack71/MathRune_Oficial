@@ -57,8 +57,7 @@ if (_key_confirm && !resposta_revelada or time <= 0)
 	}
 	resposta_revelada = true;
 	alarm[0] = 120
-
-} else
+} 
 
 if (!resposta_revelada)
 {
