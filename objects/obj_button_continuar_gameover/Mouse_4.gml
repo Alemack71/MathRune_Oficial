@@ -1,3 +1,7 @@
+/// @description Inserir descrição aqui
+// Você pode escrever seu código neste editor
+
+// Inherit the parent event
 event_inherited();
 
 if(file_exists("save.sav")){ 
@@ -17,5 +21,10 @@ if(file_exists("save.sav")){
     ini_close();
 } else
 {
-	no_saves = !no_saves; //Faz a mensagem "No saves" ficar indo e voltando
+	//Quando não existe arquivo e o player clica em jogar de novo ele volta como se tivesse clicado em "Novo Jogo", resetando e voltando ao padrão todos as vartiaveis necessárias
+	instance_create_layer(50, 69, "Instances", obj_player);
+	global.party[0].hp = 2;
+	global.party[0].mp = 10;
+	global.dialogo_acabou_elfo1 = 0;
+	room_goto(rm_game_inicio);
 }

@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_leaderbord",
+  "%Name":"obj_button_continuar_gameover",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_leaderbord",
+  "name":"obj_button_continuar_gameover",
   "overriddenProperties":[],
   "parent":{
     "name":"Buttons",

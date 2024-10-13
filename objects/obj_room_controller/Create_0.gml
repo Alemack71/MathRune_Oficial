@@ -1,5 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
+
 if (global.player_continuing) {
     // Criar o jogador na posição salva
     instance_create_layer(global.player_x, global.player_y, "Instances", obj_player);
