@@ -344,7 +344,7 @@ function InitializeParty() {
     [
         {
             name: global.name,
-            hp: 10,
+            hp: 2,
             hpMax: 20,
             mp: 10,
             mpMax: 15,

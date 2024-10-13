@@ -14,12 +14,12 @@ draw_set_font(fnOpenSansPX);
 draw_set_color(c_aqua);
 draw_set_halign(fa_left);
 
-if (!global.gamePaused)
-{
-	draw_text(_x, _y, "Score: ");
-	draw_set_color(c_yellow);
-	draw_text(_x + string_width("Score: "), _y, string(global.pontos));
-}
+//if (!global.gamePaused)
+//{
+//	draw_text(_x, _y, "Score: ");
+//	draw_set_color(c_yellow);
+//	draw_text(_x + string_width("Score: "), _y, string(global.pontos));
+//}
 
 var _escala = 1;
 var _guia =  display_get_gui_height();

@@ -27,7 +27,7 @@ view_h = camera_get_view_height(view_camera[0]);
 display_set_gui_size(view_w,view_h);
 
 //barra de tempo
-time_max = 90;
+time_max = 5;
 time = time_max;
 timebar_w = 50;
 timebar_h = 3;
