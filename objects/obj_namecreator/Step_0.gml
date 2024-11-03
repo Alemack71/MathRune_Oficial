@@ -46,6 +46,8 @@ if (global.POK){
 	if(newLetter == "OK"){
 		if (string_length(currentName) >= 3)
 		{
+			 global.novo_jogo = true; //trigger para 
+			file_delete("save.sav"); //deleta o save antigo (isso não esta no botão play no inicio pq se o usuario quiser voltar ele vai querer continuar o jogo de antes, entao só deletaremos o save antigo quando ele ja tiver criado o novo personagem)
 	        global.name = currentName;
 	        InitializeParty(); // Inicializa o party com o nome definido
 			InitializeDialogoComNome(); // Inicializa o script de dialogo com nome

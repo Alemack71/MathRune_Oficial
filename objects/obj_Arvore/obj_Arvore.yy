@@ -2,16 +2,16 @@
   "$GMObject":"",
   "%Name":"obj_Arvore",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_Arvore",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_decoracao_pai","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"propertyId":{"name":"transparente","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_decoracao_pai","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"propertyId":{"name":"transparente","path":"objects/obj_decoracao_pai/obj_decoracao_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Ambiente",
+    "path":"folders/Objects/Ambiente.yy",
   },
   "parentObjectId":{
     "name":"obj_decoracao_pai",

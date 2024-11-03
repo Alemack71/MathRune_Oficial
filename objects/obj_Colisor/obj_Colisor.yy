@@ -6,8 +6,8 @@
   "name":"obj_Colisor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Objetos colisores",
+    "path":"folders/Objects/Objetos colisores.yy",
   },
   "parentObjectId":null,
   "persistent":false,

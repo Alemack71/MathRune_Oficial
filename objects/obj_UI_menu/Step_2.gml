@@ -32,7 +32,7 @@ if (global.gamePaused){
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
 				ini_close();
-				with(obj_game) instance_destroy();
+				with(obj_game_paused) instance_destroy();
 				instance_destroy(obj_player);
 				instance_destroy();
 				room_goto(rm_menu);	
@@ -57,7 +57,7 @@ if (global.gamePaused){
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
 				ini_close();
-				with(obj_game) instance_destroy();
+				with(obj_game_paused) instance_destroy();
 				instance_destroy(obj_player);
 				instance_destroy();
 				room_goto(rm_menu);	

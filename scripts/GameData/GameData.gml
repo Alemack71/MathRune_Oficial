@@ -349,7 +349,7 @@ function InitializeParty() {
             mp: 10,
             mpMax: 15,
             strength: 6,
-            sprites : { idle: sLuluIdle, attack: sLuluAttack, cast: sLuluAttack, defend: sLuluDefend, down: sLuluDown},
+            sprites : { idle: sPlayerIdle, attack: sPlayerAttack, cast: sPlayerAttack, defend: sPlayerDefend, down: sPlayerDown},
             actions : [global.action_library.attack, global.action_library.ice]
         }
     ];

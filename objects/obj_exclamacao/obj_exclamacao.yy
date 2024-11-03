@@ -6,8 +6,8 @@
   "name":"obj_exclamacao",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogo",
-    "path":"folders/Objects/Dialogo.yy",
+    "name":"UI - UX",
+    "path":"folders/Objects/UI - UX.yy",
   },
   "parentObjectId":null,
   "persistent":false,
