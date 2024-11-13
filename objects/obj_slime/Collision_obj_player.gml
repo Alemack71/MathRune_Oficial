@@ -9,7 +9,7 @@ if(global.ativar)
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {
-	NewEncounter([global.enemies.slimeG, global.enemies.slimeG], sBgField);
+	NewEncounter([global.enemies.slimeG, global.enemies.slimeG], sBgField_Forest);
 }
 
 //seta novamente para false para nao destruir todas as outras instancias

@@ -33,6 +33,7 @@
     {"name":"inst_340F1683","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_3DF625EF","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_1DCCC169","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_2018B419","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -61,6 +62,11 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_travel","path":"objects/obj_travel/obj_travel.yy",},"propertyId":{"name":"posicao_x","path":"objects/obj_travel/obj_travel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"610",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_travel","path":"objects/obj_travel/obj_travel.yy",},"propertyId":{"name":"posicao_y","path":"objects/obj_travel/obj_travel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"230",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.75,"scaleY":0.8125,"x":-40.0,"y":188.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2018B419","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2018B419","objectId":{"name":"obj_travel","path":"objects/obj_travel/obj_travel.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_travel","path":"objects/obj_travel/obj_travel.yy",},"propertyId":{"name":"destino","path":"objects/obj_travel/obj_travel.yy",},"resource":{"name":"rm_game_2","path":"rooms/rm_game_2/rm_game_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_game_2",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_travel","path":"objects/obj_travel/obj_travel.yy",},"propertyId":{"name":"posicao_x","path":"objects/obj_travel/obj_travel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"25",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_travel","path":"objects/obj_travel/obj_travel.yy",},"propertyId":{"name":"posicao_y","path":"objects/obj_travel/obj_travel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"230",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.75,"scaleY":0.8125,"x":602.0,"y":194.0,},
         {"$GMRInstance":"v1","%Name":"inst_3DB0924E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3DB0924E","objectId":{"name":"obj_room_controller","path":"objects/obj_room_controller/obj_room_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6.0,"y":26.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},

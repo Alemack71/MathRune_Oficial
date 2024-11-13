@@ -5,6 +5,7 @@ global.acertou = false;
 global.battle_x = 0;
 global.battle_y = 0;
 
+#region ações
 //action library
 global.action_library =
 {
@@ -52,6 +53,8 @@ global.action_library =
 		}
 	}
 }
+
+#endregion
 
 #region operacoes_basicas_1
 

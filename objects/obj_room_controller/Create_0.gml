@@ -12,8 +12,8 @@ if (global.player_continuing) {
 }
 
 // Criar os outros dois objetos persistentes
-if (!instance_exists(obj_game_paused)) {
-    instance_create_layer(0, 0, "Instances", obj_game_paused);
+if (!instance_exists(obj_game_pause_and_bar)) {
+    instance_create_layer(0, 0, "Instances", obj_game_pause_and_bar);
 }
 
 if (!instance_exists(obj_UI_menu)) {
