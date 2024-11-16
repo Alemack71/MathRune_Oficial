@@ -13,3 +13,5 @@ progresso = 0;
 primeiro_terminado = false;
 
 dialogo_trocou = false;
+
+dialogo_concluido = false;

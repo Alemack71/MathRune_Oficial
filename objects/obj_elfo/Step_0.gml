@@ -15,6 +15,7 @@ if (room_atual == 1)
 	}
 }
 
+
 if (room_atual == 2)
 {
 	if (global.dialogo_acabou_elfo2 == false)
@@ -26,12 +27,10 @@ if (room_atual == 2)
 	}
 }
 
-//show_debug_message(global.dialogo_acabou_elfo1
-//);
-
 if (room_atual == 2 && global.key_1 == 4)
-{
-	dialogo_final = "Fatores_Multiplos";
+{	
+	progresso = 1;
+	dialogo_2 = "Fatores_Multiplos";
 	if (!global.dialogo_acabou_elfo2) {
 		dialogo_trocou = true;
 	} else {
@@ -47,7 +46,7 @@ if (room_atual == 2 && global.key_1 == 4)
 	}
 };
 
-show_debug_message("Elfo 1:" + string(dialogo_final));
+show_debug_message("Elfo 1:" + string(global.dialogo_acabou_elfo1));
 show_debug_message("Elfo 2:" + string(global.dialogo_acabou_elfo2));
-show_debug_message("Trocou:" + string(dialogo_trocou));
-show_debug_message("terminou:" + string(progresso));
+show_debug_message("dialogo concluido:" + string(dialogo_concluido));
+show_debug_message("Keys:" + string(global.key_1));

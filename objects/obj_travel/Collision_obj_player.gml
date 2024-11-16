@@ -1,8 +1,8 @@
 /// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
+// Você pode escrever seu código neste editor 
+	
 //travel para próxima room
-if (global.dialogo_acabou_elfo1 || global.dialogo_acabou_elfo2) {
+if (dialogo_finalizado) {
 	room_goto(destino);
 	
 	other.x = posicao_x;

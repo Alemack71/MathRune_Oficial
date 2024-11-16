@@ -1,6 +1,7 @@
 if (distance_to_object(obj_player) <= 10) {
-    if (!global.dialogo_on) {
+    if (!global.dialogo_on && dialogo_concluido) {
         progresso++;
+		dialogo_concluido = false;
     }
 
     // Verifica se o diálogo final foi concluído na sala atual
@@ -17,20 +18,24 @@ if (distance_to_object(obj_player) <= 10) {
         dialogo = dialogo_final;
     } else {
         // Caso contrário, avança normalmente pelos diálogos
-        if (progresso == 1) {
+        if (progresso == 0) {
             global.dialogo_on = true;
-            primeiro_terminado = true;
             dialogo = dialogo; // Defina o primeiro diálogo
-        } else if (progresso == 2 && dialogo_2 != 0) {
+			primeiro_terminado = true;
+			dialogo_concluido = true; //sinaliza que esse dialogo foi concluido e pode seguir para o próximo quando usuário clicar de novo
+        } else if (progresso == 1 && dialogo_2 != 0) {
             global.dialogo_on = true;
             dialogo = dialogo_2;
-        } else if (progresso == 3 && dialogo_3 != 0) {
+			dialogo_concluido = true;
+        } else if (progresso == 2 && dialogo_3 != 0) {
             global.dialogo_on = true;
             dialogo = dialogo_3;
-        } else if (progresso == 4 && dialogo_4 != 0) {
+			dialogo_concluido = true;
+        } else if (progresso == 3 && dialogo_4 != 0) {
             global.dialogo_on = true;
             dialogo = dialogo_4;
-        } else if (dialogo_final != 0 && primeiro_terminado && !global.dialogo_on) {
+			dialogo_concluido = true;
+        } else if ((dialogo_final != 0 && !global.dialogo_on && primeiro_terminado) or (progresso == 4 && !global.dialogo_on)) {
             global.dialogo_on = true;
             dialogo = dialogo_final;
 

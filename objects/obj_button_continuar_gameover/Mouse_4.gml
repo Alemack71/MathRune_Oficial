@@ -26,5 +26,5 @@ if(file_exists("save.sav")){
 	global.party[0].hp = 2;
 	global.party[0].mp = 10;
 	global.dialogo_acabou_elfo1 = 0;
-	room_goto(rm_game_inicio);
+	room_goto(rm_game_tutorial);
 }

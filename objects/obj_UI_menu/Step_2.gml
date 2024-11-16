@@ -29,8 +29,12 @@ if (global.gamePaused){
 				ini_write_real("Player","hp_atual",global.party[0].hp);
 				ini_write_real("Player","mp_atual",global.party[0].mp);
 				ini_write_real("Player","sala_atual", room);
+				
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
+				
+				ini_write_real("Chave","1",global.key_1);
+				
 				ini_close();
 				with(obj_game_pause_and_bar) instance_destroy();
 				instance_destroy(obj_player);
@@ -54,8 +58,12 @@ if (global.gamePaused){
 				ini_write_real("Player","hp_atual",global.party[0].hp);
 				ini_write_real("Player","mp_atual",global.party[0].mp);
 				ini_write_real("Player","sala_atual", room);
+				
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
+				
+				ini_write_real("Chave","1",global.key_1);
+				
 				ini_close();
 				with(obj_game_pause_and_bar) instance_destroy();
 				instance_destroy(obj_player);

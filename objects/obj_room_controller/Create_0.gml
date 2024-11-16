@@ -8,6 +8,8 @@ if (global.player_continuing) {
 	
 } else if (global.novo_jogo) {
 	instance_create_layer(50, 69, "Instances", obj_player);
+	global.dialogo_acabou_elfo1 = false;
+	global.dialogo_acabou_elfo2 = false;
 	global.novo_jogo = false; //Mesmo motivo
 }
 
