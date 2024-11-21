@@ -127,6 +127,59 @@ global.topics[$ "Radiciacao"] = [
 
 #endregion
 
+#region fase 2
+
+global.topics[$ "Equacao_Primeiro_Grau"] = [
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Você está indo muito bem! Agora vamos aprender algo essencial para sua jornada: as Equações de Primeiro Grau."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Essas equações conectam valores conhecidos e desconhecidos, chamados de incógnitas. Elas são expressas assim: ax + b = 0."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Aqui, 'a' e 'b' são números reais, e 'a' deve ser diferente de zero. A incógnita, geralmente representada por x, é o termo que queremos descobrir."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Um exemplo de equação de primeiro grau é: 2x = 4. Aqui, queremos saber qual valor de x torna a igualdade verdadeira."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Para resolver, isolamos a incógnita de um lado da equação e movemos os valores constantes para o outro. Importante: ao mudar um termo de lado, invertemos a operação."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Por exemplo, se um número está somando, ele passará subtraindo; se está multiplicando, ele passará dividindo. Isso mantém a igualdade verdadeira."),
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Com isso, você está pronto para começar a resolver equações de primeiro grau! Vamos praticar?"),
+	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
+];
+
+global.topics[$ "Sistemas_Equacoes"] = [
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Excelente progresso! Agora vamos aprender a resolver sistemas de equações do 1º grau."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Um sistema de equações é composto por duas ou mais equações que compartilham incógnitas. O objetivo é encontrar valores que satisfaçam todas as equações ao mesmo tempo."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Existem dois métodos principais para resolver sistemas: o método da substituição e o método da adição. Vamos começar pelo da substituição."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("No método da substituição, isolamos uma incógnita em uma das equações, substituímos o valor encontrado na outra equação, e resolvemos."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Por exemplo, no sistema: x + y = 12 e 3x - y = 20, podemos isolar o x na primeira equação: x = 12 - y. Depois substituímos esse valor na segunda equação."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Após a substituição, teremos uma equação com apenas uma incógnita. Resolva para encontrar o valor de y e, depois, substitua esse valor de volta para encontrar x."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Agora, vamos ao método da adição!"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Esse método é útil quando os coeficientes de uma incógnita possuem valores opostos. Assim, somamos as equações para eliminar essa incógnita."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Por exemplo, no sistema: x + y = 12 e 3x - y = 20, podemos somar as equações diretamente, pois o coeficiente de y em uma é positivo e na outra é negativo."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Após a soma, sobrará uma equação com apenas a incógnita x. Resolva essa equação, e depois substitua o valor encontrado em uma das equações originais para determinar y."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Se os coeficientes não forem opostos, você pode multiplicar uma das equações por um número que torne os coeficientes opostos."),
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("E pronto! Agora você conhece os dois métodos para resolver sistemas de equações. Vamos praticar para fixar o aprendizado!"),
+	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
+];
+
+
+#endregion
+
 #region fogueira
 
 global.topics[$ "Bonfire_Descanso"] = [
@@ -140,6 +193,7 @@ global.topics[$ "Bonfire_Cheio"] = [
 #endregion
 
 #region placas
+
 global.topics[$ "Aviso_enter"] = [
 	TEXT("Parabéns, você interagiu comigo!")
 ];
@@ -147,4 +201,5 @@ global.topics[$ "Aviso_enter"] = [
 global.topics[$ "Aviso_bonfire"] = [
 	TEXT("Quando achar uma fogueira, você também pode interagir para acendê-la e recuperar sua vida e mana!")
 ];
+
 #endregion

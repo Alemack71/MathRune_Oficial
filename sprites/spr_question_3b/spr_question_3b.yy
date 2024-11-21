@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_question_3b",
   "bboxMode":0,
-  "bbox_bottom":39,
+  "bbox_bottom":12,
   "bbox_left":0,
   "bbox_right":119,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":40,
+  "height":13,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"7888e53a-6ac3-4ad4-8755-e2a8735ca1f3","blendMode":0,"displayName":"default","isLocked":false,"name":"7888e53a-6ac3-4ad4-8755-e2a8735ca1f3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

@@ -1093,8 +1093,7 @@ global.radiciacao =
 
 #endregion
 
-
-#region
+#region slime_king
 
 global.question_king_slime =
 [
@@ -1202,6 +1201,381 @@ global.question_king_slime =
 
 #endregion
 
+#region equacao_1_grau
+
+global.equacao_1 =
+[
+	{
+		pergunta : "Resolva a equacao:\nx + 7 = 14",
+		alternativas : ["x = 7","x = 6","x = 8","x = 5"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n3x -2 = 16",
+		alternativas : ["x = 4","x = 6","x = 8","x = 5"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n5x + 8 = 3x + 20",
+		alternativas : ["x = 4","x = 5","x = 8","x = 6"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n",
+		alternativas : ["x = 10","x = 12","x = 14","x = 8"],
+		alternativa_certa : 1,
+		sprites : spr_question_6d, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n7x + 5 = 9x - 11",
+		alternativas : ["x = 6","x = 7","x = 8","x = 5"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n10x -4 = 4x + 14",
+		alternativas : ["x = 3","x = 4","x = 5","x = 6"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n",
+		alternativas : ["x = 8","x = 9","x = 10","x = 12"],
+		alternativa_certa : 2,
+		sprites : spr_question_6g, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n",
+		alternativas : ["x = 6","x = 8","x = 10","x = 4"],
+		alternativa_certa : 1,
+		sprites : spr_question_6h, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n6x - 8 = 4 - 2x",
+		alternativas : ["x = 5/2","x = 2","x = 3/2","x = 1"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n2x + 3 = 5x - 6",
+		alternativas : ["x = 3","x = 4","x = 5","x = 2"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n",
+		alternativas : ["x = 3","x = 5","x = 4","x = 2"],
+		alternativa_certa : 2,
+		sprites : spr_question_6k, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n5x - 7 + x = 13",
+		alternativas : ["x = 10/3","x = 4","x = 5","x = 9/2"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n3 + 7x = 18 + 2x",
+		alternativas : ["x = 4","x = 3","x = 5","x = 6"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\n8x - 4 = 6x + 12",
+		alternativas : ["x = 6","x = 10","x = 8","x = 5"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
+
+#region sistemas
+
+//global.sistemas_equacao_1 =
+//[
+//	{
+//		pergunta : "Resolva o sistema:\n",
+//		alternativas : ["x = 3, y = 4","x = 4, y = 2","x = 5, y = 1","x = 2, y = 6"],
+//		alternativa_certa : 1,
+//		sprites : spr_question_7a, //0 indica que não precisa de sprites
+//		description : "{0} pergunta!",
+//		user_animation : "attack",
+//		effect_sprite : sAttackBonk,
+//		effect_on_target : MODE.ALWAYS,
+//		func : function(_user, _targets)
+//		{
+//			if (!global.acertou)
+//			{
+//				{
+//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+//					BattleChangeHP(_targets[0], - _damage, 0);
+//				}
+//			}
+//		}
+//	},
+//	{
+//		pergunta : "Resolva o sistema:\n",
+//		alternativas : ["x = 5, y = 7","x = 6, y = 6","x = 4, y = 8","x = 7, y = 5"],
+//		alternativa_certa : 0,
+//		sprites : spr_question_7b, //0 indica que não precisa de sprites
+//		description : "{0} pergunta!",
+//		user_animation : "attack",
+//		effect_sprite : sAttackBonk,
+//		effect_on_target : MODE.ALWAYS,
+//		func : function(_user, _targets)
+//		{
+//			if (!global.acertou)
+//			{
+//				{
+//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+//					BattleChangeHP(_targets[0], - _damage, 0);
+//				}
+//			}
+//		}
+//	},
+//	{
+//		pergunta : "Resolva o sistema:\n",
+//		alternativas : ["x = 4, y = 3","x = 3, y = 2","x = 4, y = 1","x = 5, y = 2"],
+//		alternativa_certa : 2,
+//		sprites : spr_question_7d, //0 indica que não precisa de sprites
+//		description : "{0} pergunta!",
+//		user_animation : "attack",
+//		effect_sprite : sAttackBonk,
+//		effect_on_target : MODE.ALWAYS,
+//		func : function(_user, _targets)
+//		{
+//			if (!global.acertou)
+//			{
+//				{
+//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+//					BattleChangeHP(_targets[0], - _damage, 0);
+//				}
+//			}
+//		}
+//	},
+//	{
+//		pergunta : "Resolva o sistema:\n",
+//		alternativas : ["x = 2, y = 1","x = 1, y = 2","x = 3, y = 1","x = 0, y = 3"],
+//		alternativa_certa : 1,
+//		sprites : spr_question_7d, //0 indica que não precisa de sprites
+//		description : "{0} pergunta!",
+//		user_animation : "attack",
+//		effect_sprite : sAttackBonk,
+//		effect_on_target : MODE.ALWAYS,
+//		func : function(_user, _targets)
+//		{
+//			if (!global.acertou)
+//			{
+//				{
+//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+//					BattleChangeHP(_targets[0], - _damage, 0);
+//				}
+//			}
+//		}
+//	},
+//]
+
+#endregion
 
 //constantes para valores semi-booleanos
 enum MODE
@@ -1251,7 +1625,7 @@ global.enemies =
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSlime, attack: sSlimeAttack},
-		actions: global.question_king_slime,
+		actions: global.sistemas_equacao_1,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
