@@ -15,24 +15,25 @@ var alternative_height = 20; // Altura da sprite da alternativa
 // Desenhar a questão centralizada
 var question_x = _x_centro + (_spr_box_width / 2);
 var question_y = _y_centro + question_margin_top;
-draw_set_font(fnQuest);
+draw_set_font(fnM5x7);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(0);
 draw_text(question_x, question_y, questao_box);
 //question_x = 440
 //question_y = 171
+
 if (imagem != 0)
 {
 	if (imagem != 0) {
-	    var image_width = 110;  // Largura desejada para a sprite da imagem
-	    var image_height = 33;  // Altura desejada para a sprite da imagem
+	    var image_width = sprite_get_width(sprites);  // Largura desejada para a sprite da imagem
+	    var image_height = spr_height;  // Altura desejada para a sprite da imagem
     
 	    // Calcula a posição X da imagem para centralizar com a pergunta
 	    var image_x = _x_centro + (_spr_box_width / 2) - (image_width / 2);
     
 	    // Calcula a posição Y da imagem fixa entre a pergunta e as alternativas
-	    var image_y = question_y + ((start_y - question_y) / 2) - (image_height / 2);
+	    var image_y = question_y + ((start_y - question_y) / 2) - (image_height / 2) + 15;
     
 	    // Desenha a sprite da imagem
 	    draw_sprite_stretched(imagem, 0, image_x, image_y + 7, image_width, image_height);
@@ -50,7 +51,7 @@ var positions = [
 for (var i = 0; i < array_length(alternativas_box); i++) {
     var pos = positions[i];
     var alternative_x = start_x + pos[0] * (alternative_width + margin_horizontal); // Espaçamento entre colunas
-    var alternative_y = start_y + pos[1] * (alternative_height + margin_horizontal); // Espaçamento entre linhas
+    var alternative_y = start_y + pos[1] * (alternative_height + margin_horizontal) + spr_height; // Espaçamento entre linhas
     
     // Configurar a cor de mistura (blend) da imagem antes de desenhar
     if (i == alternativa_selecionada) {
@@ -62,15 +63,17 @@ for (var i = 0; i < array_length(alternativas_box); i++) {
     
 	 // Se a resposta foi revelada, mostrar as alternativas corretas e incorretas
     if (resposta_revelada) {
+    if (i == alternativa_selecionada) {
+        // Mostra a sprite de correto apenas se a resposta selecionada for a certa
         if (i == alternativa_certa) {
             draw_sprite_stretched(sQuest_right, 0, alternative_x, alternative_y, alternative_width, alternative_height);
-        } else if (i == alternativa_selecionada) {
+        } else {
             draw_sprite_stretched(sQuest_wrong, 0, alternative_x, alternative_y, alternative_width, alternative_height);
         }
     }
-	
+}
     // Desenhar o texto da alternativa centralizado
-	draw_set_font(fnQuest);
+	draw_set_font(fnM5x7);
 	draw_set_color(c_white);
 	draw_set_halign(0)
 	draw_set_valign(0)

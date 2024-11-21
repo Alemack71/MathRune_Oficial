@@ -286,10 +286,13 @@ function battle_state_perform_action()
                 waiting_for_idle = true;
                 delay_frames = 30; // Defina o número de frames de delay aqui
             }
-        }
+			
+			
+		}
     }
     else // Espera pelo delay e então acaba o turno
     {
+		
         if (waiting_for_idle)
         {
             delay_frames--;

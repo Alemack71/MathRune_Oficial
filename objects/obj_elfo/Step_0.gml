@@ -24,29 +24,35 @@ if (room_atual == 2)
 	} else {
 		instance_destroy(obj_exclamacao);	
 		dialogo = dialogo_final;
+	};
+	
+	if (global.key_1 == 3)
+	{	
+		dialogo_2 = "Fatores_Multiplos";
+	};
+	
+	if (global.key_1 == 6)
+	{	
+		dialogo_final = "Finalização_floresta_1";
+		if (!global.dialogo_acabou_elfo2) {
+			dialogo_trocou = true;
+		} else {
+			dialogo_trocou = false;
+		}
+	
+		if (dialogo_trocou)
+		{
+			instance_create_layer(x, y -24, "Instances", obj_exclamacao);
+		} else if (!dialogo_trocou)
+		{
+			instance_destroy(obj_exclamacao);	
+		}
 	}
 }
 
-if (room_atual == 2 && global.key_1 == 4)
-{	
-	progresso = 1;
-	dialogo_2 = "Fatores_Multiplos";
-	if (!global.dialogo_acabou_elfo2) {
-		dialogo_trocou = true;
-	} else {
-		dialogo_trocou = false;
-	}
-	
-	if (dialogo_trocou)
-	{
-		instance_create_layer(x, y -24, "Instances", obj_exclamacao);
-	} else if (!dialogo_trocou)
-	{
-		instance_destroy(obj_exclamacao);	
-	}
-};
+
 
 show_debug_message("Elfo 1:" + string(global.dialogo_acabou_elfo1));
 show_debug_message("Elfo 2:" + string(global.dialogo_acabou_elfo2));
-show_debug_message("dialogo concluido:" + string(dialogo_concluido));
+show_debug_message("global dialogo:" + string(global.dialogo_on));
 show_debug_message("Keys:" + string(global.key_1));

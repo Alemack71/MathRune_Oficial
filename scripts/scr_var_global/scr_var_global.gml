@@ -7,10 +7,12 @@ global.player_y = -1
 global.hp = 0;
 global.mp = 0;
 
-//segurar dialogo de ordem das operações
+global.escapou = false;
+
+//segurar dialogo da room 1
 global.key_1 = 0;
 
-//segurar dialogo de fatores e multiplos
+//segurar dialogo da room 2
 global.key_2 = 0;
 
 //guarda pontos feitos pelo jogador
@@ -29,3 +31,4 @@ global.ativar = false;
 global.dialogo_acabou_elfo1 = false;
 
 global.dialogo_acabou_elfo2 = false;
+

@@ -1,4 +1,4 @@
-/// @desc Menu - faz um menu, opções fornecidas no formulárui [["nome", função, argumento], [...]]
+/// @desc Menu - faz um menu, opções fornecidas no formulárui [["nome", função, argumento, avaliavel], [...]]
 function Menu(_x, _y, _options, _description = -1, _width = undefined, _height = undefined)
 {
 	//criando a instância do objeto menu (depth -99999 para aparecer em cima de tudo

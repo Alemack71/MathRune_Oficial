@@ -10,8 +10,8 @@
   "name":"obj_slime_blue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Fase 1",
+    "path":"folders/Objects/Enemies/Fase 1.yy",
   },
   "parentObjectId":{
     "name":"obj_inimigo_pai",

@@ -19,28 +19,32 @@ if (delay > 2)
 
 if (_key_confirm) _clicou = true;
 
-if (_key_up) {
-    if (alternativa_selecionada > 1) {
-        alternativa_selecionada -= 2;
-    }
-}
+//só pode alterar entre as alternativas enquanto ainda não respondeu
+if (!resposta_revelada)
+{
+	if (_key_up) {
+	    if (alternativa_selecionada > 1) {
+	        alternativa_selecionada -= 2;
+	    }
+	}
 
-if (_key_down) {
-    if (alternativa_selecionada < array_length(alternativas_box) - 2) {
-        alternativa_selecionada += 2;
-    }
-}
+	if (_key_down) {
+	    if (alternativa_selecionada < array_length(alternativas_box) - 2) {
+	        alternativa_selecionada += 2;
+	    }
+	}
 
-if (_key_left) {
-    if (alternativa_selecionada % 2 != 0) {
-        alternativa_selecionada -= 1;
-    }
-}
+	if (_key_left) {
+	    if (alternativa_selecionada % 2 != 0) {
+	        alternativa_selecionada -= 1;
+	    }
+	}
 
-if (_key_right) {
-    if (alternativa_selecionada % 2 == 0 && alternativa_selecionada < array_length(alternativas_box) - 1) {
-        alternativa_selecionada += 1;
-    }
+	if (_key_right) {
+	    if (alternativa_selecionada % 2 == 0 && alternativa_selecionada < array_length(alternativas_box) - 1) {
+	        alternativa_selecionada += 1;
+	    }
+	}
 }
 
 // Verifica se o usuário confirma a escolha

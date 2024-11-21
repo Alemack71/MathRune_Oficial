@@ -15,11 +15,15 @@ _key_confirm = false;
 resposta_revelada = false;
 imagem = sprites;
 
+spr_height = 0;
+
+if (imagem != 0) spr_height = sprite_get_height(sprites);
 _spr_box_width = 180;
-_spr_box_height = 100;
+_spr_box_height = 100 + spr_height;
+
 
 _x_centro = (global.battle_x + 158) - (_spr_box_width / 2);
-_y_centro = (global.battle_y + 80) - (_spr_box_height / 2);
+_y_centro = (global.battle_y + 90) - (_spr_box_height / 2);
 
 //camera display
 view_w = camera_get_view_width(view_camera[0]);

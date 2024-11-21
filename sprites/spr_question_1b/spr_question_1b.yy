@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Questions",
-    "path":"folders/Sprites/Questions.yy",
+    "name":"operacao_basica",
+    "path":"folders/Sprites/Questions/operacao_basica.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
