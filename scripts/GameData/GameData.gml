@@ -1625,7 +1625,7 @@ global.enemies =
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSlime, attack: sSlimeAttack},
-		actions: global.sistemas_equacao_1,
+		actions: global.question_library_operacoes_basicas,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
@@ -1748,33 +1748,78 @@ global.enemies =
 			return [_action, _target];
 		}
 	},
-	bat: 
+	king_Slime: 
 	{
-		name: "Bat",
-		hp: 15,
-		hpMax: 15,
+		name: "Rei Slime",
+		hp: 30,
+		hpMax: 30,
 		mp: 0,
 		mpMax: 0,
-		strength: 4,
-		sprites: { idle: sBat_dark, attack: sBat_dark_Attack},
-		actions: [],
-		xpValue : 18,
+		strength: 5,
+		sprites: { idle: spr_slime_king_idle, attack: spr_slime_king_attack},
+		actions: global.question_king_slime,
+		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
-			//ataca um membro aleatório da party
-			var _action = actions[0];
-			//array_filter para filtrar membros da party vivos e mortos, 
-			//caso vivo retorna 1, caso o contrário retorna 0
+			// Verifica se a questão atual ainda não foi definida
+		    if (current_question_index == -1) {
+		        current_question_index = 0; // Começa com a primeira questão
+		    }
+
+		    // Seleciona a questão atual
+		    var _action = actions[current_question_index];
+
+		    // Atualiza o índice da próxima questão para o próximo turno
+		    current_question_index += 1;
+
+		    // Verifica se o índice ultrapassou o tamanho do array e reinicia o ciclo
+		    if (current_question_index >= array_length(actions) -1) {
+		        current_question_index = 0; // Volta para o início
+		    }
+
+			// Seleciona um membro aleatório da party como alvo
 			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
 			{
-				//caso a unidade estiver viva ele retorna verdadeiro, 
-				//incluindo a unidade na lista de posíveis alvos
 				return (_unit.hp > 0);
 			});
-			var _target = _possible_targets[irandom(array_length(_possible_targets)-1)];
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
 			return [_action, _target];
 		}
-	}
+	},
+	BatD: 
+	{
+		name: "Morcego",
+		hp: 16,
+		hpMax: 16,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_mushroom_purple_walk, attack: spr_mushroom_purple_attack},
+		actions: global.radiciacao,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
 }
 
 
