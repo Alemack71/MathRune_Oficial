@@ -4,7 +4,8 @@
 if(global.ativar && !global.escapou) 
 {
 	instance_destroy();
-	global.key_1++;
+	if (global.key_mushroomo < 4) global.key_mushroomo++;
+	if (global.key_bonfire < 3) global.key_bonfire++;
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {

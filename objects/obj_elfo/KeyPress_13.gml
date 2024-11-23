@@ -10,6 +10,8 @@ if (distance_to_object(obj_player) <= 10) {
         _dialogo_acabou_sala = global.dialogo_acabou_elfo1;
     } else if (room_atual == 2) {
         _dialogo_acabou_sala = global.dialogo_acabou_elfo2;
+    } else if (room_atual == 3) {
+        _dialogo_acabou_sala = global.dialogo_acabou_elfo3;
     }
 
     // Se o diálogo final já foi concluído, exibe apenas o diálogo final
@@ -44,7 +46,9 @@ if (distance_to_object(obj_player) <= 10) {
                 global.dialogo_acabou_elfo1 = true;
             } else if (room_atual == 2) {
                 global.dialogo_acabou_elfo2 = true;
-            }
+            }  else if (room_atual == 3) {
+                global.dialogo_acabou_elfo3 = true;
+            } 
 
             if (dialogo_trocou) {
                 dialogo_trocou = false;

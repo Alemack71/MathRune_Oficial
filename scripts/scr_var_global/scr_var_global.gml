@@ -9,11 +9,24 @@ global.mp = 0;
 
 global.escapou = false;
 
-//segurar dialogo da room 1
-global.key_1 = 0;
+//segurar dialogo dos slimes azuis
+global.key_slimeg = 0;
+global.key_slimeb = 0;
+global.key_mushroomo = 0;
+global.key_mushroomp = 0;
 
-//segurar dialogo da room 2
-global.key_2 = 0;
+global.key_slime_king = 0;
+
+global.key_batd = 0;
+global.key_batr = 0;
+global.key_batr = 0;
+global.skeleton_1 = 0;
+global.skeleton_2 = 0;
+
+global.king_goblin = 0;
+
+//passe para usar fogueira (precisa de 3 keys)
+global.key_bonfire = 0;
 
 //guarda pontos feitos pelo jogador
 global.pontos = 0;
@@ -28,7 +41,11 @@ global.progresso_dialogo = 0;
 
 global.ativar = false;
 
+//sinaliza final do dialogo do elfo em cada room
 global.dialogo_acabou_elfo1 = false;
 
 global.dialogo_acabou_elfo2 = false;
 
+global.dialogo_acabou_elfo3 = false;
+
+global.dialogo_acabou_elfo4 = false;

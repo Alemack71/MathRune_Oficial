@@ -5,7 +5,8 @@
 if(global.ativar && !global.escapou) 
 {
 	instance_destroy();
-	global.key_1++;
+	if (global.key_slimeb < 3) global.key_slimeb++;
+	if (global.key_bonfire < 3) global.key_bonfire++;
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {

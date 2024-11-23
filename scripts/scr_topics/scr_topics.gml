@@ -71,17 +71,16 @@ global.topics[$ "Fatores_Multiplos"] = [
 	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Escape', para aulas mais detalhadas!")
 ];
 
-global.topics[$ "Finalização_floresta_1"] = [
+global.topics[$ "Finalizacao_floresta_1"] = [
 	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
 	TEXT("Você conseguiu vencer todos os slimes ... impressionante!"),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
 	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!")
-	
 ];
 
 global.topics[$ "Potenciacao"] = [
 	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-	TEXT("Para enfrentar os cogumelos, você precisa dominar um novo poder: a Potenciação!"),
+	TEXT("Para enfrentar os cogumelos, você precisa dominar uma nova técnica: a Potenciação!"),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
 	TEXT("Potenciação é uma forma de simplificar multiplicações repetidas. Por exemplo, em vez de escrever 2 × 2 × 2 × 2, podemos escrever 2^4, que significa '2 elevado a quarta potência'."),
 	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
@@ -104,7 +103,7 @@ global.topics[$ "Potenciacao"] = [
 
 global.topics[$ "Radiciacao"] = [
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-    TEXT("Você está indo muito bem! Agora vamos aprender algo fundamental para enfrentar os slimes verdes: a Radiciação."),
+    TEXT("Você está indo muito bem! Agora vamos aprender algo fundamental para enfrentar os cogumelos roxos: a Radiciação."),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("Radiciação é o processo de descobrir qual número, multiplicado por ele mesmo um certo número de vezes, resulta em outro número. Por exemplo, o número que multiplicado por ele mesmo 2 vezes dá 16 é 4."),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
@@ -125,7 +124,35 @@ global.topics[$ "Radiciacao"] = [
     TEXT("Com isso, você está preparado para resolver questões de radiciação e enfrentar novos desafios! Vamos praticar?")
 ];
 
+global.topics[$ "Finalizacao_floresta_2"] = [
+	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+	TEXT("Você conseguiu vencer todos os cogumelos ... impressionante!"),
+	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
+	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
+];
+
 #endregion
+
+
+#region boss_1
+global.topics[$ "Dialogo_king_slime"] = [
+	SPEAKER("Rei Sime"),
+	TEXT("Você não prosseguira!"),
+];
+
+global.topics[$ "Finalização_boss_1"] = [
+	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+	TEXT("Você conseguiu vencer todos os cogumelos ... impressionante!"),
+	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
+	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
+];
+
+#endregion
+
 
 #region fase 2
 

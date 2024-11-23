@@ -4,7 +4,7 @@
 if(global.ativar && !global.escapou) 
 {
 	instance_destroy();
-	global.key_1++;
+	global.key_slime_king++;
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {

@@ -33,7 +33,14 @@ if (global.gamePaused){
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
 				
-				ini_write_real("Chave","1",global.key_1);
+				ini_write_real("Chave","1",global.key_slimeg);
+				ini_write_real("Chave","2",global.key_slimeb);
+				ini_write_real("Chave","3",global.key_mushroomo);
+				ini_write_real("Chave","4",global.key_mushroomp);
+				ini_write_real("Chave","5",global.key_slime_king);
+			
+				ini_write_real("Chave","6",global.key_batd);
+				ini_write_real("Chave","7",global.key_batr);
 				
 				ini_close();
 				with(obj_game_pause_and_bar) instance_destroy();

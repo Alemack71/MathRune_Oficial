@@ -1491,89 +1491,209 @@ global.equacao_1 =
 
 #region sistemas
 
-//global.sistemas_equacao_1 =
-//[
-//	{
-//		pergunta : "Resolva o sistema:\n",
-//		alternativas : ["x = 3, y = 4","x = 4, y = 2","x = 5, y = 1","x = 2, y = 6"],
-//		alternativa_certa : 1,
-//		sprites : spr_question_7a, //0 indica que não precisa de sprites
-//		description : "{0} pergunta!",
-//		user_animation : "attack",
-//		effect_sprite : sAttackBonk,
-//		effect_on_target : MODE.ALWAYS,
-//		func : function(_user, _targets)
-//		{
-//			if (!global.acertou)
-//			{
-//				{
-//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-//					BattleChangeHP(_targets[0], - _damage, 0);
-//				}
-//			}
-//		}
-//	},
-//	{
-//		pergunta : "Resolva o sistema:\n",
-//		alternativas : ["x = 5, y = 7","x = 6, y = 6","x = 4, y = 8","x = 7, y = 5"],
-//		alternativa_certa : 0,
-//		sprites : spr_question_7b, //0 indica que não precisa de sprites
-//		description : "{0} pergunta!",
-//		user_animation : "attack",
-//		effect_sprite : sAttackBonk,
-//		effect_on_target : MODE.ALWAYS,
-//		func : function(_user, _targets)
-//		{
-//			if (!global.acertou)
-//			{
-//				{
-//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-//					BattleChangeHP(_targets[0], - _damage, 0);
-//				}
-//			}
-//		}
-//	},
-//	{
-//		pergunta : "Resolva o sistema:\n",
-//		alternativas : ["x = 4, y = 3","x = 3, y = 2","x = 4, y = 1","x = 5, y = 2"],
-//		alternativa_certa : 2,
-//		sprites : spr_question_7d, //0 indica que não precisa de sprites
-//		description : "{0} pergunta!",
-//		user_animation : "attack",
-//		effect_sprite : sAttackBonk,
-//		effect_on_target : MODE.ALWAYS,
-//		func : function(_user, _targets)
-//		{
-//			if (!global.acertou)
-//			{
-//				{
-//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-//					BattleChangeHP(_targets[0], - _damage, 0);
-//				}
-//			}
-//		}
-//	},
-//	{
-//		pergunta : "Resolva o sistema:\n",
-//		alternativas : ["x = 2, y = 1","x = 1, y = 2","x = 3, y = 1","x = 0, y = 3"],
-//		alternativa_certa : 1,
-//		sprites : spr_question_7d, //0 indica que não precisa de sprites
-//		description : "{0} pergunta!",
-//		user_animation : "attack",
-//		effect_sprite : sAttackBonk,
-//		effect_on_target : MODE.ALWAYS,
-//		func : function(_user, _targets)
-//		{
-//			if (!global.acertou)
-//			{
-//				{
-//					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-//					BattleChangeHP(_targets[0], - _damage, 0);
-//				}
-//			}
-//		}
-//	},
-//]
+global.sistemas_equacao_1 =
+[
+	{
+		pergunta : "Resolva o sistema:\n",
+		alternativas : ["x = 3, y = 4","x = 4, y = 2","x = 5, y = 1","x = 2, y = 6"],
+		alternativa_certa : 1,
+		sprites : spr_question_7a, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema:\n",
+		alternativas : ["x = 5, y = 7","x = 6, y = 6","x = 4, y = 8","x = 7, y = 5"],
+		alternativa_certa : 1,
+		sprites : spr_question_7b, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema:\n",
+		alternativas : ["x = 4, y = 3","x = 3, y = 2","x = 4, y = 1","x = 5, y = 2"],
+		alternativa_certa : 2,
+		sprites : spr_question_7c, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema:\n",
+		alternativas : ["x = 6, y = 5","x = 8, y = 3","x = 9, y = 2","x = 7, y = 4"],
+		alternativa_certa : 3,
+		sprites : spr_question_7d, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema:\n",
+		alternativas : ["x = 3, y = 1","x = 2, y = 1","x = 4, y = 1","x = 0, y = 3"],
+		alternativa_certa : 0,
+		sprites : spr_question_7e, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema:\n",
+		alternativas : ["x = 8, y = -4","x = -4, y = -2","x = -2, y = -4","x = 4, y = 2"],
+		alternativa_certa : 1,
+		sprites : spr_question_7f, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema:\n",
+		alternativas : ["x = 8, y = -4","x = -3, y = -4","x = -2, y = -4","x = 4, y = 2"],
+		alternativa_certa : 1,
+		sprites : spr_question_7g, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	}, 
+	{
+		pergunta : "O $ de uma camiseta e\n2x o $ de um bone. Juntos, os 2\nCustam 90, qual o $ da camisa?",
+		alternativas : ["60","70","40","50"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	}, 
+	{
+		pergunta : "Um doce custa 10$ a mais\nque 1 bala. 1 doce e 2 balas\nvalem 70$. Quanto custa o doce?",
+		alternativas : ["20","30","25","35"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	}, 
+	{
+		pergunta : "x + y = 14\nO dobro de x menos y e 16\nOs valores de x e y sao:",
+		alternativas : ["x = 10, y = 4","x = 8, y = 6","x = 12, y = 2","x = 9, y = 5"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	}, 
+]
 
 #endregion
 
@@ -1591,9 +1711,9 @@ function InitializeParty() {
     [
         {
             name: global.name,
-            hp: 2,
+            hp: 20,
             hpMax: 20,
-            mp: 10,
+            mp: 2,
             mpMax: 15,
             strength: 6,
             sprites : { idle: sPlayerIdle, attack: sPlayerAttack, cast: sPlayerAttack, defend: sPlayerDefend, down: sPlayerDown},
@@ -1685,7 +1805,7 @@ global.enemies =
 	mushroomO: 
 	{
 		name: "Cogumelo",
-		hp: 16,
+		hp: 1,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -1718,7 +1838,7 @@ global.enemies =
 	mushroomP: 
 	{
 		name: "Cogumelo",
-		hp: 16,
+		hp: 1,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
