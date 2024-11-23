@@ -11,8 +11,8 @@ event_inherited();
 event_inherited();
 
 
-//se o jogador ja derrotou ele uma vez, nao pode ser desafiado de novo
-if (global.key_slime_king >= 1) instance_destroy();
+//se o jogador ja derrotou ele uma vez (ou seja, coletou a runa dele), nao pode ser desafiado de novo
+if (global.coletou_runa1) instance_destroy();
 
 //tempo_estado = game_get_speed(gamespeed_fps) * 3;
 //timer_estado = tempo_estado;

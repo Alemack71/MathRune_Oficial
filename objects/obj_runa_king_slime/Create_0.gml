@@ -1,3 +1,3 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-area_finalizada = false;
+global.dialogo_on = false;

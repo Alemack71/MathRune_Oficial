@@ -13,6 +13,11 @@ if(index == 0){
 		
 		global.dialogo_acabou_elfo1 = ini_read_real("Elfo","dialogo",0);
 		global.dialogo_acabou_elfo2 = ini_read_real("Elfo","dialogo2",0);
+		global.dialogo_acabou_elfo3 = ini_read_real("Elfo","dialogo3",0);
+		
+		global.coletou_runa1 = ini_read_real("Rune","king_slime",0);
+		global.coletou_runa2 = ini_read_real("Rune","king_goblin",0);
+		global.coletou_runa3 = ini_read_real("Rune","king_demon",0);
 		
 		global.key_slimeg = ini_read_real("Chave","1",0);
 		global.key_slimeb = ini_read_real("Chave","2",0);

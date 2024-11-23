@@ -32,6 +32,11 @@ if (global.gamePaused){
 				
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
+				ini_write_real("Elfo","dialogo3",global.dialogo_acabou_elfo3);
+				
+				ini_write_real("Rune","king_slime",global.coletou_runa1);
+				ini_write_real("Rune","king_goblin",global.coletou_runa2);
+				ini_write_real("Rune","king_demon",global.coletou_runa3);
 				
 				ini_write_real("Chave","1",global.key_slimeg);
 				ini_write_real("Chave","2",global.key_slimeb);

@@ -125,30 +125,28 @@ global.topics[$ "Radiciacao"] = [
 ];
 
 global.topics[$ "Finalizacao_floresta_2"] = [
-	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-	TEXT("Você conseguiu vencer todos os cogumelos ... impressionante!"),
-	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
-	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Você conseguiu vencer todos os cogumelos... impressionante!"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Mas antes disso, precisamos derrotar o grande lorde da floresta: o Rei Slime."),
+    SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+    TEXT("Infelizmente, eu não consigo te ajudar a derrotá-lo. Você terá que usar tudo que aprendeu aqui para conseguir vencê-lo."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Mas eu confio em você!"),
+    SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+    TEXT("Apenas lembre-se de salvar o jogo aqui antes de avançar para a área do chefe."),
 ];
 
 #endregion
 
 
 #region boss_1
+
 global.topics[$ "Dialogo_king_slime"] = [
 	SPEAKER("Rei Sime"),
 	TEXT("Você não prosseguira!"),
-];
-
-global.topics[$ "Finalização_boss_1"] = [
-	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-	TEXT("Você conseguiu vencer todos os cogumelos ... impressionante!"),
-	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
-	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
-	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
 ];
 
 #endregion
@@ -204,6 +202,33 @@ global.topics[$ "Sistemas_Equacoes"] = [
 	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
 ];
 
+global.topics[$ "Produtos_Notaveis"] = [
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Excelente progresso! Agora vamos aprender sobre os produtos notáveis."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Os produtos notáveis são expressões algébricas importantes que aparecem com frequência em problemas matemáticos."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Vamos começar pelo Quadrado da Soma de Dois Termos."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("O quadrado da soma é dado por (a + b)^2. Isso significa multiplicar (a + b) por ele mesmo."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Ao aplicar a distributiva, temos a^2 + 2ab + b^2. Ou seja, o quadrado do primeiro termo, somado ao dobro do produto dos dois termos, mais o quadrado do segundo termo."),
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Agora vamos ao Quadrado da Diferença de Dois Termos."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("O quadrado da diferença é representado por (a - b)^2. Assim como antes, multiplicamos (a - b) por ele mesmo."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Aplicando a distributiva, o resultado é a^2 - 2ab + b^2. Perceba que é parecido com o quadrado da soma, mas com um sinal negativo no termo do meio."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Por fim, temos o Produto da Soma pela Diferença de Dois Termos."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Essa propriedade é representada como (a + b)(a - b). Aqui, o resultado é a diferença dos quadrados dos dois termos: a^2 - b^2."),
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Essas propriedades são muito úteis para simplificar expressões e resolver equações. Vamos praticar algumas questões para fixar o aprendizado!"),
+	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
+];
+
 
 #endregion
 
@@ -226,7 +251,19 @@ global.topics[$ "Aviso_enter"] = [
 ];
 
 global.topics[$ "Aviso_bonfire"] = [
-	TEXT("Quando achar uma fogueira, você também pode interagir para acendê-la e recuperar sua vida e mana!")
+	TEXT("Quando achar uma fogueira, você também pode interagir para acendê-la e recuperar sua vida e mana!\n(Apenas se tiver derrotado 3 inimigos ou mais)")
+];
+
+global.topics[$ "Aviso_chefe_escapar"] = [
+	TEXT("Cuidado! Não tente escapar do chefe. Acredite em mim, eu já tentei!\n -Placa")
+];
+
+#endregion
+
+#region runas
+
+global.topics[$ "Runa_king_slime"] = [
+	TEXT("Parabéns, você coletou a runa do Rei Slime!\nVocê sente o poder dela sendo absorvida, aumentando seus atributos!")
 ];
 
 #endregion

@@ -1712,12 +1712,12 @@ function InitializeParty() {
         {
             name: global.name,
             hp: 20,
-            hpMax: 20,
+            hpMax: 20 + (10 * global.coletou_runa1) + (10 * global.coletou_runa2),
             mp: 2,
-            mpMax: 15,
+            mpMax: 15 + (5 * global.coletou_runa1) + (5 * global.coletou_runa2),
             strength: 6,
             sprites : { idle: sPlayerIdle, attack: sPlayerAttack, cast: sPlayerAttack, defend: sPlayerDefend, down: sPlayerDown},
-            actions : [global.action_library.attack, global.action_library.ice, global.action_library.fire, global.action_library.escape]
+            actions : [global.action_library.attack, global.action_library.fire, global.action_library.escape]
         }
     ];
 }
@@ -1871,8 +1871,8 @@ global.enemies =
 	king_Slime: 
 	{
 		name: "Rei Slime",
-		hp: 30,
-		hpMax: 30,
+		hp: 1,
+		hpMax: 35,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
@@ -1893,7 +1893,7 @@ global.enemies =
 		    current_question_index += 1;
 
 		    // Verifica se o índice ultrapassou o tamanho do array e reinicia o ciclo
-		    if (current_question_index >= array_length(actions) -1) {
+		    if (current_question_index >= array_length(actions)) {
 		        current_question_index = 0; // Volta para o início
 		    }
 

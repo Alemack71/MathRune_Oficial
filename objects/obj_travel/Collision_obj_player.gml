@@ -2,7 +2,7 @@
 // Você pode escrever seu código neste editor 
 	
 //travel para próxima room
-if (dialogo_finalizado)
+if (area_finalizada)
 {
 	room_goto(destino);
 	

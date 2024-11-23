@@ -174,7 +174,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_elfo","path":"objects/obj_elfo/obj_elfo.yy",},"propertyId":{"name":"dialogo_4","path":"objects/obj_elfo/obj_elfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_elfo","path":"objects/obj_elfo/obj_elfo.yy",},"propertyId":{"name":"dialogo_final","path":"objects/obj_elfo/obj_elfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_elfo","path":"objects/obj_elfo/obj_elfo.yy",},"propertyId":{"name":"room_atual","path":"objects/obj_elfo/obj_elfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":32.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":64.0,},
       ],"layers":[],"name":"NPCs","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Mobs","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_33637F89","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33637F89","objectId":{"name":"obj_mushroom_orange","path":"objects/obj_mushroom_orange/obj_mushroom_orange.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":256.0,},
@@ -340,8 +340,8 @@
   ],
   "name":"rm_game_floresta_2",
   "parent":{
-    "name":"Level Design",
-    "path":"folders/Rooms/Level Design.yy",
+    "name":"Fase_1",
+    "path":"folders/Rooms/Level Design/Fase_1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

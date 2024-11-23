@@ -184,8 +184,8 @@
   ],
   "name":"rm_game_tutorial",
   "parent":{
-    "name":"Level Design",
-    "path":"folders/Rooms/Level Design.yy",
+    "name":"Fase_1",
+    "path":"folders/Rooms/Level Design/Fase_1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

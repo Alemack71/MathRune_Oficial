@@ -9,6 +9,11 @@ global.mp = 0;
 
 global.escapou = false;
 
+//sinaliza as runas coletadas pelo player
+global.coletou_runa1 = false;
+global.coletou_runa2 = false;
+global.coletou_runa3 = false;
+
 //segurar dialogo dos slimes azuis
 global.key_slimeg = 0;
 global.key_slimeb = 0;

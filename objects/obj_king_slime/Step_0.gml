@@ -7,28 +7,24 @@ event_inherited();
 var _dist_x = abs(x - obj_player.x);
 var _dist_y = abs(y - obj_player.y);
 
-if (_dist_x <= 64 && _dist_y <= 64) {
-    // Inicia o diálogo do chefe
-	global.dialogo_on = true;
-    startDialogue("Dialogo_king_slime");
-	
-	if (keyboard_check_released(vk_enter))
+if (_dist_x <= 666 && _dist_y <= 48) {
+	if(global.ativar && !global.escapou) 
 	{
-	    // Decide o próximo passo após o diálogo
-	    if (global.ativar && !global.escapou) {
-	        instance_destroy();
-	        global.key_slime_king++;
-	    } 
-	    // Se não, inicia a batalha
-	    else if (!global.ativar) {
-	        NewEncounter([global.enemies.king_Slime], sBgField_Forest);
-	    }
+		
+		instance_destroy();
+		instance_create_layer(x, y, "Instances", obj_runa_king_slime);
+		global.key_slime_king++;
+	} //Se nao, inicia a batalha
+	else if (global.ativar == false) 
+	{
+		NewEncounter([global.enemies.king_Slime], sBgField_Forest);
 	}
 
-    // Reseta os estados globais para a próxima interação
-	
-    global.ativar = false;
-    global.escapou = false;
+	//se o player escapou ele precisa ser distanciado para não entrar instantaneamente na batalha dnv
+
+	//seta novamente para false para nao destruir todas as outras instancias e permitir que escape dnv
+	global.ativar = false;
+	global.escapou = false;
 }
 
 
