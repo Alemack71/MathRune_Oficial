@@ -81,4 +81,4 @@ if (_colidiu) {
 	troca_estado(estado_idle);	
 }
 
-//show_debug_message(global.novo_jogo);
+show_debug_message(global.coletou_runa1);

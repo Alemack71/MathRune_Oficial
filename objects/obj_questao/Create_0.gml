@@ -18,7 +18,7 @@ imagem = sprites;
 spr_height = 0;
 
 if (imagem != 0) spr_height = sprite_get_height(sprites);
-_spr_box_width = 180;
+_spr_box_width = 200;
 _spr_box_height = 100 + spr_height;
 
 

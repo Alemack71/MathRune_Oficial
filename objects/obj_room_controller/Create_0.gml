@@ -21,3 +21,10 @@ if (!instance_exists(obj_game_pause_and_bar)) {
 if (!instance_exists(obj_UI_menu)) {
     instance_create_layer(0, 0, "Instances", obj_UI_menu);
 }
+
+//Gerencia em que nivel o player está
+if (global.coletou_runa1) global.party[0].actions =  [global.action_library.attack, global.action_library.ice, global.action_library.escape];
+if (global.coletou_runa1 && global.coletou_runa2) global.party[0].actions =  [global.action_library.attack, global.action_library.ice, global.action_library.fire, global.action_library.escape];
+
+global.party[0].hpMax = 20 + (10 * global.coletou_runa1) + (10 * global.coletou_runa2);
+global.party[0].mpMax = 15 + (5 * global.coletou_runa1) + (5 * global.coletou_runa2);

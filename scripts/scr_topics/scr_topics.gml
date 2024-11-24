@@ -155,8 +155,10 @@ global.topics[$ "Dialogo_king_slime"] = [
 #region fase 2
 
 global.topics[$ "Equacao_Primeiro_Grau"] = [
-    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-    TEXT("Você está indo muito bem! Agora vamos aprender algo essencial para sua jornada: as Equações de Primeiro Grau."),
+	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Você conseguiu pegar a runa do Rei Slime! Sabia que podia confiar em você para salvar o mundo."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Você está indo muito bem! Agora vamos aprender algo essencial para continuar sua jornada e derrotar os morcegos da caverna: as Equações de Primeiro Grau."),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("Essas equações conectam valores conhecidos e desconhecidos, chamados de incógnitas. Elas são expressas assim: ax + b = 0."),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
@@ -168,14 +170,16 @@ global.topics[$ "Equacao_Primeiro_Grau"] = [
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("Por exemplo, se um número está somando, ele passará subtraindo; se está multiplicando, ele passará dividindo. Isso mantém a igualdade verdadeira."),
     SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-    TEXT("Com isso, você está pronto para começar a resolver equações de primeiro grau! Vamos praticar?"),
+    TEXT("Com isso, você está pronto para começar a resolver equações de primeiro grau!"),
 	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
 	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
 ];
 
 global.topics[$ "Sistemas_Equacoes"] = [
-    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-    TEXT("Excelente progresso! Agora vamos aprender a resolver sistemas de equações do 1º grau."),
+	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+	TEXT("Você conseguiu vencer todos os morcegos ... impressionante!"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Excelente progresso! Agora vamos aprender a resolver sistemas de equações do 1º grau.\nEssenciais para derrotar os esqueletos"),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("Um sistema de equações é composto por duas ou mais equações que compartilham incógnitas. O objetivo é encontrar valores que satisfaçam todas as equações ao mesmo tempo."),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
@@ -200,6 +204,13 @@ global.topics[$ "Sistemas_Equacoes"] = [
     TEXT("E pronto! Agora você conhece os dois métodos para resolver sistemas de equações. Vamos praticar para fixar o aprendizado!"),
 	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
 	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
+];
+
+global.topics[$ "Finalizacao_caverna_1"] = [
+	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+	TEXT("Você conseguiu vencer todos os inimigos ... impressionante!"),
+	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+	TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!")
 ];
 
 global.topics[$ "Produtos_Notaveis"] = [
@@ -263,7 +274,7 @@ global.topics[$ "Aviso_chefe_escapar"] = [
 #region runas
 
 global.topics[$ "Runa_king_slime"] = [
-	TEXT("Parabéns, você coletou a runa do Rei Slime!\nVocê sente o poder dela sendo absorvida, aumentando seus atributos!")
+	TEXT("Parabéns, você coletou a runa do Rei Slime!\nVocê sente o poder dela sendo absorvido, aumentando seus atributos!")
 ];
 
 #endregion

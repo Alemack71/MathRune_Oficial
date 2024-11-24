@@ -24,11 +24,10 @@ global.key_slime_king = 0;
 
 global.key_batd = 0;
 global.key_batr = 0;
-global.key_batr = 0;
-global.skeleton_1 = 0;
-global.skeleton_2 = 0;
+global.key_skeleton_1 = 0;
+global.key_skeleton_2 = 0;
 
-global.king_goblin = 0;
+global.key_goblin_king= 0;
 
 //passe para usar fogueira (precisa de 3 keys)
 global.key_bonfire = 0;
@@ -53,4 +52,5 @@ global.dialogo_acabou_elfo2 = false;
 
 global.dialogo_acabou_elfo3 = false;
 
-global.dialogo_acabou_elfo4 = false;
+global.dialogo_acabou_elfo5 = false;
+

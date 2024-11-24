@@ -88,6 +88,43 @@ if (room_atual == 3)
 	}
 }
 
+if (room_atual == 5)
+{
+	if (global.dialogo_acabou_elfo5 == false)
+	{
+		instance_create_layer(x, y -24, "Instances", obj_exclamacao);	
+	} else {
+		instance_destroy(obj_exclamacao);	
+		dialogo = dialogo_final;
+	};
+	
+	if (global.key_batd == 3)
+	{	
+		progresso = 1;
+		dialogo_2 = "Sistemas_Equacoes";
+	};
+	
+	if (global.key_skeleton_1 == 3)
+	{	
+		progresso = 4;
+		dialogo_final = "Finalizacao_caverna_1";
+		
+		if (!global.dialogo_acabou_elfo5) {
+			dialogo_trocou = true;
+		} else {
+			dialogo_trocou = false;
+		}
+	
+		if (dialogo_trocou)
+		{
+			instance_create_layer(x, y -24, "Instances", obj_exclamacao);
+		} else if (!dialogo_trocou)
+		{
+			instance_destroy(obj_exclamacao);	
+		}
+	}
+}
+
 
 
 show_debug_message("progresso:" + string(progresso));

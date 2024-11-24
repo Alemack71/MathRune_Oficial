@@ -1095,7 +1095,7 @@ global.radiciacao =
 
 #region slime_king
 
-global.question_king_slime =
+global.question_slime_king =
 [
 	{
 		pergunta : "Calcule a expressao:\n",
@@ -1697,6 +1697,589 @@ global.sistemas_equacao_1 =
 
 #endregion
 
+#region produtos_notaveis
+
+global.produtos_notaveis =
+[
+	{
+		pergunta : "Qual o resultado de:\n",
+		alternativas : ["x^2 +4x +4","x^2 +4x +2","x^2 +2x +4","x^2 +2x +2"],
+		alternativa_certa : 0,
+		sprites : spr_question_8a, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Qual o resultado de:\n",
+		alternativas : ["9x^2 +30x +25","9x^2 +20x +25","9x^2 +30x +5","3x^2 +30x +25"],
+		alternativa_certa : 0,
+		sprites : spr_question_8b, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Qual o resultado de:\n",
+		alternativas : ["x^2 +4y +8y^2","x^2 +4xy +16y^2","x^2 +8xy +4y^2","x^2 +8xy +16y^2"],
+		alternativa_certa : 3,
+		sprites : spr_question_8c, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Calcule o valor de:\n",
+		alternativas : ["a^2 -8a +4","a^2 -16a +4","a^2 -8a +16","a^2 -4a +16"],
+		alternativa_certa : 2,
+		sprites : spr_question_8e, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Qual o resultado de:\n",
+		alternativas : ["x^2 -5x +25","x^2 -10x +25","x^2 -25x +10","x^2 -25x +25"],
+		alternativa_certa : 1,
+		sprites : spr_question_8f, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Calcule o valor de:\n",
+		alternativas : ["9a^2 -6ab +b^2","9a^2 -3ab +b^2","9a^2 -9ab +b^2","9a^2 -6ab +b"],
+		alternativa_certa : 0,
+		sprites : spr_question_8g, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Calcule o valor de:\n",
+		alternativas : ["x^2 -49","x^2 +14x +49","x^2 -14x -49","x^2 -14x +49"],
+		alternativa_certa : 0,
+		sprites : spr_question_8h, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva:\n",
+		alternativas : ["25a^2 +15b^2","25a^2 -6b^2","25a^2 -9b^2","25a^2 -3b^2"],
+		alternativa_certa : 2,
+		sprites : spr_question_8i, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Calcule o valor de:\n",
+		alternativas : ["x^2 +8x -16","x^2 -8x -16","x^2 +8x +16","x^2 -16"],
+		alternativa_certa : 3,
+		sprites : spr_question_8j, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
+
+#region equacao_2_grau
+
+global.equacao_2 =
+[
+	{
+		pergunta : "Resolva a equacao:\nx^2 - 5x + 6 = 0",
+		alternativas : ["S = {-2,-3}","S = {3,2}","S = {-6,1}","S = {1,6}"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva a equacao:\nx^2 + 7x + 10 = 0",
+		alternativas : ["S = {5,-2}","S = {-2,-3}","S = {-5,-2}","S = {2,-7}"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Determine as raizes da equacao:\nx^2 - 4x - 12 = 0",
+		alternativas : ["S = {6,-2}","S = {-6,2}","S = {3,-4}","S = {-3,4}"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Encontre S para:\nx^2 + x - 6 = 0",
+		alternativas : ["S = {3,-2}","S = {-3,2}","S = {1,-6}","S = {-1,-6}"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva:\n2x^2 - 8x = 0",
+		alternativas : ["S = {-2,-4}","S = {0,-4}","S = {4,-2}","S = {0,4}"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva:\nx^2 - 9 = 0",
+		alternativas : ["S = {-3,3}","S = {0,3}","S = {6,-3}","S = {0,-3}"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Encontre as raizes de:\nx^2 - 6x = 0",
+		alternativas : ["S = {0,-6}","S = {3,-3}","S = {0,6}","S = {0,-3}"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva:\nx^2 + 8x + 15 = 0",
+		alternativas : ["S = {5,3}","S = {-5,-3}","S = {-5,3}","S = {5,-3}"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Determine S para:\n3x^2 - 12 = 0",
+		alternativas : ["S = {0,2}","S = {2,4}","S = {0,-4}","S = {-2,2}"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Encontre as raizes de:\nx^2 - 2x - 3 = 0",
+		alternativas : ["S = {3,-1}","S = {2,4}","S = {0,-3}","S = {-1,2}"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva:\nx^2 + 2x - 8 = 0",
+		alternativas : ["S = {-4,2}","S = {-2,4}","S = {2,-4}","S = {-2,2}"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Encontre as raizes de:\nx^2 + x - 20 = 0",
+		alternativas : ["S = {-4,5}","S = {4,-5}","S = {-5,-4}","S = {5,4}"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva:\nx^2 - 7x + 10 = 0",
+		alternativas : ["S = {−5,2}","S = {7,−10}","S = {5,2}","S = {−7,10}"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Determine S para:\n4x^2 - 25 = 0",
+		alternativas : ["S = {-5/2,5/2}","S = {5/2,5}","S = {- 5,5}","S = {- 5/4,5/4}"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
+
+#region goblin_king
+
+global.question_goblin_king =
+[
+	{
+		pergunta : "Resolva a equacao 2x + 5 = 15:\ne use o valor encontrado para calcular\nx^2 - 4x",
+		alternativas : ["-10","0","5","10"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema de equacoes:\nx + y = 7 e x - y = 3.\nDepois, calcule o produto:",
+		alternativas : ["10","21","25","30"],
+		alternativa_certa : 1,
+		sprites : spr_question_10b, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Expanda o produto notavel:\n(x + 3)^2\ne encontre o valor de x",
+		alternativas : ["x = -3","x = -1","x = 0","x = -2"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Encontre as raizes de:\n3x - 2 = x^2",
+		alternativas : ["S = {1,2}","S = {-1,-2}","S = {-1,2}","S = {1,-2}"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Resolva o sistema:\n2x + y = 10 e x - y = 2,\ne use os valores para calcular:",
+		alternativas : ["2","5","10","20"],
+		alternativa_certa : 3,
+		sprites : spr_question_10e, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
 //constantes para valores semi-booleanos
 enum MODE
 {
@@ -1712,12 +2295,12 @@ function InitializeParty() {
         {
             name: global.name,
             hp: 20,
-            hpMax: 20 + (10 * global.coletou_runa1) + (10 * global.coletou_runa2),
+            hpMax: 20,
             mp: 2,
-            mpMax: 15 + (5 * global.coletou_runa1) + (5 * global.coletou_runa2),
+            mpMax: 15,
             strength: 6,
             sprites : { idle: sPlayerIdle, attack: sPlayerAttack, cast: sPlayerAttack, defend: sPlayerDefend, down: sPlayerDown},
-            actions : [global.action_library.attack, global.action_library.fire, global.action_library.escape]
+            actions : [global.action_library.attack, global.action_library.escape]
         }
     ];
 }
@@ -1745,7 +2328,7 @@ global.enemies =
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSlime, attack: sSlimeAttack},
-		actions: global.question_library_operacoes_basicas,
+		actions: question_library_operacoes_basicas,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
@@ -1772,7 +2355,7 @@ global.enemies =
 	slimeB: 
 	{
 		name: "Slime",
-		hp: 7,
+		hp: 1,
 		hpMax: 7,
 		mp: 0,
 		mpMax: 0,
@@ -1875,9 +2458,9 @@ global.enemies =
 		hpMax: 35,
 		mp: 0,
 		mpMax: 0,
-		strength: 5,
+		strength: 10,
 		sprites: { idle: spr_slime_king_idle, attack: spr_slime_king_attack},
-		actions: global.question_king_slime,
+		actions: global.question_slime_king,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
@@ -1910,13 +2493,13 @@ global.enemies =
 	BatD: 
 	{
 		name: "Morcego",
-		hp: 16,
+		hp: 1,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
-		sprites: { idle: spr_mushroom_purple_walk, attack: spr_mushroom_purple_attack},
-		actions: global.radiciacao,
+		sprites: { idle: sBat_dark_walk, attack: sBat_dark_attack},
+		actions: global.equacao_1,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
@@ -1940,8 +2523,76 @@ global.enemies =
 			return [_action, _target];
 		}
 	},
+	Skeleton1: 
+	{
+		name: "Esqueleto",
+		hp: 16,
+		hpMax: 16,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_skeleton_1_idle, attack: spr_skeleton_1_attack},
+		actions: global.sistemas_equacao_1,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
+	king_Goblin: 
+	{
+		name: "Rei Goblin",
+		hp: 40,
+		hpMax: 40,
+		mp: 0,
+		mpMax: 0,
+		strength: 10,
+		sprites: { idle: spr_king_goblin_idle, attack: spr_king_goblin_attack},
+		actions: global.question_slime_king,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Verifica se a questão atual ainda não foi definida
+		    if (current_question_index == -1) {
+		        current_question_index = 0; // Começa com a primeira questão
+		    }
+
+		    // Seleciona a questão atual
+		    var _action = actions[current_question_index];
+
+		    // Atualiza o índice da próxima questão para o próximo turno
+		    current_question_index += 1;
+
+		    // Verifica se o índice ultrapassou o tamanho do array e reinicia o ciclo
+		    if (current_question_index >= array_length(actions)) {
+		        current_question_index = 0; // Volta para o início
+		    }
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
 }
-
-
-
-
