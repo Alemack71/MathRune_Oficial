@@ -34,9 +34,9 @@ var _maxmana = global.party[0].mpMax;
 //Se o jogo tiver pausado, oculta a barra de vida/mana
 if (!global.gamePaused)
 {
-    draw_sprite_ext(spr_hud_barra_vida, 0, _x_bar, _y_bar, (_vida/_maxvida) * _escala, _escala, 0, c_white, 1);
-	draw_sprite_ext(spr_hud_barra_mana, 0, _x_bar, _y_bar+8, (_mana/_maxmana) * _escala, _escala, 0, c_white, 1);
-	draw_sprite_ext(spr_hud_barra, 0, _x_bar, _y_bar, (_vida/_maxvida) * _escala, _escala, 0, c_white, 1);
+    //draw_sprite_ext(spr_hud_barra_vida, 0, _x_bar, _y_bar, (_vida/_maxvida) * _escala, _escala, 0, c_white, 1);
+	//draw_sprite_ext(spr_hud_barra_mana, 0, _x_bar, _y_bar+8, (_mana/_maxmana) * _escala, _escala, 0, c_white, 1);
+	//draw_sprite_ext(spr_hud_barra, 0, _x_bar, _y_bar,_escala, _escala, 0, c_white, 1);
 }
 
 

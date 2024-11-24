@@ -4,11 +4,11 @@
 if(global.ativar && !global.escapou) 
 {
 	instance_destroy();
-	global.key_slime_king++;
+	global.key_goblin_king++;
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {
-	NewEncounter([global.enemies.king_Slime], sBgField_Forest);
+	NewEncounter([global.enemies.king_Slime], sBgField_Cave);
 }
 
 //se o player escapou ele precisa ser distanciado para não entrar instantaneamente na batalha dnv
