@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_demon_king_rune",
+  "%Name":"Sprite172",
   "bboxMode":0,
   "bbox_bottom":18,
   "bbox_left":0,
@@ -24,19 +24,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"f6d5033d-a06e-478e-a5a5-6c0f3a81f1f6","blendMode":0,"displayName":"default","isLocked":false,"name":"f6d5033d-a06e-478e-a5a5-6c0f3a81f1f6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_demon_king_rune",
+  "name":"Sprite172",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Itens",
-    "path":"folders/Sprites/Itens.yy",
+    "name":"grupo1",
+    "path":"folders/Sprites/grupo1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_demon_king_rune",
+    "%Name":"Sprite172",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_demon_king_rune",
+    "name":"Sprite172",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -72,16 +72,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"502b49c5-41ca-40fe-8afe-f6acded3c3dc","path":"sprites/spr_demon_king_rune/spr_demon_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"502b49c5-41ca-40fe-8afe-f6acded3c3dc","path":"sprites/Sprite172/Sprite172.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"061e1b52-f05a-466e-9242-4c2957feb56f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7e28fbc-e173-41b3-93cd-26245887f79b","path":"sprites/spr_demon_king_rune/spr_demon_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7e28fbc-e173-41b3-93cd-26245887f79b","path":"sprites/Sprite172/Sprite172.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c3c4dc34-a736-4d75-95c3-9eb3f3d9ba15","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c31219b-ada8-4327-a604-a044a2f4a650","path":"sprites/spr_demon_king_rune/spr_demon_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c31219b-ada8-4327-a604-a044a2f4a650","path":"sprites/Sprite172/Sprite172.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3b1ca719-d819-477b-a9dc-167620bf6a73","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c87be984-61a0-4b20-8953-82e15241438b","path":"sprites/spr_demon_king_rune/spr_demon_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c87be984-61a0-4b20-8953-82e15241438b","path":"sprites/Sprite172/Sprite172.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3656c70e-ae75-431e-ad81-18baeaaa7a16","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

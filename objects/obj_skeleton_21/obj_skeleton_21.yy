@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_runa_king_demon",
+  "%Name":"obj_skeleton_21",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_runa_king_demon",
+  "name":"obj_skeleton_21",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos colisores",
-    "path":"folders/Objects/Objetos colisores.yy",
+    "name":"Fase 2",
+    "path":"folders/Objects/Enemies/Fase 2.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inimigo_pai",
+    "path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_demon_king_rune",
-    "path":"sprites/spr_demon_king_rune/spr_demon_king_rune.yy",
+    "name":"spr_skeleton_1_walk",
+    "path":"sprites/spr_skeleton_1_walk/spr_skeleton_1_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

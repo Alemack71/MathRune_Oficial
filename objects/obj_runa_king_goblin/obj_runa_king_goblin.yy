@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_goblin_king_rune",
-    "path":"sprites/spr_goblin_king_rune/spr_goblin_king_rune.yy",
+    "name":"Sprite171",
+    "path":"sprites/Sprite171/Sprite171.yy",
   },
   "spriteMaskId":null,
   "visible":true,

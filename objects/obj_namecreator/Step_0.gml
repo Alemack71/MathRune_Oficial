@@ -12,6 +12,307 @@ if (keyboard_check_pressed(vk_enter)) global.POK = true; else global.POK = false
 
 if (keyboard_check_pressed(vk_backspace)) global.PCAN = true; else global.PCAN = false;
 
+if keyboard_check_pressed(ord("A")) {
+	posicao = a_letters[0,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+if keyboard_check_pressed(ord("B")) {
+	posicao = a_letters[1,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+if keyboard_check_pressed(ord("C")) {
+	posicao = a_letters[2,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+if keyboard_check_pressed(ord("D")) {
+	posicao = a_letters[3,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+
+if keyboard_check_pressed(ord("E")) {
+	posicao = a_letters[4,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+if keyboard_check_pressed(ord("F")) {
+	posicao = a_letters[5,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("G")) {
+	posicao = a_letters[6,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("H")) {
+	posicao = a_letters[7,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("I")) {
+	posicao = a_letters[8,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("J")) {
+	posicao = a_letters[9,0]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("K")) {
+	posicao = a_letters[0,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("L")) {
+	posicao = a_letters[1,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+
+	if keyboard_check_pressed(ord("M")) {
+	posicao = a_letters[2,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("N")) {
+	posicao = a_letters[3,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("O")) {
+	posicao = a_letters[4,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("P")) {
+	posicao = a_letters[5,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("Q")) {
+	posicao = a_letters[6,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("R")) {
+	posicao = a_letters[7,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("S")) {
+	posicao = a_letters[8,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("T")) {
+	posicao = a_letters[9,1]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("U")) {
+	posicao = a_letters[0,2]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+		if keyboard_check_pressed(ord("V")) {
+	posicao = a_letters[1,2]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("W")) {
+	posicao = a_letters[2,2]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}	
+	
+	if keyboard_check_pressed(ord("X")) {
+	posicao = a_letters[3,2]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("Y")) {
+	posicao = a_letters[4,2]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(ord("Z")) {
+	posicao = a_letters[5,2]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}
+	
+	if keyboard_check_pressed(vk_space) {
+	posicao = a_letters[6,2]
+		if (string_length(currentName) == 0)
+		{
+			currentName += string_upper(posicao);
+		} else if (string_length(currentName) > 0)
+		{
+			currentName +=  string_lower(posicao);
+		}
+	}	
+	
+if(keyboard_check_pressed(vk_escape)) {
+	room_goto(rm_menu); 
+}
+
 #endregion
 
 #region CURSOR

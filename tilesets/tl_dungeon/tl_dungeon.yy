@@ -1,0 +1,41 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tl_dungeon",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"base","closed_edge":false,"name":"base","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[1045,811,808,809,634,693,0,985,631,0,749,987,633,1103,1105,927,],},
+    {"$GMAutoTileSet":"","%Name":"piso","closed_edge":false,"name":"piso","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[1045,1107,1109,986,989,1044,0,985,990,0,1046,987,1104,1103,1105,1050,],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tl_dungeon",
+  "out_columns":41,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_dungeon_tileset",
+    "path":"sprites/spr_dungeon_tileset/spr_dungeon_tileset.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":1711,
+}

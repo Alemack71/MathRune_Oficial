@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_skeleton_1",
+  "%Name":"obj_runa_king_goblin_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_skeleton_1",
+  "name":"obj_runa_king_goblin_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fase 2",
-    "path":"folders/Objects/Enemies/Fase 2.yy",
+    "name":"Objetos colisores",
+    "path":"folders/Objects/Objetos colisores.yy",
   },
-  "parentObjectId":{
-    "name":"obj_inimigo_pai",
-    "path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_skeleton_1_walk",
-    "path":"sprites/spr_skeleton_1_walk/spr_skeleton_1_walk.yy",
+    "name":"Sprite172",
+    "path":"sprites/Sprite172/Sprite172.yy",
   },
   "spriteMaskId":null,
   "visible":true,

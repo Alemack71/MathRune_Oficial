@@ -9,8 +9,8 @@ global.PCAN = false;
 currentName = "";
 limite = 9;
 
-gridX = 0;
-gridY = 0;
+gridX = 9;
+gridY = 2;
 
 letterString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ   ";
 
@@ -29,3 +29,5 @@ for(var yy = 0; yy < yLetters; yy ++){
 		charCount ++;
 	}
 }
+
+posicao = a_letters[gridX, gridY];
