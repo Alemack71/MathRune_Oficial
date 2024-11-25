@@ -15,10 +15,13 @@ if(index == 0){
 		global.dialogo_acabou_elfo2 = ini_read_real("Elfo","dialogo2",0);
 		global.dialogo_acabou_elfo3 = ini_read_real("Elfo","dialogo3",0);
 		global.dialogo_acabou_elfo5 = ini_read_real("Elfo","dialogo5",0);
+		global.dialogo_acabou_elfo6 = ini_read_real("Elfo","dialogo6",0);
 		
 		global.coletou_runa1 = ini_read_real("Rune","king_slime",0);
 		global.coletou_runa2 = ini_read_real("Rune","king_goblin",0);
 		global.coletou_runa3 = ini_read_real("Rune","king_demon",0);
+		
+		global.key_bonfire = ini_read_real("Chave","0",0);
 		
 		global.key_slimeg = ini_read_real("Chave","1",0);
 		global.key_slimeb = ini_read_real("Chave","2",0);
@@ -28,7 +31,11 @@ if(index == 0){
 		global.key_slime_king = ini_read_real("Chave","5",0);
 		
 		global.key_batd = ini_read_real("Chave","6",0);
-		global.key_batr = ini_read_real("Chave","7",0);
+		global.key_skeleton_1 = ini_read_real("Chave","7",0);
+		global.key_batr = ini_read_real("Chave","8",0);
+		global.key_skeleton_2 = ini_read_real("Chave","9",0);	
+		
+		global.key_goblin_king = ini_read_real("Chave","10",0);
 		
 		global.player_continuing = true
 		var roomID;
@@ -40,7 +47,9 @@ if(index == 0){
 	no_saves = !no_saves; //Faz a mensagem "No saves" ficar indo e voltando
 	}
 }else if(index == 2){
+	room_goto(rm_controls)
+}else if(index==3){
 	url_open("https://alemack71.github.io/MathRune_Oficial/");
-}else if(index == 3){
+}else if(index == 4){
 	game_end();
 }

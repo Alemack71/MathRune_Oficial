@@ -33,19 +33,28 @@ if (global.gamePaused){
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
 				ini_write_real("Elfo","dialogo3",global.dialogo_acabou_elfo3);
+				ini_write_real("Elfo","dialogo5",global.dialogo_acabou_elfo5);
+				ini_write_real("Elfo","dialogo6",global.dialogo_acabou_elfo6);
 				
 				ini_write_real("Rune","king_slime",global.coletou_runa1);
 				ini_write_real("Rune","king_goblin",global.coletou_runa2);
 				ini_write_real("Rune","king_demon",global.coletou_runa3);
 				
+				ini_write_real("Chave","0",global.key_bonfire);
+
 				ini_write_real("Chave","1",global.key_slimeg);
 				ini_write_real("Chave","2",global.key_slimeb);
 				ini_write_real("Chave","3",global.key_mushroomo);
 				ini_write_real("Chave","4",global.key_mushroomp);
+				
 				ini_write_real("Chave","5",global.key_slime_king);
 			
 				ini_write_real("Chave","6",global.key_batd);
-				ini_write_real("Chave","7",global.key_batr);
+				ini_write_real("Chave","7",global.key_skeleton_1);
+				ini_write_real("Chave","8",global.key_batr);
+				ini_write_real("Chave","9",global.key_skeleton_2);
+				
+				ini_write_real("Chave","10",global.key_goblin_king);
 				
 				ini_close();
 				with(obj_game_pause_and_bar) instance_destroy();
@@ -73,8 +82,29 @@ if (global.gamePaused){
 				
 				ini_write_real("Elfo","dialogo",global.dialogo_acabou_elfo1);
 				ini_write_real("Elfo","dialogo2",global.dialogo_acabou_elfo2);
+				ini_write_real("Elfo","dialogo3",global.dialogo_acabou_elfo3);
+				ini_write_real("Elfo","dialogo3",global.dialogo_acabou_elfo5);
+				ini_write_real("Elfo","dialogo3",global.dialogo_acabou_elfo6);
 				
-				ini_write_real("Chave","1",global.key_1);
+				ini_write_real("Rune","king_slime",global.coletou_runa1);
+				ini_write_real("Rune","king_goblin",global.coletou_runa2);
+				ini_write_real("Rune","king_demon",global.coletou_runa3);
+				
+				ini_write_real("Chave","0",global.key_bonfire);
+
+				ini_write_real("Chave","1",global.key_slimeg);
+				ini_write_real("Chave","2",global.key_slimeb);
+				ini_write_real("Chave","3",global.key_mushroomo);
+				ini_write_real("Chave","4",global.key_mushroomp);
+				
+				ini_write_real("Chave","5",global.key_slime_king);
+			
+				ini_write_real("Chave","6",global.key_batd);
+				ini_write_real("Chave","7",global.key_skeleton_1);
+				ini_write_real("Chave","8",global.key_batr);
+				ini_write_real("Chave","9",global.key_skeleton_2);
+				
+				ini_write_real("Chave","10",global.key_goblin_king);
 				
 				ini_close();
 				with(obj_game_pause_and_bar) instance_destroy();
