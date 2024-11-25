@@ -141,17 +141,6 @@ global.topics[$ "Finalizacao_floresta_2"] = [
 
 #endregion
 
-
-#region boss_1
-
-global.topics[$ "Dialogo_king_slime"] = [
-	SPEAKER("Rei Sime"),
-	TEXT("Você não prosseguira!"),
-];
-
-#endregion
-
-
 #region fase 2
 
 global.topics[$ "Equacao_Primeiro_Grau"] = [
@@ -201,7 +190,7 @@ global.topics[$ "Sistemas_Equacoes"] = [
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("Se os coeficientes não forem opostos, você pode multiplicar uma das equações por um número que torne os coeficientes opostos."),
     SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-    TEXT("E pronto! Agora você conhece os dois métodos para resolver sistemas de equações. Vamos praticar para fixar o aprendizado!"),
+    TEXT("E pronto! Agora você conhece os dois métodos para resolver sistemas de equações."),
 	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
 	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
 ];
@@ -214,8 +203,8 @@ global.topics[$ "Finalizacao_caverna_1"] = [
 ];
 
 global.topics[$ "Produtos_Notaveis"] = [
-    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-    TEXT("Excelente progresso! Agora vamos aprender sobre os produtos notáveis."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Você está preparado para desafios maiores. Escute com atenção, vou te ensinar a derrotar os poderosos morcegos vermelhos.\nEles possuem a técnica dos produtos notáveis"),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("Os produtos notáveis são expressões algébricas importantes que aparecem com frequência em problemas matemáticos."),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
@@ -235,11 +224,60 @@ global.topics[$ "Produtos_Notaveis"] = [
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("Essa propriedade é representada como (a + b)(a - b). Aqui, o resultado é a diferença dos quadrados dos dois termos: a^2 - b^2."),
     SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
-    TEXT("Essas propriedades são muito úteis para simplificar expressões e resolver equações. Vamos praticar algumas questões para fixar o aprendizado!"),
+    TEXT("Essas propriedades são muito úteis para simplificar expressões e resolver equações."),
 	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
 	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
 ];
 
+global.topics[$ "Equacao_Segundo_Grau"] = [
+	SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Você conseguiu derrotar todos os morcegos, incrível!"),
+	SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Você está preparado para desafios maiores. Escute com atenção, vou te ensinar a derrotar os esqueletos guardas.\nEles utilizam equaçoes de segundo grau"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Uma equação do segundo grau é representada por ax^2 + bx + c = 0, onde a, b e c são números reais, e a é diferente de 0."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Para resolver esse tipo de equação, primeiro identificamos os coeficientes a, b e c."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Depois, calculamos o delta, também chamado de discriminante, usando a fórmula delta = b² - 4ac."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("O valor de delta nos diz o número de raízes reais que a equação possui:"),
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("- Se Δ > 0, há duas raízes reais diferentes."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("- Se Δ = 0, há uma raiz real única."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("- Se delta < 0, não há raízes reais."),
+    SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+    TEXT("Agora que sabemos como interpretar o delta, podemos calcular as raízes usando a fórmula de Bhaskara:"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("x = (-b ± √Δ) / (2a)"),
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Se a equação for incompleta (b = 0 ou c = 0), podemos simplificar os cálculos:"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("- Para b = 0, isolamos x² e resolvemos a raiz quadrada."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("- Para c = 0, fatoramos x e resolvemos cada fator."),
+	 SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Com isso, você está pronto para começar a resolver equações de segundo grau!"),
+	SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+	TEXT("Lembre-se que se você não lembra ou não acha suficiente o que te ensinei, é sempre possível verificar a seção 'Ajuda' no menu, clicando na tecla 'Esc', para aulas mais detalhadas!"),
+];
+
+global.topics[$ "Finalizacao_caverna_2"] = [
+    SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
+    TEXT("Você conseguiu vencer todos os inimigos... impressionante!"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Bom, agora acho que estamos prontos para avançar para a próxima área!"),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Mas antes disso, precisamos derrotar o grande lorde da caverna: o Rei Goblin."),
+    SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+    TEXT("Infelizmente, como o Rei Slime, eu não consigo te dar dicas para derrotá-lo. Você terá que usar tudo que aprendeu aqui para conseguir vencê-lo."),
+    SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
+    TEXT("Mas eu acredito em você! Você já possuí uma grande runa, será fácil para você!"),
+    SPEAKER("Luck", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+    TEXT("Apenas lembre-se de salvar o jogo aqui antes de avançar para a área do chefe."),
+];
 
 #endregion
 
@@ -265,6 +303,10 @@ global.topics[$ "Aviso_bonfire"] = [
 	TEXT("Quando achar uma fogueira, você também pode interagir para acendê-la e recuperar sua vida e mana!\n(Apenas se tiver derrotado 3 inimigos ou mais)")
 ];
 
+global.topics[$ "Aviso_avancar"] = [
+	TEXT("Só é possível avançar de área após conversar com o elfo Luck. O diálogo disponível é representado por um ponto de exclamação na cabeça dele.")
+];
+
 global.topics[$ "Aviso_chefe_escapar"] = [
 	TEXT("Cuidado! Não tente escapar do chefe. Acredite em mim, eu já tentei!\n -Placa")
 ];
@@ -275,6 +317,14 @@ global.topics[$ "Aviso_chefe_escapar"] = [
 
 global.topics[$ "Runa_king_slime"] = [
 	TEXT("Parabéns, você coletou a runa do Rei Slime!\nVocê sente o poder dela sendo absorvido, aumentando seus atributos!")
+];
+
+global.topics[$ "Runa_king_goblin"] = [
+	TEXT("Parabéns, você coletou a runa do Rei Goblin!\nVocê sente o poder dela sendo absorvido, aumentando seus atributos!")
+];
+
+global.topics[$ "Runa_king_demon"] = [
+	TEXT("Parabéns, você coletou a runa do Rei Demônio!\nVocê sente o poder dela sendo absorvido, aumentando seus atributos!")
 ];
 
 #endregion

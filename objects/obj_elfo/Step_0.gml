@@ -125,9 +125,46 @@ if (room_atual == 5)
 	}
 }
 
+if (room_atual == 6)
+{
+	if (global.dialogo_acabou_elfo6 == false)
+	{
+		instance_create_layer(x, y -24, "Instances", obj_exclamacao);	
+	} else {
+		instance_destroy(obj_exclamacao);	
+		dialogo = dialogo_final;
+	};
+	
+	if (global.key_batr == 3)
+	{	
+		progresso = 1;
+		dialogo_2 = "Equacao_Segundo_Grau";
+	};
+	
+	if (global.key_skeleton_2 == 3)
+	{	
+		progresso = 4;
+		dialogo_final = "Finalizacao_caverna_2";
+		
+		if (!global.dialogo_acabou_elfo6) {
+			dialogo_trocou = true;
+		} else {
+			dialogo_trocou = false;
+		}
+	
+		if (dialogo_trocou)
+		{
+			instance_create_layer(x, y -24, "Instances", obj_exclamacao);
+		} else if (!dialogo_trocou)
+		{
+			instance_destroy(obj_exclamacao);	
+		}
+	}
+}
+
 
 
 show_debug_message("progresso:" + string(progresso));
-show_debug_message("Elfo 3:" + string(global.dialogo_acabou_elfo3));
+show_debug_message("Elfo 6:" + string(global.dialogo_acabou_elfo6));
 show_debug_message("Keys:" + string(global.key_slimeb));
 show_debug_message("Keys:" + string(global.key_slimeg));

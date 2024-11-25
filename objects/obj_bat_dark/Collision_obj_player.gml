@@ -8,7 +8,7 @@ if(global.ativar && !global.escapou)
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {
-	NewEncounter([global.enemies.BatD, global.enemies.BatD], sBgField_Cave);
+	NewEncounter([global.enemies.BatD, global.enemies.BatD], sBgField_Dungeon);
 }
 
 //se o player escapou ele precisa ser distanciado para não entrar instantaneamente na batalha dnv

@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"BattleUnits",
-    "path":"folders/Sprites/BattleUnits.yy",
+    "name":"Party",
+    "path":"folders/Sprites/BattleUnits/Party.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

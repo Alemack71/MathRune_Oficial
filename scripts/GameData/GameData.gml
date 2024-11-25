@@ -2280,6 +2280,7 @@ global.question_goblin_king =
 ]
 
 #endregion
+
 //constantes para valores semi-booleanos
 enum MODE
 {
@@ -2299,7 +2300,7 @@ function InitializeParty() {
             mp: 2,
             mpMax: 15,
             strength: 6,
-            sprites : { idle: sPlayerIdle, attack: sPlayerAttack, cast: sPlayerAttack, defend: sPlayerDefend, down: sPlayerDown},
+            sprites : { idle: sPlayerIdle, attack: sPlayerAttack, cast: sPlayerCast, defend: sPlayerDefend, down: sPlayerDown},
             actions : [global.action_library.attack, global.action_library.escape]
         }
     ];
@@ -2556,6 +2557,72 @@ global.enemies =
 			return [_action, _target];
 		}
 	},
+	BatR: 
+	{
+		name: "Morcego",
+		hp: 1,
+		hpMax: 16,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_bat_red_walk, attack: spr_bat_red_attack},
+		actions: global.produtos_notaveis,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
+	Skeleton2: 
+	{
+		name: "Esqueleto",
+		hp: 16,
+		hpMax: 16,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_skeleton_2_idle, attack: spr_skeleton_2_attack},
+		actions: global.equacao_2,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
 	king_Goblin: 
 	{
 		name: "Rei Goblin",
@@ -2565,7 +2632,7 @@ global.enemies =
 		mpMax: 0,
 		strength: 10,
 		sprites: { idle: spr_king_goblin_idle, attack: spr_king_goblin_attack},
-		actions: global.question_slime_king,
+		actions: global.question_goblin_king,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_exclamacao",
-    "path":"sprites/spr_exclamacao/spr_exclamacao.yy",
+    "name":"spr_slime_king_rune",
+    "path":"sprites/spr_slime_king_rune/spr_slime_king_rune.yy",
   },
   "spriteMaskId":null,
   "visible":true,

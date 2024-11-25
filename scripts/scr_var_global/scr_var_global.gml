@@ -54,3 +54,4 @@ global.dialogo_acabou_elfo3 = false;
 
 global.dialogo_acabou_elfo5 = false;
 
+global.dialogo_acabou_elfo6 = false;
