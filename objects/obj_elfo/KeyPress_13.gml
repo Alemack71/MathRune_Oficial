@@ -12,6 +12,14 @@ if (distance_to_object(obj_player) <= 10) {
         _dialogo_acabou_sala = global.dialogo_acabou_elfo2;
     } else if (room_atual == 3) {
         _dialogo_acabou_sala = global.dialogo_acabou_elfo3;
+    }  else if (room_atual == 5) {
+        _dialogo_acabou_sala = global.dialogo_acabou_elfo5;
+    } else if (room_atual == 6) {
+        _dialogo_acabou_sala = global.dialogo_acabou_elfo6;
+    } else if (room_atual == 8) {
+        _dialogo_acabou_sala = global.dialogo_acabou_elfo8;
+    } else if (room_atual == 9) {
+        _dialogo_acabou_sala = global.dialogo_acabou_elfo9;
     }
 
     // Se o diálogo final já foi concluído, exibe apenas o diálogo final
@@ -48,6 +56,14 @@ if (distance_to_object(obj_player) <= 10) {
                 global.dialogo_acabou_elfo2 = true;
             }  else if (room_atual == 3) {
                 global.dialogo_acabou_elfo3 = true;
+            } else if (room_atual == 5) {
+                global.dialogo_acabou_elfo5 = true;
+            } else if (room_atual == 6) {
+                global.dialogo_acabou_elfo6 = true;
+            } else if (room_atual == 8) {
+                global.dialogo_acabou_elfo8 = true;
+            } else if (room_atual == 9) {
+                global.dialogo_acabou_elfo9 = true;
             } 
 
             if (dialogo_trocou) {

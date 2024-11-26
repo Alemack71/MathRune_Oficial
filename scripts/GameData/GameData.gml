@@ -3055,13 +3055,13 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Slime",
-		hp: 10,
-		hpMax: 7,
+		hp: 12,
+		hpMax: 12,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSlime, attack: sSlimeAttack},
-		actions: global.question_demon_king,
+		actions: global.question_library_operacoes_basicas,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
@@ -3088,8 +3088,8 @@ global.enemies =
 	slimeB: 
 	{
 		name: "Slime",
-		hp: 1,
-		hpMax: 7,
+		hp: 12,
+		hpMax: 12,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
@@ -3121,8 +3121,8 @@ global.enemies =
 	mushroomO: 
 	{
 		name: "Cogumelo",
-		hp: 1,
-		hpMax: 16,
+		hp: 18,
+		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
@@ -3154,8 +3154,8 @@ global.enemies =
 	mushroomP: 
 	{
 		name: "Cogumelo",
-		hp: 1,
-		hpMax: 16,
+		hp: 18,
+		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
@@ -3187,7 +3187,7 @@ global.enemies =
 	king_Slime: 
 	{
 		name: "Rei Slime",
-		hp: 1,
+		hp: 35,
 		hpMax: 35,
 		mp: 0,
 		mpMax: 0,
@@ -3226,7 +3226,7 @@ global.enemies =
 	BatD: 
 	{
 		name: "Morcego",
-		hp: 1,
+		hp: 16,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -3292,8 +3292,8 @@ global.enemies =
 	BatR: 
 	{
 		name: "Morcego",
-		hp: 1,
-		hpMax: 16,
+		hp: 18,
+		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
@@ -3325,8 +3325,8 @@ global.enemies =
 	Skeleton2: 
 	{
 		name: "Esqueleto",
-		hp: 16,
-		hpMax: 16,
+		hp: 18,
+		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,

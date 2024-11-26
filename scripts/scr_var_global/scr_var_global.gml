@@ -63,3 +63,5 @@ global.dialogo_acabou_elfo5 = false;
 global.dialogo_acabou_elfo6 = false;
 
 global.dialogo_acabou_elfo8 = false;
+
+global.dialogo_acabou_elfo9 = false;

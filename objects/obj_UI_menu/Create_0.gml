@@ -1,4 +1,4 @@
-pauseOption = ["Continuar", "Salvar e Sair", "Ajuda"];
+pauseOption = ["Continuar", "Salvar", "Ajuda", "Salvar e Sair"];
 pauseOptionSelected = 0;
 
 x_visao = view_wport[0]+100;

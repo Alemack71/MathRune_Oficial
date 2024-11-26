@@ -16,6 +16,8 @@ if(index == 0){
 		global.dialogo_acabou_elfo3 = ini_read_real("Elfo","dialogo3",0);
 		global.dialogo_acabou_elfo5 = ini_read_real("Elfo","dialogo5",0);
 		global.dialogo_acabou_elfo6 = ini_read_real("Elfo","dialogo6",0);
+		global.dialogo_acabou_elfo8 = ini_read_real("Elfo","dialogo8",0);
+		global.dialogo_acabou_elfo9 = ini_read_real("Elfo","dialogo9",0);
 		
 		global.coletou_runa1 = ini_read_real("Rune","king_slime",0);
 		global.coletou_runa2 = ini_read_real("Rune","king_goblin",0);
@@ -36,6 +38,12 @@ if(index == 0){
 		global.key_skeleton_2 = ini_read_real("Chave","9",0);	
 		
 		global.key_goblin_king = ini_read_real("Chave","10",0);
+		
+		global.key_knight_1 = ini_read_real("Chave","11",0);
+		global.key_mage = ini_read_real("Chave","12",0);
+		global.key_knight_2 = ini_read_real("Chave","13",0);
+		
+		global.key_demon_king = ini_read_real("Chave","14",0);
 		
 		global.player_continuing = true
 		var roomID;

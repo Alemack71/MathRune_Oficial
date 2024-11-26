@@ -63,6 +63,7 @@
     {"name":"inst_4204C52A","path":"rooms/rm_game_caverna_1/rm_game_caverna_1.yy",},
     {"name":"inst_2D353C2E","path":"rooms/rm_game_caverna_1/rm_game_caverna_1.yy",},
     {"name":"inst_3EC14150","path":"rooms/rm_game_caverna_1/rm_game_caverna_1.yy",},
+    {"name":"inst_2BA781FB","path":"rooms/rm_game_caverna_1/rm_game_caverna_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -167,6 +168,9 @@
       ],"layers":[],"name":"Mobs","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Natureza","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_612677CF_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_612677CF_1","objectId":{"name":"obj_bonfire","path":"objects/obj_bonfire/obj_bonfire.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":80.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2BA781FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2BA781FB","objectId":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},"propertyId":{"name":"aviso","path":"objects/obj_placa/obj_placa.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Nova_magia\"",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":304.0,},
       ],"layers":[],"name":"Natureza","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Luz","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Luz","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Acima_decor","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Acima_decor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
