@@ -11,7 +11,7 @@ if (_dist_x <= 666 && _dist_y <= 48) {
 	if(global.ativar && !global.escapou) 
 	{
 		instance_destroy();
-		instance_create_layer(x, y, "Instances", obj_runa_king_slime);
+		instance_create_layer(x, y, "Instances", obj_runa_king_goblin);
 		global.key_goblin_king++;
 	} //Se nao, inicia a batalha
 	else if (global.ativar == false) 

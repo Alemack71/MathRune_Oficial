@@ -44,7 +44,7 @@ global.action_library =
 			{	
 				for (var i = 0; i < array_length(_targets); i++)
 				{
-					var _damage = irandom_range(3,6);
+					var _damage = irandom_range(5,7);
 					if (array_length(_targets) > 1) _damage = ceil(_damage * 0.75);
 					BattleChangeHP(_targets[i], - _damage);
 				}
@@ -70,7 +70,7 @@ global.action_library =
 			{	
 				for (var i = 0; i < array_length(_targets); i++)
 				{
-					var _damage = irandom_range(5,7);
+					var _damage = irandom_range(8,12);
 					if (array_length(_targets) > 1) _damage = ceil(_damage * 0.75);
 					BattleChangeHP(_targets[i], - _damage);
 				}
@@ -2281,6 +2281,738 @@ global.question_goblin_king =
 
 #endregion
 
+#region razao
+
+global.razao =
+[
+	{
+		pergunta : "Em uma sala com 40 alunos,\n28 sao meninas. Qual a razao\nentre meninas e o total de alunos?",
+		alternativas : ["28:12","7:10","28:40","14:20"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "Dada a razao 3:5, determine\numa razao equivalente com\nantecedente igual a 9",
+		alternativas : ["9:15","9:25","3:9","15:9"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{
+		pergunta : "A razao entre dois numeros e 4:9.\nQual a razao inversa?",
+		alternativas : ["4:9","9:4","1:13","36:16"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                   
+		pergunta : "Uma fabrica produz 50 produtos em\n2 horas. Qual a razao entre\nprodutos produzidos e o tempo?",
+		alternativas : ["50:2","25:1","1:25","50:25"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                     
+		pergunta : "Em uma equipe, tem 12 homens e\n8 mulheres. Qual a razao entre o\nnumero de mulheres e de homens?",
+		alternativas : ["2:3","8:12","3:2","1:1.5"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{				                                   	                                                                              
+		pergunta : "A razao entre dois numeros e 5:8.\nQual das alternativas representa\numa razao equivalente?",
+		alternativas : ["10:16","15:24","20:32","Todas certas"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{				                                                                    	                                                                              
+		pergunta : "A razao entre o numero de paginas\nlidas e o total de paginas e 3:7.\nQual a razao inversa?",
+		alternativas : ["7:3","1:3","21:9","10:1"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{				                                                                                                                    	                                                                              
+		pergunta : "Dada a razao 6:8, determine\numa razao equivalente com\nconsequente igual a 24.",
+		alternativas : ["12:24","18:24","24:48","6:24"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{				                                                                                                                                          	                                                                              
+		pergunta : "120 pessoas preferem cafe e 80 cha\nQual a razao entre os que preferem\ncha e o total de pessoas?",
+		alternativas : ["1:3","4:5","1:2","2:3"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{				                                                                                                                                          	                                                                              
+		pergunta : "A razao 8:12 pode ser\nsimplificada para:",
+		alternativas : ["4:6","2:3","1:2","8:24"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
+
+#region porcentagem
+
+global.porcentagem =
+[
+	{                                                       
+		pergunta : "Um celular custa R$ 800.\nSe ele for vendido com um desconto\nde 15%, qual sera o valor final?",
+		alternativas : ["700,50","720,00","680,00","650,50"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                 
+		pergunta : "Pedro tinha R$ 1.000 no banco\ne gastou 30% do valor.\nQuanto ele ainda tem?",
+		alternativas : ["700,00","800,00","300,00","750,00"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                  
+		pergunta : "Ana comprou um livro de R$ 120\nmas depois o revendeu com um lucro\nde 25%. Por quanto ela vendeu?",
+		alternativas : ["140,00","150,00","130,00","160,50"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                
+		pergunta : "Uma loja aumentou o valor de um\nproduto de R$ 200 em 10%.\Qual o novo valor?",
+		alternativas : ["210,00","220,00","230,00","240,00"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                               
+		pergunta : "Em uma turma de 50 alunos,\n40% gostam de matematica.\nQuantos alunos gostam de matematica?",
+		alternativas : ["15 alunos","30 alunos","25 alunos","20 alunos"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                                
+		pergunta : "Um desconto de 20% foi aplicado\nem um produto que custava R$ 250.\nQual foi o valor do desconto?",
+		alternativas : ["40,50","70,00","50,00","60,00"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                        
+		pergunta : "O salario de Elisa é de R$ 3.500.\nApos receber um aumento de 8%,\nqual o novo salario dela?",
+		alternativas : ["3.750,00","3.780,00","3.800,00","3.850,00"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                                                             
+		pergunta : "60% de 300 pessoas preferem banana e\no restante prefere uva.\nQuantas pessoas preferem uva?",
+		alternativas : ["180 pessoas","120 pessoas","100 pessoas","150 pessoas"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                                                                                       
+		pergunta : "Um computador foi comprado por\nR$ 2.000 e vendido com 15% de\nprejuizo. Por quanto foi vendido?",
+		alternativas : ["1.800,00","1.750,00","1.700,00","1.850,00"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                                                                                      
+		pergunta : "Um item esta custando R$ 90,00\napos um desconto de 10%.\nQual era o valor original?",
+		alternativas : ["100,00","110,00","120,00","95,00"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
+
+#region regra_de_tres
+
+global.regra_3 =
+[
+	{                                                                           
+		pergunta : "Quanto custam 10 mangas,\nse 4 mangas custam R$ 12,00?",
+		alternativas : ["20,00","25,00","30,00","35,00"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                         
+		pergunta : "Quantos litros sao necessarios\npara percorrer 450 km, se um carro\npercorre 300 km com 20 litros?",
+		alternativas : ["25 litros","30 litros","35 litros","40 litros"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                
+		pergunta : "Quanto rendem 8 dias de trabalho,\nse 5 dias rendem R$ 400,00?",
+		alternativas : ["500,00","600,00","640,00","720,00"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                
+		pergunta : "Quanto custam 15 lapis,\nse 3 lapis custam R$ 9,00?",
+		alternativas : ["30,00","35,00","40,00","45,00"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                           
+		pergunta : "Quantos quilos um caminhao\ntransportara em 7 viagens,\nse transporta 800 kg em 4 viagens?",
+		alternativas : ["1.200 kg","1.400 kg","1.600 kg","1.800 kg"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                              
+		pergunta : "Quantos litros uma torneira\nenchera em 7 horas,\nse enche 500 litros em 4 horas?",
+		alternativas : ["700 litros","750 litros","875 litros","900 litros"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                            
+		pergunta : "Quantos quilometros uma bicicleta\npercorrera em 5 horas,\nse percorre 60 km em 2 horas?",
+		alternativas : ["120 km","140 km","150 km","160 km"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                       
+		pergunta : "Quanto custam 15 metros de tecido,\nse 6 metros custam R$ 90,00?",
+		alternativas : ["200,00","210,00","220,00","225,00"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                          
+		pergunta : "Quantas peças uma maquina\nproduzira em 15 horas, se produz\n240 peças em 8 horas?",
+		alternativas : ["400 peças","420 peças","450 peças","480 peças"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                        
+		pergunta : "Quantos pacotes de arroz\nsao necessarios para 45 kg,\nse 2 pacotes pesam 10 kg?",
+		alternativas : ["7 pacotes","8 pacotes","9 pacotes","10 pacotes"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
+
+#region demon_king
+
+global.question_demon_king =
+[
+	{                                                                                                         
+		pergunta : "Uma escola tem 300 alunos: 60%\nmeninas. Participam 75% dos meninos\ne 50% das meninas. Participam:",
+		alternativas : ["135 pessoas","140 pessoas","180 pessoas","145 pessoas"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                        
+		pergunta : "Um carro percorre 96 km com 12L\nde combustivel. Se o litro custa\nR$ 6,50, quanto custa rodar 240 km?",
+		alternativas : ["160,00","195,00","180,00","200,00"],
+		alternativa_certa : 1,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                                       
+		pergunta : "Quatro maquinas atendem 12\ntrabalhadores. Quantos trabalhadores\nserao atendidos por 10 maquinas?",
+		alternativas : ["20","25","40","30"],
+		alternativa_certa : 3,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                                                                         
+		pergunta : "Uma fabrica produz 750 itens com 5\nmaquinas. Apos adicionar 3 maquinas\nquantos itens serao produzidos?",
+		alternativas : ["1200","1000","210","350"],
+		alternativa_certa : 0,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+	{                                                                                                                                                                                                                                                                                                                                        
+		pergunta : "12 funcionarios terminam uma obra\nem 2 meses. Quantos funcionarios\nprecisa para concluir em 15 dias?",
+		alternativas : ["32","40","48","50"],
+		alternativa_certa : 2,
+		sprites : 0, //0 indica que não precisa de sprites
+		description : "{0} pergunta!",
+		user_animation : "attack",
+		effect_sprite : sAttackBonk,
+		effect_on_target : MODE.ALWAYS,
+		func : function(_user, _targets)
+		{
+			if (!global.acertou)
+			{
+				{
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					BattleChangeHP(_targets[0], - _damage, 0);
+				}
+			}
+		}
+	},
+]
+
+#endregion
+
 //constantes para valores semi-booleanos
 enum MODE
 {
@@ -2323,13 +3055,13 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Slime",
-		hp: 1,
+		hp: 10,
 		hpMax: 7,
 		mp: 0,
 		mpMax: 0,
 		strength: 5,
 		sprites: { idle: sSlime, attack: sSlimeAttack},
-		actions: question_library_operacoes_basicas,
+		actions: global.question_demon_king,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
