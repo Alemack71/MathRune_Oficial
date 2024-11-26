@@ -27,4 +27,4 @@ if (global.coletou_runa1) global.party[0].actions =  [global.action_library.atta
 if (global.coletou_runa1 && global.coletou_runa2) global.party[0].actions =  [global.action_library.attack, global.action_library.ice, global.action_library.fire, global.action_library.escape];
 
 global.party[0].hpMax = 20 + (10 * global.coletou_runa1) + (10 * global.coletou_runa2);
-global.party[0].mpMax = 15 + (5 * global.coletou_runa1) + (5 * global.coletou_runa2);
+global.party[0].mpMax = 15 + (5 * global.coletou_runa1) + (10 * global.coletou_runa2);

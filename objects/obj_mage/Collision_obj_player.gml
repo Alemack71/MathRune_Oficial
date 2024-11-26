@@ -3,12 +3,12 @@
 if(global.ativar && !global.escapou) 
 {
 	instance_destroy();
-	if (global.key_batd < 3) global.key_batd++;
+	if (global.key_mage < 3) global.key_mage++;
 	if (global.key_bonfire < 3) global.key_bonfire++;
 } //Se nao, inicia a batalha
 else if (global.ativar == false) 
 {
-	NewEncounter([global.enemies.BatD, global.enemies.BatD], sBgField_Cave);
+	NewEncounter([global.enemies.Mage, global.enemies.Mage], sBgField_Dungeon);
 }
 
 //se o player escapou ele precisa ser distanciado para não entrar instantaneamente na batalha dnv

@@ -2,8 +2,9 @@
   "$GMTileSet":"v1",
   "%Name":"tl_dungeon",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"base","closed_edge":false,"name":"base","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[1045,811,808,809,634,693,0,985,631,0,749,987,633,1103,1105,927,],},
-    {"$GMAutoTileSet":"","%Name":"piso","closed_edge":false,"name":"piso","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[1045,1107,1109,986,989,1044,0,985,990,0,1046,987,1104,1103,1105,1050,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[699,631,583,633,576,690,0,579,571,0,693,634,810,808,811,696,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_2","closed_edge":false,"name":"autotile_2","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[1045,1105,1103,1104,987,1046,0,990,985,0,1044,989,986,1109,1107,1050,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_3","closed_edge":false,"name":"autotile_3","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[1045,1107,1109,986,989,1044,0,985,990,0,1046,987,1104,1103,1105,1108,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":0,

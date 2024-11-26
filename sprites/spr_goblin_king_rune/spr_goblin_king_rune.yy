@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"Sprite171",
+  "%Name":"spr_goblin_king_rune",
   "bboxMode":0,
   "bbox_bottom":17,
   "bbox_left":0,
@@ -24,19 +24,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"2efbcb73-46ac-45bc-9b68-e7305a9dcfb0","blendMode":0,"displayName":"default","isLocked":false,"name":"2efbcb73-46ac-45bc-9b68-e7305a9dcfb0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Sprite171",
+  "name":"spr_goblin_king_rune",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"grupo1",
-    "path":"folders/Sprites/grupo1.yy",
+    "name":"Runes",
+    "path":"folders/Sprites/Runes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"Sprite171",
+    "%Name":"spr_goblin_king_rune",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Sprite171",
+    "name":"spr_goblin_king_rune",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -72,16 +72,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a26862d1-490d-48ea-a222-c8f6b48b5290","path":"sprites/Sprite171/Sprite171.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a26862d1-490d-48ea-a222-c8f6b48b5290","path":"sprites/spr_goblin_king_rune/spr_goblin_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"bf903d8b-2350-476f-ae6d-d860b40a8b65","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1149b773-4cb8-4d6f-b794-a8e7da99f767","path":"sprites/Sprite171/Sprite171.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1149b773-4cb8-4d6f-b794-a8e7da99f767","path":"sprites/spr_goblin_king_rune/spr_goblin_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3ee94697-36f8-4707-a0af-5dd5bc2ad9d1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9d025c7-54d5-4337-a51f-a4ade4cf2434","path":"sprites/Sprite171/Sprite171.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9d025c7-54d5-4337-a51f-a4ade4cf2434","path":"sprites/spr_goblin_king_rune/spr_goblin_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f94c1bae-ee92-4bb5-87d5-1458559f6799","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"329b643b-1cc3-42b6-8023-d37332262ad6","path":"sprites/Sprite171/Sprite171.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"329b643b-1cc3-42b6-8023-d37332262ad6","path":"sprites/spr_goblin_king_rune/spr_goblin_king_rune.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"251d0d7a-978a-4223-befb-41ece3e2b50d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

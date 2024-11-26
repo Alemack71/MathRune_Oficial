@@ -10,13 +10,14 @@ var _dist_y = abs(y - obj_player.y);
 if (_dist_x <= 666 && _dist_y <= 48) {
 	if(global.ativar && !global.escapou) 
 	{
+		
 		instance_destroy();
-		instance_create_layer(x, y, "Instances", obj_runa_king_goblin);
-		global.key_goblin_king++;
+		instance_create_layer(x, y, "Instances", obj_runa_king_demon);
+		global.key_demon_king++;
 	} //Se nao, inicia a batalha
 	else if (global.ativar == false) 
 	{
-		NewEncounter([global.enemies.king_Goblin], sBgField_Cave);
+		NewEncounter([global.enemies.king_Demon,global.enemies.king_Goblin,global.enemies.king_Slime], sBgField_Dungeon);
 	}
 
 	//se o player escapou ele precisa ser distanciado para não entrar instantaneamente na batalha dnv

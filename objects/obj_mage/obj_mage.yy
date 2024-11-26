@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_runa_king_goblin",
+  "%Name":"obj_mage",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_runa_king_goblin",
+  "name":"obj_mage",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos colisores",
-    "path":"folders/Objects/Objetos colisores.yy",
+    "name":"Fase 3",
+    "path":"folders/Objects/Enemies/Fase 3.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inimigo_pai",
+    "path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_goblin_king_rune",
-    "path":"sprites/spr_goblin_king_rune/spr_goblin_king_rune.yy",
+    "name":"spr_mage_idle",
+    "path":"sprites/spr_mage_idle/spr_mage_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_runa_king_goblin",
+  "%Name":"obj_runa_king_demon",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_runa_king_goblin",
+  "name":"obj_runa_king_demon",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos colisores",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_goblin_king_rune",
-    "path":"sprites/spr_goblin_king_rune/spr_goblin_king_rune.yy",
+    "name":"spr_demon_king_rune",
+    "path":"sprites/spr_demon_king_rune/spr_demon_king_rune.yy",
   },
   "spriteMaskId":null,
   "visible":true,

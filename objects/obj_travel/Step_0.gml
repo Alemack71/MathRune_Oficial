@@ -13,4 +13,8 @@ if (room_atual == 1) {
 	area_finalizada = global.dialogo_acabou_elfo5;	
 } else if (room_atual == 6) {
 	area_finalizada = global.dialogo_acabou_elfo6;	
+} else if (room_atual == 7) {
+	area_finalizada = global.coletou_runa2;	
+} else if (room_atual == 8) {
+	area_finalizada = global.dialogo_acabou_elfo8;	
 }

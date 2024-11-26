@@ -3358,13 +3358,151 @@ global.enemies =
 	king_Goblin: 
 	{
 		name: "Rei Goblin",
-		hp: 40,
-		hpMax: 40,
+		hp: 48,
+		hpMax: 48,
 		mp: 0,
 		mpMax: 0,
 		strength: 10,
 		sprites: { idle: spr_king_goblin_idle, attack: spr_king_goblin_attack},
 		actions: global.question_goblin_king,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Verifica se a questão atual ainda não foi definida
+		    if (current_question_index == -1) {
+		        current_question_index = 0; // Começa com a primeira questão
+		    }
+
+		    // Seleciona a questão atual
+		    var _action = actions[current_question_index];
+
+		    // Atualiza o índice da próxima questão para o próximo turno
+		    current_question_index += 1;
+
+		    // Verifica se o índice ultrapassou o tamanho do array e reinicia o ciclo
+		    if (current_question_index >= array_length(actions)) {
+		        current_question_index = 0; // Volta para o início
+		    }
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
+	Knight1: 
+	{
+		name: "Cavaleiro",
+		hp: 20,
+		hpMax: 20,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_knight_1_idle, attack: spr_knight_1_attack},
+		actions: global.razao,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
+	Mage: 
+	{
+		name: "Mago",
+		hp: 16,
+		hpMax: 16,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_mage_idle, attack: spr_mage_attack},
+		actions: global.porcentagem,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
+	Knight2: 
+	{
+		name: "Cavaleiro",
+		hp: 25,
+		hpMax: 25,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_knight_2_idle, attack: spr_knight_2_attack},
+		actions: global.regra_3,
+		current_question_index: -1, // Armazena o índice da questão atual
+		AIscript : function()
+		{
+			// Seleciona uma questão aleatória se ainda não houver uma selecionada
+			if (current_question_index == -1) {
+				current_question_index = irandom(array_length(actions) - 1);
+			}
+
+			var _action = actions[current_question_index];
+
+			// Atualiza o índice da próxima questão para o próximo turno
+			current_question_index = irandom(array_length(actions) - 1);
+
+			// Seleciona um membro aleatório da party como alvo
+			var _possible_targets = array_filter(obj_battle.partyUnidades, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possible_targets[irandom(array_length(_possible_targets) - 1)];
+
+			return [_action, _target];
+		}
+	},
+	king_Demon: 
+	{
+		name: "Rei Demonio",
+		hp: 55,
+		hpMax: 55,
+		mp: 0,
+		mpMax: 0,
+		strength: 15,
+		sprites: { idle: spr_king_goblin_idle, attack: spr_king_goblin_attack},
+		actions: global.question_demon_king,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()
 		{
