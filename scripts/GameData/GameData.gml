@@ -332,7 +332,7 @@ global.fatores_e_multiplos =
 		}
 	},
 	{
-		pergunta : "Encontre o MDC de:\n48 e 64",
+		pergunta : "Calcule o MDC de:\n48 e 64",
 		alternativas : ["8","12","16","24"],
 		alternativa_certa : 2,
 		sprites : 0, //0 indica que não precisa de sprites
@@ -414,7 +414,7 @@ global.fatores_e_multiplos =
 	{
 		pergunta : "Determine o MMC de:\n6, 9 e 15",
 		alternativas : ["24","30","36","90"],
-		alternativa_certa : 2,
+		alternativa_certa : 3,
 		sprites : 0, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
@@ -582,7 +582,7 @@ global.potenciacao =
 	},
 	{
 		pergunta : "Calcule:\n",
-		alternativas : ["0,04","0,2","0,16","0,08"],
+		alternativas : ["0,04","0,002","0,0016","0,16"],
 		alternativa_certa : 2,
 		sprites : spr_question_3d, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
@@ -762,7 +762,7 @@ global.potenciacao =
 	},
 	{
 		pergunta : "Calcule:\n",
-		alternativas : ["-26","-20","-25","-24"],
+		alternativas : ["-28","-20","-25","-24"],
 		alternativa_certa : 0,
 		sprites : spr_question_3m, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
@@ -782,7 +782,7 @@ global.potenciacao =
 	},
 	{
 		pergunta : "Calcule:\n",
-		alternativas : ["12500","6250","78125","15625"],
+		alternativas : ["12.500","6.250","78.125","15.625"],
 		alternativa_certa : 3,
 		sprites : spr_question_3n, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
@@ -872,7 +872,7 @@ global.radiciacao =
 	{
 		pergunta : "Calcule o radical:\n",
 		alternativas : ["64","4","8","16"],
-		alternativa_certa : 3,
+		alternativa_certa : 2,
 		sprites : spr_question_4d, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
@@ -1032,7 +1032,7 @@ global.radiciacao =
 	{
 		pergunta : "Resolva a operacao:\n",
 		alternativas : ["9","-6","-3","6"],
-		alternativa_certa : 1,
+		alternativa_certa : 3,
 		sprites : spr_question_4l, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
@@ -1071,7 +1071,7 @@ global.radiciacao =
 	},
 	{
 		pergunta : "Racionalize a fracao:\n",
-		alternativas : ["1","2","4","0,5"],
+		alternativas : ["1","raiz de 2","raiz de 4","4/2"],
 		alternativa_certa : 1,
 		sprites : spr_question_4n, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
@@ -1099,8 +1099,8 @@ global.question_slime_king =
 [
 	{
 		pergunta : "Calcule a expressao:\n",
-		alternativas : ["65","77","88","95"],
-		alternativa_certa : 3,
+		alternativas : ["65","70","88","95"],
+		alternativa_certa : 1,
 		sprites : spr_question_5a, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
 		user_animation : "attack",
@@ -1118,7 +1118,7 @@ global.question_slime_king =
 		}
 	},
 	{
-		pergunta : "Encontre o menor\nmultiplo de 12\nque satisfaca:\n",
+		pergunta : "Encontre o valor de x:\n",
 		alternativas : ["36","48","60","72"],
 		alternativa_certa : 0,
 		sprites : spr_question_5b, //0 indica que não precisa de sprites
@@ -1138,7 +1138,7 @@ global.question_slime_king =
 		}
 	},
 	{
-		pergunta : "Fatore 72 e calcule:\n2^3 x produto dos\nfatores restantes\n",
+		pergunta : "Fatore 72 e calcule:\n2^2 x produto dos\nfatores restantes\n",
 		alternativas : ["144","216","288","180"],
 		alternativa_certa : 2,
 		sprites : 0, //0 indica que não precisa de sprites
@@ -1159,7 +1159,7 @@ global.question_slime_king =
 	},
 	{
 		pergunta : "Resolva a expressao\n",
-		alternativas : ["12","14","16","18"],
+		alternativas : ["12","11","16","18"],
 		alternativa_certa : 1,
 		sprites : spr_question_5d, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
@@ -1179,7 +1179,7 @@ global.question_slime_king =
 	},
 	{
 		pergunta : "Determine o MDC de 48 e 60\ne use-o para resolver:\n",
-		alternativas : ["33","36","30","27"],
+		alternativas : ["39","36","30","27"],
 		alternativa_certa : 0,
 		sprites : spr_question_5e, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",

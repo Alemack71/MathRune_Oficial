@@ -12,7 +12,9 @@ global.topics[$ "Bem vindo"] = [
     SPEAKER("?", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
     TEXT("Essas runas foram tomadas de seus locais mágicos pelos grandes lordes, mergulhando MathRune no caos."),
     SPEAKER("?", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
-    TEXT("- O Rei Slime, Lorde da Floresta\n- O Rei Goblin, Lorde das Cavernas\n- E o Rei Demônio, o mais poderoso, com masmorras e castelos espalhados por todo o reino."),
+    TEXT("- O Rei Slime, Lorde da Floresta\n- O Rei Goblin, Lorde das Cavernas..."),
+	SPEAKER("?", spr_portrait_luck_mad, PORTRAIT_SIDE.LEFT),
+	TEXT("- E o Rei Demônio, o mais poderoso, com masmorras e castelos espalhados por todo o reino."),
     SPEAKER("Luck", spr_portrait_luck, PORTRAIT_SIDE.LEFT),
     TEXT("No entanto, há uma antiga profecia... Ela fala de alguém de outro mundo que viria para desafiar os lordes e restaurar as runas."),
     SPEAKER("Luck", spr_portrait_luck_pog, PORTRAIT_SIDE.LEFT),
@@ -414,6 +416,11 @@ global.topics[$ "Bonfire_Cheio"] = [
 	TEXT("Não temos tempo para descansar. É hora de resolver problemas matemáticos!")
 ];
 
+global.topics[$ "Bonfire_Insuficiente"] = [
+	TEXT("Você precisa derrotar ao menos 3 inimigos para acender a fogueira!")
+];
+
+
 #endregion
 
 #region placas
@@ -423,7 +430,7 @@ global.topics[$ "Aviso_enter"] = [
 ];
 
 global.topics[$ "Aviso_bonfire"] = [
-	TEXT("Quando achar uma fogueira, você também pode interagir para acendê-la e recuperar sua vida e mana!\n(Apenas se tiver derrotado 3 inimigos ou mais)")
+	TEXT("Quando achar uma fogueira, você também pode interagir para acendê-la e recuperar sua vida e mana! (Apenas se tiver derrotado 3 inimigos ou mais)")
 ];
 
 global.topics[$ "Aviso_avancar"] = [
@@ -435,7 +442,7 @@ global.topics[$ "Aviso_chefe_escapar"] = [
 ];
 
 global.topics[$ "Nova_magia"] = [
-	TEXT("Ao coletas runas além de ficar mais forte você também adquire novas magias.\nDentro de batalha utilize a tecla 'Shift' para selecionar alvos únicos ou múltiplos com magias!")
+	TEXT("Ao coletas runas além de ficar mais forte você também adquire novas magias. Dentro de batalha utilize a tecla 'Shift' para selecionar alvos únicos ou múltiplos com magias!")
 ];
 
 #endregion
