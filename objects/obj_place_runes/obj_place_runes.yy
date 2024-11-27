@@ -36,5 +36,5 @@
     "path":"sprites/spr_fundo/spr_fundo.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

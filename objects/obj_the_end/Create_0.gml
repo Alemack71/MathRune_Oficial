@@ -1,4 +1,4 @@
-opcoes = ["Volar para o menu"];
+opcoes = ["Voltar para o menu"];
 index = 0;
 op_max = array_length(opcoes);
 

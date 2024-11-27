@@ -81,4 +81,4 @@ if (_colidiu) {
 	troca_estado(estado_idle);	
 }
 
-show_debug_message(global.coletou_runa1);
+//show_debug_message(global.coletou_runa1);

@@ -1327,7 +1327,7 @@ global.equacao_1 =
 	},
 	{
 		pergunta : "Resolva a equacao:\n",
-		alternativas : ["x = 8","x = 9","x = 10","x = 12"],
+		alternativas : ["x = 8","x = 9","x = 6","x = 12"],
 		alternativa_certa : 2,
 		sprites : spr_question_6g, //0 indica que não precisa de sprites
 		description : "{0} pergunta!",
@@ -3191,7 +3191,7 @@ global.enemies =
 		hpMax: 35,
 		mp: 0,
 		mpMax: 0,
-		strength: 10,
+		strength: 8,
 		sprites: { idle: spr_slime_king_idle, attack: spr_slime_king_attack},
 		actions: global.question_slime_king,
 		current_question_index: -1, // Armazena o índice da questão atual
@@ -3362,7 +3362,7 @@ global.enemies =
 		hpMax: 48,
 		mp: 0,
 		mpMax: 0,
-		strength: 10,
+		strength: 11,
 		sprites: { idle: spr_king_goblin_idle, attack: spr_king_goblin_attack},
 		actions: global.question_goblin_king,
 		current_question_index: -1, // Armazena o índice da questão atual
@@ -3501,7 +3501,7 @@ global.enemies =
 		mp: 0,
 		mpMax: 0,
 		strength: 15,
-		sprites: { idle: spr_king_goblin_idle, attack: spr_king_goblin_attack},
+		sprites: { idle: spr_demon_king_idle, attack: spr_demon_king_attack},
 		actions: global.question_demon_king,
 		current_question_index: -1, // Armazena o índice da questão atual
 		AIscript : function()

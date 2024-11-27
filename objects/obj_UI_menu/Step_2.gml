@@ -1,4 +1,3 @@
-
 if (global.gamePaused){
 	
 	var keyUp = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
@@ -63,6 +62,8 @@ if (global.gamePaused){
 				ini_write_real("Chave","13",global.key_knight_2);
 		
 				ini_write_real("Chave","14",global.key_demon_king);
+				
+				ini_close();
 				
 				global.gamePaused = false;
 				with (all)

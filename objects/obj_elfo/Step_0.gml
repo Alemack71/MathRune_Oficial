@@ -178,13 +178,13 @@ if (room_atual == 8)
 		dialogo_2 = "Porcentagem";
 	};
 	
-	if (global.key_knight_1 == 3 && global.key_mage == 3)
+	if (global.key_mage == 3)
 	{	
 		progresso = 2;
-		dialogo_2 = "RegraDeTres";
+		dialogo_3 = "RegraDeTres";
 	};
 	
-	if (global.key_knight_1 == 3 && global.key_mage == 3 && global.key_knight_2 == 3)
+	if (global.key_knight_2 == 3)
 	{	
 		progresso = 4;
 		dialogo_final = "Finalizacao_masmorra_1";
@@ -217,7 +217,7 @@ if (room_atual == 9)
 }
 
 
-show_debug_message("progresso:" + string(progresso));
-show_debug_message("Elfo 6:" + string(global.dialogo_acabou_elfo6));
-show_debug_message("Keys:" + string(global.key_slimeb));
-show_debug_message("Keys:" + string(global.key_slimeg));
+//show_debug_message("progresso:" + string(progresso));
+//show_debug_message("Keys 2:" + string(global.key_knight_2));
+//show_debug_message("Keys 1:" + string(global.key_knight_1));
+//show_debug_message("Keys m:" + string(global.key_mage));

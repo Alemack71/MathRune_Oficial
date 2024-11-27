@@ -23,7 +23,7 @@ alvo = obj_player;
 
 estado_idle.inicia = function() {
     // Define a sprite
-    sprite_index = spr_knight_2_idle;
+    sprite_index = spr_mage_idle;
     image_index = 0;
 
     // Reseta o timer do estado
@@ -48,7 +48,7 @@ estado_idle.roda = function() {
 #region estado_walk
 
 estado_walk.inicia = function() {
-    sprite_index = spr_knight_2_walk;
+    sprite_index = spr_mage_walk;
     image_index = 0;
 
     // Reseta o timer do estado
