@@ -390,9 +390,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_derrota","path":"rooms/rm_derrota/rm_derrota.yy",},},
     {"roomId":{"name":"rm_teste","path":"rooms/rm_teste/rm_teste.yy",},},
     {"roomId":{"name":"rm_game_dungeon_1","path":"rooms/rm_game_dungeon_1/rm_game_dungeon_1.yy",},},
-    {"roomId":{"name":"rm_derrota","path":"rooms/rm_derrota/rm_derrota.yy",},},
     {"roomId":{"name":"rm_name","path":"rooms/rm_name/rm_name.yy",},},
     {"roomId":{"name":"rm_game_floresta_1","path":"rooms/rm_game_floresta_1/rm_game_floresta_1.yy",},},
     {"roomId":{"name":"rm_game_tutorial","path":"rooms/rm_game_tutorial/rm_game_tutorial.yy",},},

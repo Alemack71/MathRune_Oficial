@@ -1209,7 +1209,7 @@ global.equacao_1 =
 		pergunta : "Resolva a equacao:\nx + 7 = 14",
 		alternativas : ["x = 7","x = 6","x = 8","x = 5"],
 		alternativa_certa : 0,
-		sprites : 0, //0 indica que não precisa de sprites
+		sprites : 0, 
 		description : "{0} pergunta!",
 		user_animation : "attack",
 		effect_sprite : sAttackBonk,
@@ -1647,7 +1647,7 @@ global.sistemas_equacao_1 =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0., _user.strength * 0.1));
 					BattleChangeHP(_targets[0], - _damage, 0);
 				}
 			}
@@ -1674,7 +1674,7 @@ global.sistemas_equacao_1 =
 		}
 	}, 
 	{
-		pergunta : "x + y = 14\nO dobro de x menos y e 16\nOs valores de x e y sao:",
+		pergunta : "Se x + y = 14\nO dobro de x menos y e 16\nOs valores de x e y sao:",
 		alternativas : ["x = 10, y = 4","x = 8, y = 6","x = 12, y = 2","x = 9, y = 5"],
 		alternativa_certa : 0,
 		sprites : 0, //0 indica que não precisa de sprites
@@ -3055,7 +3055,7 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Slime",
-		hp: 12,
+		hp: 1,
 		hpMax: 12,
 		mp: 0,
 		mpMax: 0,
@@ -3088,7 +3088,7 @@ global.enemies =
 	slimeB: 
 	{
 		name: "Slime",
-		hp: 12,
+		hp: 1,
 		hpMax: 12,
 		mp: 0,
 		mpMax: 0,
@@ -3121,7 +3121,7 @@ global.enemies =
 	mushroomO: 
 	{
 		name: "Cogumelo",
-		hp: 18,
+		hp: 1,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3154,7 +3154,7 @@ global.enemies =
 	mushroomP: 
 	{
 		name: "Cogumelo",
-		hp: 18,
+		hp: 1,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3187,7 +3187,7 @@ global.enemies =
 	king_Slime: 
 	{
 		name: "Rei Slime",
-		hp: 35,
+		hp: 3,
 		hpMax: 35,
 		mp: 0,
 		mpMax: 0,
@@ -3226,7 +3226,7 @@ global.enemies =
 	BatD: 
 	{
 		name: "Morcego",
-		hp: 16,
+		hp: 1,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -3259,7 +3259,7 @@ global.enemies =
 	Skeleton1: 
 	{
 		name: "Esqueleto",
-		hp: 16,
+		hp: 1,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -3292,7 +3292,7 @@ global.enemies =
 	BatR: 
 	{
 		name: "Morcego",
-		hp: 18,
+		hp: 1,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3325,7 +3325,7 @@ global.enemies =
 	Skeleton2: 
 	{
 		name: "Esqueleto",
-		hp: 18,
+		hp: 1,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3358,7 +3358,7 @@ global.enemies =
 	king_Goblin: 
 	{
 		name: "Rei Goblin",
-		hp: 48,
+		hp: 4,
 		hpMax: 48,
 		mp: 0,
 		mpMax: 0,
@@ -3397,7 +3397,7 @@ global.enemies =
 	Knight1: 
 	{
 		name: "Cavaleiro",
-		hp: 20,
+		hp: 2,
 		hpMax: 20,
 		mp: 0,
 		mpMax: 0,
@@ -3430,7 +3430,7 @@ global.enemies =
 	Mage: 
 	{
 		name: "Mago",
-		hp: 16,
+		hp: 1,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -3463,7 +3463,7 @@ global.enemies =
 	Knight2: 
 	{
 		name: "Cavaleiro",
-		hp: 25,
+		hp: 2,
 		hpMax: 25,
 		mp: 0,
 		mpMax: 0,
@@ -3496,7 +3496,7 @@ global.enemies =
 	king_Demon: 
 	{
 		name: "Rei Demonio",
-		hp: 55,
+		hp: 5,
 		hpMax: 55,
 		mp: 0,
 		mpMax: 0,
