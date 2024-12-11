@@ -3055,7 +3055,7 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Slime",
-		hp: 1,
+		hp: 12,
 		hpMax: 12,
 		mp: 0,
 		mpMax: 0,
@@ -3088,7 +3088,7 @@ global.enemies =
 	slimeB: 
 	{
 		name: "Slime",
-		hp: 1,
+		hp: 12,
 		hpMax: 12,
 		mp: 0,
 		mpMax: 0,
@@ -3121,7 +3121,7 @@ global.enemies =
 	mushroomO: 
 	{
 		name: "Cogumelo",
-		hp: 1,
+		hp: 18,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3154,7 +3154,7 @@ global.enemies =
 	mushroomP: 
 	{
 		name: "Cogumelo",
-		hp: 1,
+		hp: 18,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3187,7 +3187,7 @@ global.enemies =
 	king_Slime: 
 	{
 		name: "Rei Slime",
-		hp: 3,
+		hp: 35,
 		hpMax: 35,
 		mp: 0,
 		mpMax: 0,
@@ -3226,7 +3226,7 @@ global.enemies =
 	BatD: 
 	{
 		name: "Morcego",
-		hp: 1,
+		hp: 16,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -3259,7 +3259,7 @@ global.enemies =
 	Skeleton1: 
 	{
 		name: "Esqueleto",
-		hp: 1,
+		hp: 16,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -3292,7 +3292,7 @@ global.enemies =
 	BatR: 
 	{
 		name: "Morcego",
-		hp: 1,
+		hp: 18,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3325,7 +3325,7 @@ global.enemies =
 	Skeleton2: 
 	{
 		name: "Esqueleto",
-		hp: 1,
+		hp: 18,
 		hpMax: 18,
 		mp: 0,
 		mpMax: 0,
@@ -3358,7 +3358,7 @@ global.enemies =
 	king_Goblin: 
 	{
 		name: "Rei Goblin",
-		hp: 4,
+		hp: 48,
 		hpMax: 48,
 		mp: 0,
 		mpMax: 0,
@@ -3397,7 +3397,7 @@ global.enemies =
 	Knight1: 
 	{
 		name: "Cavaleiro",
-		hp: 2,
+		hp: 20,
 		hpMax: 20,
 		mp: 0,
 		mpMax: 0,
@@ -3430,7 +3430,7 @@ global.enemies =
 	Mage: 
 	{
 		name: "Mago",
-		hp: 1,
+		hp: 16,
 		hpMax: 16,
 		mp: 0,
 		mpMax: 0,
@@ -3463,7 +3463,7 @@ global.enemies =
 	Knight2: 
 	{
 		name: "Cavaleiro",
-		hp: 2,
+		hp: 25,
 		hpMax: 25,
 		mp: 0,
 		mpMax: 0,
@@ -3496,7 +3496,7 @@ global.enemies =
 	king_Demon: 
 	{
 		name: "Rei Demonio",
-		hp: 5,
+		hp: 55,
 		hpMax: 55,
 		mp: 0,
 		mpMax: 0,
