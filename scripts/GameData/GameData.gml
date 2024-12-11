@@ -137,8 +137,8 @@ global.question_library_operacoes_basicas =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -177,8 +177,8 @@ global.question_library_operacoes_basicas =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -843,8 +843,8 @@ global.radiciacao =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -883,8 +883,8 @@ global.radiciacao =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -903,8 +903,8 @@ global.radiciacao =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -1043,8 +1043,8 @@ global.radiciacao =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -1279,8 +1279,8 @@ global.equacao_1 =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -1339,8 +1339,8 @@ global.equacao_1 =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -1359,8 +1359,8 @@ global.equacao_1 =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}
@@ -1419,8 +1419,8 @@ global.equacao_1 =
 			if (!global.acertou)
 			{
 				{
-					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-					BattleChangeHP(_targets[0], - _damage, 0);
+					var _damage = ceil(_user.strength + random_range(-_user.strength * 0.1, _user.strength * 0.1));
+					BattleChangeHP(_targets[0], -_damage, 0);
 				}
 			}
 		}

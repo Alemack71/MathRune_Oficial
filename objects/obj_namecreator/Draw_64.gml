@@ -44,3 +44,10 @@ for (var yy = 0; yy < yLetters; yy ++){
         charCount ++;
     }
 }
+
+var _voltar {
+	draw_set_font(fnt_esc);
+	draw_text(20,20,voltar);
+}
+
+draw_set_font(-1);

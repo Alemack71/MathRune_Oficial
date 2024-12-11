@@ -38,7 +38,7 @@ estado_idle.roda = function() {
 
     if (_tempo <= 0) {
         // Escolhe o próximo estado (maior chance de continuar no idle)
-        var _estado_novo = choose(estado_walk, estado_idle, estado_idle);
+        var _estado_novo = choose(estado_walk, estado_walk, estado_idle);
         troca_estado(_estado_novo);
     }
 };

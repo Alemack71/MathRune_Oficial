@@ -31,3 +31,5 @@ for(var yy = 0; yy < yLetters; yy ++){
 }
 
 posicao = a_letters[gridX, gridY];
+
+voltar = "Pressione ESC para voltar ao menu principal!";

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSlime",
-    "path":"sprites/sSlime/sSlime.yy",
+    "name":"spr_slime_walk",
+    "path":"sprites/spr_slime_walk/spr_slime_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

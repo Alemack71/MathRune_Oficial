@@ -199,9 +199,9 @@
           -249,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tl_dungeon","path":"tilesets/tl_dungeon/tl_dungeon.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Agua_efeitos","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Agua_efeitos","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":33,"SerialiseWidth":49,"TileCompressedData":[
-          -962,-2147483648,-4,0,-14,-2147483648,-9,31,-31,0,-19,-2147483648,1,31,-10,-2147483648,-2,0,-38,-2147483648,
-          -2,31,-49,-2147483648,1,0,-3,31,-49,-2147483648,1,0,-49,-2147483648,2,0,31,-49,-2147483648,2,0,31,-49,
-          -2147483648,1,0,-49,-2147483648,1,0,-220,-2147483648,
+          -962,-2147483648,-4,0,-14,-2147483648,-40,0,-17,-2147483648,-7,0,-6,-2147483648,-2,0,-38,-2147483648,
+          -5,0,-46,-2147483648,-4,0,-48,-2147483648,-2,0,-49,-2147483648,-3,0,-48,-2147483648,-3,0,-48,-2147483648,
+          1,0,-49,-2147483648,1,0,-220,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tl_agua_anim","path":"tilesets/tl_agua_anim/tl_agua_anim.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Agua","depth":700,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Agua","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":33,"SerialiseWidth":49,"TileCompressedData":[
           -539,-2147483648,-44,328,-5,-2147483648,-44,328,-5,-2147483648,-44,328,-5,-2147483648,-44,328,-5,-2147483648,
